@@ -3,9 +3,46 @@
   padding: 10px 0 15px 0;
   background: var(--white);
 
+  a {
+    color: var(--black);
+  }
+
+  .logo-div {
+    img {
+      max-width: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  .email img, .phone img {
+    margin-right: 10px;
+  }
+
+  .search {
+    background: var(--dark-grey);
+    border-radius: 12px;
+    input {
+      background: none;
+      border: none;
+    }
+    form {
+      padding: 8px 15px;
+    }
+    ::placeholder { 
+      color: #99a2a5;
+      font-size: 14px; 
+    }
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
     .menu {
       display: flex;

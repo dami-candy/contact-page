@@ -21,19 +21,33 @@
     </head>
     <body <?php body_class();?>>
     <header id="header" class="hfeed">
-        <div class="container">
+        <div class="container flex-wrap">
             <div class="logo-div">
                 <a href="/#">
-                    <img class="header-logo " src="<?php bloginfo('template_url'); ?>/images/logo.svg" alt="Baseline logo" width="120px" height="50px">
+                    <img class="header-logo " src="<?php bloginfo('template_url'); ?>/images/spore-buddies.png" alt="Spore Buddies Logo" width="240px" height="60px">
                 </a>
             </div>
-            <nav>
-                <?php
-                    wp_nav_menu( array( 
-                    'theme_location' => 'main-menu', 
-                    'container_class' => 'main-menu' ) ); 
-                ?>
-            </nav>
+            <div class="phone"><a href="tel:0800 069 9269"><img src="<?php bloginfo('template_url'); ?>/images/phone.png" alt="Phone icon" width="18px" height="18px">0800 069 9269</a></div>
+            <div class="email"><a href="mailto:hello@sporebuddies.com"><img src="<?php bloginfo('template_url'); ?>/images/email.png" alt="Phone icon" width="18px" height="18px">hello@sporebuddies.com</a></div>
+            <div class="search d-flex align-items-center"> 
+                <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                    <img class="mr-2" src="<?php bloginfo('template_url'); ?>/images/search.png" alt="Search icon" width="14px" height="14px">
+                    <label>
+                        <span class="screen-reader-text">Search for:</span>
+                        <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+                    </label>
+                    <input type="submit" class="d-none" value="Search" />
+                </form>
+            </div>
+            <div class="w-100 mt-3">
+                <nav class="justify-content-md-center">
+                    <?php
+                        wp_nav_menu( array( 
+                        'theme_location' => 'main-menu', 
+                        'container_class' => 'main-menu' ) ); 
+                    ?>
+                </nav>
+            </div>
         </div>            
     </header>
 

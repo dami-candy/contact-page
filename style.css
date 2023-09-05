@@ -1,12 +1,18 @@
 :root {
   --black: #000000;
   --white: #ffffff;
+  --grey: #f5f5f5;
+  --dark-grey: #f8f8f8;
 }
 
 body {
   margin: 0;
   background: var(--white);
   color: var(--black);
+}
+
+*:focus {
+  outline: none;
 }
 
 .container {
@@ -60,9 +66,47 @@ article a {
   padding: 10px 0 15px 0;
   background: var(--white);
 }
+#header a {
+  color: var(--black);
+}
+#header .logo-div img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header .email img, #header .phone img {
+  margin-right: 10px;
+}
+#header .search {
+  background: var(--dark-grey);
+  border-radius: 12px;
+}
+#header .search input {
+  background: none;
+  border: none;
+}
+#header .search form {
+  padding: 8px 15px;
+}
+#header .search ::-moz-placeholder {
+  color: #99a2a5;
+  font-size: 14px;
+}
+#header .search ::placeholder {
+  color: #99a2a5;
+  font-size: 14px;
+}
 #header .container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  #header .container {
+    flex-direction: row;
+  }
 }
 #header .container .menu {
   display: flex;
@@ -112,7 +156,7 @@ article a {
 }
 
 #footer {
-  background: var(--black);
+  background: var(--grey);
   color: var(--white);
   padding: 40px 0;
   margin-top: 50px;
@@ -130,8 +174,8 @@ article a {
 }
 
 @font-face {
-  font-family: Righteous-Regular;
-  src: url("fonts/Righteous-Regular.ttf");
+  font-family: Poppins-Regular;
+  src: url("fonts/Poppins-Regular.ttf");
 }
 a {
   text-decoration: none;
@@ -143,7 +187,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Righteous-Regular", cursive;
+  font-family: "Poppins-Regular", cursive;
 }
 
 h1 {
@@ -166,12 +210,6 @@ h1 {
   .blog .container {
     flex-direction: row;
   }
-}
-.blog img {
-  max-width: 100%;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .blog .post {
   width: 33%;
@@ -348,14 +386,10 @@ h1 {
   z-index: 1;
 }
 #half-block .container .lottie {
-  -webkit-animation-name: floating;
-          animation-name: floating;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-name: floating;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
   margin-left: 30px;
   margin-top: 5px;
 }
@@ -370,17 +404,6 @@ h1 {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
-  }
-}
-@-webkit-keyframes floating {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(-20px, 80px);
-  }
-  to {
-    transform: translate(0, 0px);
   }
 }
 @keyframes floating {

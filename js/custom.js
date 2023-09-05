@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
     if (headerSearchBarField) {
       if (document.querySelector("[placeholder='Search …']")) {
         document.querySelector("[placeholder='Search …']").placeholder =
-          "Search for products";
+          "Search something here!";
       }
     }
   }
