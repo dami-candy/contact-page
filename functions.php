@@ -64,4 +64,24 @@
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+
+    // -------- Adding Useful Links menu
+    function useful_links_menu() {
+        register_nav_menu('useful-links',__( 'Useful Links' ));
+    }
+    add_action( 'init', 'useful_links_menu' );
+
+    // -------- Adding Copyright menu
+    function copyright_menu() {
+        register_nav_menu('copyright-menu',__( 'Copyright Menu' ));
+    }
+    add_action( 'init', 'copyright_menu' );
+
+     // -------- About menu
+     function about_menu() {
+        register_nav_menu('about-menu',__( 'About Menu' ));
+    }
+    add_action( 'init', 'about_menu' );
+
+
 ?>

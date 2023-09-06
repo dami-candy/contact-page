@@ -1,17 +1,84 @@
 #footer {
   background: var(--grey);
-  color: var(--white);
+  color: #121212;
   padding: 40px 0;
   margin-top: 50px;
+
+  a {
+    color: var(--black)
+  }
   .container {
     justify-content: center;
   }
-  .social_icon {
-    display: flex;
-    justify-content: center;
+  ul {
     padding: 0;
     li {
       list-style: none;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+  }
+  .newsletter {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px;
+    h2 {
+      font-weight: 900;
+      font-size: 24px;
+    }
+    form {
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: end;  
+      }
+    }
+    .wpcf7-submit {
+      background: var(---blue);
+      color: var(--white);
+      border: 3px solid #86b2ed;
+      padding: 13px 25px;
+      border-radius: 30px;
+      margin-left: 20px;
+      font-weight: 700;
+      transition: 0.6s;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    input {
+      padding: 12px 25px;
+      border-radius: 5px;
+      border: 1px solid #99A2A5;
+    }
+    ::placeholder {
+      font-size: 14px;
+    }
+    .input {
+      @media screen and (min-width: 768px) {
+        width: 60%;
+      }
+      input {
+        width: 100%;
+      }
+    }
+    .submit {
+      width: 28%;
+    }
+  }
+  .copyright {
+    border-top: 1px solid #bebebe;
+    font-size: 14px;
+    .menu {
+      display: flex;
+    }
+    li {
+      padding-left: 20px;
+      text-decoration: underline;
+    } 
+  }
+  .social-icons {
+    img {
+      object-fit: contain;
     }
   }
 }

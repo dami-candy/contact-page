@@ -1,6 +1,6 @@
 // Theme colours
 :root {
-  --black: #000000;
+  --black: #121212;
   --white: #ffffff;
   --grey: #f5f5f5;
   --dark-grey: #f8f8f8;
@@ -75,4 +75,18 @@ article {
   background: var(---blue);
   color: var(--white);
   font-size: 16px;
+}
+
+.btn {
+  background: var(---blue);
+  color: var(--white);
+  border: 2px solid #0D66DB;
+}
+
+.logo-div {
+  img {
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+  }
 }

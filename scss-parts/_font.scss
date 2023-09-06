@@ -3,16 +3,36 @@
   src: url("fonts/Poppins-Regular.ttf");
 }
 
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("fonts/Poppins-Bold.ttf");
+}
+
 a {
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: "Poppins-Bold", cursive;
+}
+
+.wpcf7-submit, strong {
+  font-family: "Poppins-SemiBold", cursive;
+}
+
+p,
+::placeholder,
+li,
+a {
   font-family: "Poppins-Regular", cursive;
 }
 

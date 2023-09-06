@@ -1,5 +1,5 @@
 :root {
-  --black: #000000;
+  --black: #121212;
   --white: #ffffff;
   --grey: #f5f5f5;
   --dark-grey: #f8f8f8;
@@ -72,6 +72,19 @@ article a {
   font-size: 16px;
 }
 
+.btn {
+  background: var(---blue);
+  color: var(--white);
+  border: 2px solid #0D66DB;
+}
+
+.logo-div img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
@@ -79,12 +92,6 @@ article a {
 }
 #header a {
   color: var(--black);
-}
-#header .logo-div img {
-  max-width: 100%;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 #header .contact-info .email {
   padding-left: 30px;
@@ -250,25 +257,101 @@ article a {
 
 #footer {
   background: var(--grey);
-  color: var(--white);
+  color: #121212;
   padding: 40px 0;
   margin-top: 50px;
+}
+#footer a {
+  color: var(--black);
 }
 #footer .container {
   justify-content: center;
 }
-#footer .social_icon {
-  display: flex;
-  justify-content: center;
+#footer ul {
   padding: 0;
 }
-#footer .social_icon li {
+#footer ul li {
   list-style: none;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+#footer .newsletter {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 32px;
+}
+#footer .newsletter h2 {
+  font-weight: 900;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  #footer .newsletter form {
+    display: flex;
+    justify-content: end;
+  }
+}
+#footer .newsletter .wpcf7-submit {
+  background: var(---blue);
+  color: var(--white);
+  border: 3px solid #86b2ed;
+  padding: 13px 25px;
+  border-radius: 30px;
+  margin-left: 20px;
+  font-weight: 700;
+  transition: 0.6s;
+}
+#footer .newsletter .wpcf7-submit:hover {
+  transform: scale(1.02);
+}
+#footer .newsletter input {
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: 1px solid #99A2A5;
+}
+#footer .newsletter ::-moz-placeholder {
+  font-size: 14px;
+}
+#footer .newsletter ::placeholder {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  #footer .newsletter .input {
+    width: 60%;
+  }
+}
+#footer .newsletter .input input {
+  width: 100%;
+}
+#footer .newsletter .submit {
+  width: 28%;
+}
+#footer .copyright {
+  border-top: 1px solid #bebebe;
+  font-size: 14px;
+}
+#footer .copyright .menu {
+  display: flex;
+}
+#footer .copyright li {
+  padding-left: 20px;
+  text-decoration: underline;
+}
+#footer .social-icons img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @font-face {
   font-family: Poppins-Regular;
   src: url("fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("fonts/Poppins-Bold.ttf");
 }
 a {
   text-decoration: none;
@@ -280,6 +363,21 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Poppins-Bold", cursive;
+}
+
+.wpcf7-submit, strong {
+  font-family: "Poppins-SemiBold", cursive;
+}
+
+::-moz-placeholder {
+  font-family: "Poppins-Regular", cursive;
+}
+
+p,
+::placeholder,
+li,
+a {
   font-family: "Poppins-Regular", cursive;
 }
 
