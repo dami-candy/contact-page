@@ -99,12 +99,6 @@
       }
     }
   }
-  .search-form input {
-    display: none;
-    @media screen and (min-width: 768px) {
-      display: block;
-    }
-  }
  
   .main-menu {
     width: 100%;
@@ -154,8 +148,10 @@
     position: absolute;
     background: white;
     left: 0;
-    padding-top: 100px;
+    padding-top: 50px;
     top: 0;
+    height: 100vh;
+    z-index: 10;
     li {
       font-size: 32px;
     }
@@ -181,6 +177,12 @@
   }
   .mob-account-details {
     display: flex;
+  }
+  .current-menu-item {
+    font-weight: 700;
+  }
+  .banner {
+    z-index: 19999;
   }
 }
 

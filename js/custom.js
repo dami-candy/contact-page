@@ -31,5 +31,6 @@ jQuery(document).ready(function ($) {
     $('nav').toggleClass('d-none');
     $('body').toggleClass('overflow');
     $('.mob-account-details').toggleClass('d-none');
+    $('.banner').toggleClass('d-none');
 });
 });

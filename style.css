@@ -3,6 +3,7 @@
   --white: #ffffff;
   --grey: #f5f5f5;
   --dark-grey: #f8f8f8;
+  ---blue: #0D66DB;
 }
 
 body {
@@ -63,6 +64,12 @@ article a {
   padding: 15px 20px;
   margin-top: 50px;
   border-radius: 30px;
+}
+
+.banner {
+  background: var(---blue);
+  color: var(--white);
+  font-size: 16px;
 }
 
 #header {
@@ -159,14 +166,6 @@ article a {
   color: var(--black);
   padding: 5px;
 }
-#header .search-form input {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  #header .search-form input {
-    display: block;
-  }
-}
 #header .main-menu {
   width: 100%;
 }
@@ -213,8 +212,10 @@ article a {
   position: absolute;
   background: white;
   left: 0;
-  padding-top: 100px;
+  padding-top: 50px;
   top: 0;
+  height: 100vh;
+  z-index: 10;
 }
 #header .mob-header li {
   font-size: 32px;
@@ -239,6 +240,12 @@ article a {
 }
 #header .mob-account-details {
   display: flex;
+}
+#header .current-menu-item {
+  font-weight: 700;
+}
+#header .banner {
+  z-index: 19999;
 }
 
 #footer {

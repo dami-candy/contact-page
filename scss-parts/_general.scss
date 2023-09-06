@@ -4,6 +4,7 @@
   --white: #ffffff;
   --grey: #f5f5f5;
   --dark-grey: #f8f8f8;
+  ---blue: #0D66DB;
 }
 
 body {
@@ -68,4 +69,10 @@ article {
   padding: 15px 20px;
   margin-top: 50px;
   border-radius: 30px;
+}
+
+.banner {
+  background: var(---blue);
+  color: var(--white);
+  font-size: 16px;
 }

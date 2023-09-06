@@ -20,6 +20,7 @@
         <link rel="canonical" href="<?php echo esc_url( 'https://' . $_SERVER["HTTP_HOST"] . parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ) ); ?>" />
     </head>
     <body <?php body_class();?>>
+    <div class="banner text-center py-2">Want discounts on Bulk Substrate Orders? Please get in touch</div>
     <header id="header" class="hfeed">
         <div class="container flex-wrap">
             <div class="logo-div">
@@ -46,7 +47,7 @@
                         <a href="/checkout"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart icon" width="22px" height="22px"></a>
                         <a class="ms-2" href="/my-account"><img src="<?php bloginfo('template_url'); ?>/images/account.png" alt="Phone icon" width="17px" height="17px"></a>
                     </div>
-                    <div class="hamburger-menu d-xl-none ms-4">
+                    <div class="hamburger-menu d-md-none ms-4">
                         <div class="bar-top"></div>
                         <div class="bar-middle"></div>
                         <div class="bar-bottom"></div>
@@ -57,11 +58,23 @@
             
             
             <div class="w-100 mt-3">
-                <div class="mob-account-details me-4 d-none justify-content-end">
-                    <a href="/checkout"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart icon" width="22px" height="22px"></a>
-                    <a class="ms-2" href="/my-account"><img src="<?php bloginfo('template_url'); ?>/images/account.png" alt="Phone icon" width="17px" height="17px"></a>
+                <div class="container mob-account-details justify-content-between my-2 d-none">
+                    <div class="search">
+                        <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                            <img class="mr-2" src="<?php bloginfo('template_url'); ?>/images/search.png" alt="Search icon" width="14px" height="14px">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+                            </label>
+                            <!-- <input type="submit" class="d-none" value="Search" /> -->
+                        </form>
+                    </div>
+                    <div>
+                        <a href="/checkout"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart icon" width="22px" height="22px"></a>
+                        <a class="ms-2" href="/my-account"><img src="<?php bloginfo('template_url'); ?>/images/account.png" alt="Phone icon" width="17px" height="17px"></a>
+                    </div>
                 </div>
-                <nav class="justify-content-center d-none d-xl-block">
+                <nav class="justify-content-center d-none d-lg-block">
                     <?php
                         wp_nav_menu( array( 
                         'theme_location' => 'main-menu', 
