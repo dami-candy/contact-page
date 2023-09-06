@@ -24,4 +24,12 @@ jQuery(document).ready(function ($) {
       }
     }
   }
+
+  $(".hamburger-menu").click(function() {
+    $(this).toggleClass('active');
+    $('.w-100.mt-3').toggleClass('mob-header');
+    $('nav').toggleClass('d-none');
+    $('body').toggleClass('overflow');
+    $('.mob-account-details').toggleClass('d-none');
+});
 });

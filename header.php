@@ -24,23 +24,44 @@
         <div class="container flex-wrap">
             <div class="logo-div">
                 <a href="/#">
-                    <img class="header-logo " src="<?php bloginfo('template_url'); ?>/images/spore-buddies.png" alt="Spore Buddies Logo" width="240px" height="60px">
+                    <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/spore-buddies.png" alt="Spore Buddies Logo" width="240px" height="60px">
                 </a>
             </div>
-            <div class="phone"><a href="tel:0800 069 9269"><img src="<?php bloginfo('template_url'); ?>/images/phone.png" alt="Phone icon" width="18px" height="18px">0800 069 9269</a></div>
-            <div class="email"><a href="mailto:hello@sporebuddies.com"><img src="<?php bloginfo('template_url'); ?>/images/email.png" alt="Phone icon" width="18px" height="18px">hello@sporebuddies.com</a></div>
-            <div class="search d-flex align-items-center"> 
-                <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-                    <img class="mr-2" src="<?php bloginfo('template_url'); ?>/images/search.png" alt="Search icon" width="14px" height="14px">
-                    <label>
-                        <span class="screen-reader-text">Search for:</span>
-                        <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
-                    </label>
-                    <input type="submit" class="d-none" value="Search" />
-                </form>
+            <div class="content d-flex">
+                <a href="tel:0800 069 9269" class="d-flex align-items-center phone"><img src="<?php bloginfo('template_url'); ?>/images/phone.png" alt="Phone icon" width="18px" height="18px"><span class="d-none d-xl-flex">0800 069 9269</span></a>
+                <a href="mailto:hello@sporebuddies.com" class="d-flex align-items-center email ms-xl-5"><img src="<?php bloginfo('template_url'); ?>/images/email.png" alt="Phone icon" width="18px" height="18px"><span class="d-none d-xl-flex">hello@sporebuddies.com</span></a>
+
+                <div class="search d-flex align-items-center ms-xl-5"> 
+                    <div>
+                        <form role="search" method="get" class="search-form d-none d-md-block" action="<?php echo home_url( '/' ); ?>">
+                            <img class="mr-2" src="<?php bloginfo('template_url'); ?>/images/search.png" alt="Search icon" width="14px" height="14px">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+                            </label>
+                            <!-- <input type="submit" class="d-none" value="Search" /> -->
+                        </form>
+                    </div>
+                    <div class="account-details ms-4 d-none d-md-block">
+                        <a href="/checkout"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart icon" width="22px" height="22px"></a>
+                        <a class="ms-2" href="/my-account"><img src="<?php bloginfo('template_url'); ?>/images/account.png" alt="Phone icon" width="17px" height="17px"></a>
+                    </div>
+                    <div class="hamburger-menu d-xl-none ms-4">
+                        <div class="bar-top"></div>
+                        <div class="bar-middle"></div>
+                        <div class="bar-bottom"></div>
+                    </div>
+                </div>
             </div>
+            
+            
+            
             <div class="w-100 mt-3">
-                <nav class="justify-content-md-center">
+                <div class="mob-account-details me-4 d-none justify-content-end">
+                    <a href="/checkout"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart icon" width="22px" height="22px"></a>
+                    <a class="ms-2" href="/my-account"><img src="<?php bloginfo('template_url'); ?>/images/account.png" alt="Phone icon" width="17px" height="17px"></a>
+                </div>
+                <nav class="justify-content-center d-none d-xl-block">
                     <?php
                         wp_nav_menu( array( 
                         'theme_location' => 'main-menu', 
@@ -48,6 +69,7 @@
                     ?>
                 </nav>
             </div>
+
         </div>            
     </header>
 

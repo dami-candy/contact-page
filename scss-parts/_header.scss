@@ -15,19 +15,26 @@
     }
   }
 
+  .contact-info {
+    .email {
+      padding-left: 30px;
+    }
+  }
+  
+
   .email img, .phone img {
     margin-right: 10px;
   }
 
   .search {
-    background: var(--dark-grey);
-    border-radius: 12px;
     input {
       background: none;
       border: none;
     }
     form {
       padding: 8px 15px;
+      background: var(--dark-grey);
+      border-radius: 12px;
     }
     ::placeholder { 
       color: #99a2a5;
@@ -38,15 +45,13 @@
   .container {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-    }
 
     .menu {
       display: flex;
       list-style: none;
+      justify-content: center;
       margin-bottom: 0;
       a {
         padding-right: 30px;
@@ -65,7 +70,9 @@
     li {
       list-style: none;
       display: flex;
-      align-self: center;
+      @media screen and (min-width: 768px) {
+        align-self: center;
+      }
     }
     .sub-menu {
       display: none;
@@ -92,4 +99,89 @@
       }
     }
   }
+  .search-form input {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+ 
+  .main-menu {
+    width: 100%;
+      ul {
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  body {
+    background-color: black;
+  }
+  
+
+  .hamburger-menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 1.7rem;
+    width: 1.7rem;
+    cursor: pointer;
+  }
+  .bar-top,
+  .bar-middle,
+  .bar-bottom {
+    height: 3px;
+    background:#0f65da;
+    border-radius: 5px;
+    margin: 3px 0;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+  .hamburger-menu.active .bar-top {
+    transform: rotate(45deg);
+  }
+  .hamburger-menu.active .bar-middle {
+    transform:translateX(1rem);
+    opacity: 0;
+  }
+  .hamburger-menu.active .bar-bottom {
+    transform: rotate(-45deg);
+  }  
+
+  .mob-header {
+    position: absolute;
+    background: white;
+    left: 0;
+    padding-top: 100px;
+    top: 0;
+    li {
+      font-size: 32px;
+    }
+    @media screen and (min-width: 768px) {
+      position: unset;
+      padding-top: 0px;
+      li {
+        font-size: inherit;
+      }
+    }
+  }
+ 
+  
+  .content, .header-logo {
+    position: relative;
+    z-index: 19999;
+  }
+
+  @media screen and (max-width: 460px) {
+    .header-logo {
+      max-width: 160px !important;
+    }
+  }
+  .mob-account-details {
+    display: flex;
+  }
 }
+
+  
