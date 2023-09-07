@@ -1,4 +1,5 @@
 </main>
+
 <footer>
     <section id="footer">
         <div class="container">
@@ -65,7 +66,7 @@
                 <div class="row">
                     <div class="col-md-12 d-flex mt-3 justify-content-between">
                         <div class="d-flex">
-                            <p class="me-3">© <?php echo date("Y"); ?> SporeBuddies.com All rights reserved.</a></p>
+                            <p class="me-3"><?php the_field('copyright_text', 'option'); ?></p>
                             <nav class="justify-content-center d-none d-lg-block">
                                 <?php
                                     wp_nav_menu( array( 
@@ -74,12 +75,23 @@
                                 ?>
                             </nav>
                         </div>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/people/Sporebuddiescom/100039991404304/" target="_blank" class="mx-1"><img src="<?php bloginfo('template_url'); ?>/images/facebook.png" alt="Facebook Logo" width="20px" height="20px"></a>
-                            <a class="mx-1"><img src="<?php bloginfo('template_url'); ?>/images/instagram.png" alt="Instagram Logo" width="20px" height="20px"></a>
-                            <a href="https://twitter.com/SporeBuddy" target="_blank" class="mx-1"><img src="<?php bloginfo('template_url'); ?>/images/twitter.png" alt="Twitter Logo" width="20px" height="20px"></a>
-                            <a class="mx-1"><img src="<?php bloginfo('template_url'); ?>/images/linkedin.png" alt="LinkedIn Logo" width="20px" height="20px"></a>
-                        </div>
+                        <ul class="social-icons d-flex">
+                            <?php
+                                if (have_rows('socials', 'option')) :
+                                    while (have_rows('socials', 'option')) : the_row(); ?>
+                                        <li>
+                                            <a href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener" aria-label="<?php echo $icon['alt']; ?>">
+                                                <?php $icon = get_sub_field('icon', 'option');
+                                                        if ($icon) : ?>
+                                                    <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" width="20" height="20">
+                                                <?php endif; ?>
+                                            </a>
+                                        </li>
+                                <?php
+                                    endwhile;
+                                    endif; 
+                                ?>
+                        </ul>
                     </div>
                 </div>
             </div>

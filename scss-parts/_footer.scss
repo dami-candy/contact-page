@@ -29,6 +29,7 @@
     form {
       @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
         justify-content: end;  
       }
     }
@@ -80,5 +81,8 @@
     img {
       object-fit: contain;
     }
+  }
+  .wpcf7-response-output {
+    margin: 0;
   }
 }

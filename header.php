@@ -20,7 +20,10 @@
         <link rel="canonical" href="<?php echo esc_url( 'https://' . $_SERVER["HTTP_HOST"] . parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ) ); ?>" />
     </head>
     <body <?php body_class();?>>
-    <div class="banner text-center py-2">Want discounts on Bulk Substrate Orders? Please get in touch</div>
+    <div class="slider banner-slider">
+        <div class="banner text-center py-2"><?php the_field('banner_text', 'option'); ?></div>
+        <div class="banner text-center py-2"><?php the_field('banner_text_alt', 'option'); ?></div>
+    </div>
     <header id="header" class="hfeed">
         <div class="container flex-wrap">
             <div class="logo-div">

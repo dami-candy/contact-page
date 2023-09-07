@@ -85,6 +85,10 @@ article a {
      object-fit: contain;
 }
 
+.banner a {
+  color: var(--white);
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
@@ -287,6 +291,7 @@ article a {
 @media screen and (min-width: 768px) {
   #footer .newsletter form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: end;
   }
 }
@@ -339,6 +344,9 @@ article a {
 #footer .social-icons img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+#footer .wpcf7-response-output {
+  margin: 0;
 }
 
 @font-face {

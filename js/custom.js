@@ -1,15 +1,15 @@
 // OnLoad
 jQuery(document).ready(function ($) {
   // Homepage hero slider
-  $(".homepage-hero-main-slider").slick({
+
+  $('.banner-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    fade: true,
     autoplay: true,
-    swipeToSlide: true,
+    autoplaySpeed: 2000,
+    arrows: false
   });
+    
 
   // Search Bar Header placeholder text
   headerSearchBar();
