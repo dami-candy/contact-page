@@ -21,7 +21,8 @@
   .newsletter {
     background: var(--white);
     border-radius: 16px;
-    padding: 32px;
+    padding: 32px 32px 0 32px;
+    position: relative;
     h2 {
       font-weight: 900;
       font-size: 24px;
@@ -84,5 +85,8 @@
   }
   .wpcf7-response-output {
     margin: 0;
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
   }
 }

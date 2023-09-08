@@ -9,6 +9,14 @@ jQuery(document).ready(function ($) {
     autoplaySpeed: 2000,
     arrows: false
   });
+
+  $('.slider-1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });
     
 
   // Search Bar Header placeholder text

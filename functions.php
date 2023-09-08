@@ -83,5 +83,37 @@
     }
     add_action( 'init', 'about_menu' );
 
+    function custom_block_category($categories, $post) {
+        $custom_block = array(
+            'slug' => 'custom-blocks',
+            'title' => __('Custom Blocks', 'custom-blocks')
+        );
+        $categories_sorted = array();
+        $categories_sorted[0] = $custom_block;
+        foreach ($categories as $category) {
+            $categories_sorted[] = $category;
+        }
+        return $categories_sorted;
+    }
+    add_filter('block_categories', 'custom_block_category', 10, 2);
+    
+ 
 
+    function register_acf_block_types(){
+        acf_register_block_type(
+            array(
+            'name'              => 'Slider',
+            'title'             => __('Slider'),
+            'description'       => __('A custom testimonial block.'),
+            'render_template'   => 'template-parts/blocks/slider.php',
+            'icon'              => 'editor-paste-text',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+        
+    }
+
+    if (function_exists('acf_register_block_type')) {
+        add_action('acf/init', 'register_acf_block_types');
+    }
 ?>
