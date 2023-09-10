@@ -1,0 +1,8 @@
+#three-column-section {
+    @media screen and (min-width: 768px) {
+        .divider {
+            border-left: 1px solid #2C3258;
+            border-right: 1px solid #2C3258;
+        } 
+    }
+}

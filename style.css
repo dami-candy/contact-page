@@ -552,4 +552,11 @@ h1 {
 }
 #slider .content {
   margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  #three-column-section .divider {
+    border-left: 1px solid #2C3258;
+    border-right: 1px solid #2C3258;
+  }
 }/*# sourceMappingURL=style.css.map */

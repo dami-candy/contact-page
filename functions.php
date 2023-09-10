@@ -83,30 +83,50 @@
     }
     add_action( 'init', 'about_menu' );
 
-    function custom_block_category($categories, $post) {
-        $custom_block = array(
-            'slug' => 'custom-blocks',
-            'title' => __('Custom Blocks', 'custom-blocks')
+
+    // Regsiter New Block
+    function register_layout_category( $categories ) {
+	
+        $categories[] = array(
+            'slug'  => 'custom-block',
+            'title' => 'Custom Block'
         );
-        $categories_sorted = array();
-        $categories_sorted[0] = $custom_block;
-        foreach ($categories as $category) {
-            $categories_sorted[] = $category;
-        }
-        return $categories_sorted;
+    
+        return $categories;
     }
-    add_filter('block_categories', 'custom_block_category', 10, 2);
+    
+    if ( version_compare( get_bloginfo( 'version' ), '5.8', '>=' ) ) {
+        add_filter( 'block_categories_all', 'register_layout_category' );
+    } else {
+        add_filter( 'block_categories', 'register_layout_category' );
+    }
+
+
     
  
-
     function register_acf_block_types(){
+
+        // Slider block
         acf_register_block_type(
             array(
-            'name'              => 'Slider',
+            'name'              => 'slider',
             'title'             => __('Slider'),
             'description'       => __('A custom testimonial block.'),
             'render_template'   => 'template-parts/blocks/slider.php',
-            'icon'              => 'editor-paste-text',
+            'icon'              => 'media-default',
+            'category'          => 'custom-blocks',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
+        // Three Column Section
+        acf_register_block_type(
+            array(
+            'name'              => 'three-column-section',
+            'title'             => __('Three Column Section'),
+            'description'       => __('A custom testimonial block.'),
+            'render_template'   => 'template-parts/blocks/three-column-section/three-column-section.php',
+            'icon'              => 'media-default',
             'keywords'          => array( 'testimonial', 'quote' ),
             )
         );
