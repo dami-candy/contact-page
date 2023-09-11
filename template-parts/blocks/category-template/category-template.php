@@ -28,7 +28,7 @@
                                     $category_url = get_term_link($category, 'product_cat');
 
                                     // Get the image URL
-                                    $thumbnail_url = wp_get_attachment_image_url($thumbnail_id, 'thumbnail'); // 'thumbnail' is the image size you want (you can change it to 'medium', 'large', etc.)
+                                    $thumbnail_url = wp_get_attachment_image_url($thumbnail_id, 'large'); // 'thumbnail' is the image size you want (you can change it to 'medium', 'large', etc.)
 
                                     echo '<a href="' . esc_url($category_url) . '">';
                                         echo '<img class="category-image" src="' . esc_url($thumbnail_url) . '" alt="Category Thumbnail">';
