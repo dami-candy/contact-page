@@ -155,6 +155,30 @@
             )
         );
 
+        // Accordion
+         acf_register_block_type(
+            array(
+            'name'              => 'accordion',
+            'title'             => __('Accordion'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/accordion/accordion.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
+         // Accordion
+         acf_register_block_type(
+            array(
+            'name'              => 'content',
+            'title'             => __('Content'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/content/content.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
     }
 
     if (function_exists('acf_register_block_type')) {

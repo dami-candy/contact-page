@@ -1,0 +1,69 @@
+#accordion {
+    .acc-kontainer {
+        width: 100%;
+        margin: auto;
+      }
+      .acc-kontainer .acc-body {
+        width: 98%;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        height: 0;
+        color: rgba(0, 0, 0, 0);;
+        background-color: rgba(255, 255, 255, 0.2);
+        line-height: 28px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        border-top: 1px solid var(--black);
+      }
+      
+      .acc-kontainer label {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+        padding: 15px;
+        width: 100%;
+        color: var(--black);
+        font-weight: 400;
+        box-sizing: border-box;
+        z-index: 100;
+        font-size: 18px;
+      }
+      
+      .acc-kontainer input{
+        display: none;
+      }
+      
+      .acc-kontainer label:before {
+        font-family: 'FontAwesome';
+        content: '\f067';
+        font-weight: normal;
+        float: right;
+        background-color: var(--blue);
+        color: var(--white);
+        padding: 3px 7px;
+        border-radius: 50%;
+        font-size: 12px;
+        position: relative;
+        top: 7px;
+      }
+      
+      .acc-kontainer input:checked+label {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      
+      .acc-kontainer input:checked+label:before {
+        font-family: 'FontAwesome';
+        content: '\f00d';
+        transition: 0.5s;
+      }
+      
+      .acc-kontainer input:checked~.acc-body {
+        height: auto;
+        color: var(--black);
+        font-size: 16px;
+        padding: 20px;
+        transition: 0.5s;
+      }
+}

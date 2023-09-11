@@ -3,7 +3,7 @@
   --white: #ffffff;
   --grey: #f5f5f5;
   --dark-grey: #f8f8f8;
-  ---blue: #0D66DB;
+  --blue: #0D66DB;
 }
 
 body {
@@ -31,10 +31,6 @@ article {
 }
 article a {
   padding-bottom: 50px;
-}
-
-#content {
-  min-height: 80vh;
 }
 
 .error404 .not-found {
@@ -67,7 +63,7 @@ article a {
 }
 
 .banner {
-  background: var(---blue);
+  background: var(--blue);
   color: var(--white);
   font-size: 16px;
 }
@@ -98,12 +94,18 @@ article a {
 }
 
 .btn-alt {
-  padding: 5px 25px;
+  padding: 10px 40px;
   border: 1px solid #c1c1c1;
   color: var(--black);
+  background: unset;
 }
 .btn-alt:hover {
   color: var(--black);
+}
+
+.wp-block-columns {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #header {
@@ -314,7 +316,7 @@ article a {
   }
 }
 #footer .newsletter .wpcf7-submit {
-  background: var(---blue);
+  background: var(--blue);
   color: var(--white);
   border: 3px solid #86b2ed;
   padding: 13px 25px;
@@ -570,7 +572,7 @@ h1 {
 }
 
 #cta-section {
-  background: #0D66DB;
+  background: var(--blue);
 }
 
 #category-template .category-image {
@@ -593,4 +595,66 @@ h1 {
 }
 #category-template a {
   color: var(--black);
+}
+
+#accordion .acc-kontainer {
+  width: 100%;
+  margin: auto;
+}
+#accordion .acc-kontainer .acc-body {
+  width: 98%;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.2);
+  line-height: 28px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  border-top: 1px solid var(--black);
+}
+#accordion .acc-kontainer label {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  color: var(--black);
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+  font-size: 18px;
+}
+#accordion .acc-kontainer input {
+  display: none;
+}
+#accordion .acc-kontainer label:before {
+  font-family: "FontAwesome";
+  content: "\f067";
+  font-weight: normal;
+  float: right;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 3px 7px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: relative;
+  top: 7px;
+}
+#accordion .acc-kontainer input:checked + label {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+#accordion .acc-kontainer input:checked + label:before {
+  font-family: "FontAwesome";
+  content: "\f00d";
+  transition: 0.5s;
+}
+#accordion .acc-kontainer input:checked ~ .acc-body {
+  height: auto;
+  color: var(--black);
+  font-size: 16px;
+  padding: 20px;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

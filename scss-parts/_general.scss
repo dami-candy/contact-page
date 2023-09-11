@@ -4,7 +4,7 @@
   --white: #ffffff;
   --grey: #f5f5f5;
   --dark-grey: #f8f8f8;
-  ---blue: #0D66DB;
+  --blue: #0D66DB;
 }
 
 body {
@@ -32,10 +32,6 @@ article {
   a {
     padding-bottom: 50px;
   }
-}
-
-#content {
-  min-height: 80vh;
 }
 
 // 404 Page
@@ -72,7 +68,7 @@ article {
 }
 
 .banner {
-  background: var(---blue);
+  background: var(--blue);
   color: var(--white);
   font-size: 16px;
 }
@@ -104,13 +100,16 @@ article {
 }
 
 .btn-alt {
-  padding: 5px 25px;
+  padding: 10px 40px;
   border: 1px solid #c1c1c1;
   color: var(--black);
+  background: unset;
   &:hover {
     color: var(--black);
   }
 }
 
-
-
+.wp-block-columns {
+  max-width: 1200px;
+  margin: 0 auto;
+}
