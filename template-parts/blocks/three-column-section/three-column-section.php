@@ -29,11 +29,11 @@ $content_3 = get_field('content_3');
                 <p><?php echo $content; ?></p>
             </div>
             <div class="col-md-4 <?php if($divider === 'divider') { echo "divider"; } ?>" style="text-align:<?php echo $alignment; ?>">
-                <img src="<?php echo $image_2['url']; ?>" class="img-responsive" style="width:<?php echo $image_width_2; ?>px" alt="Image">
+                <img src="<?php echo $image_2['url']; ?>" class="img-responsive" style="width:<?php echo $image_2_width; ?>px" alt="Image">
                 <p><?php echo $content_2; ?></p>
             </div>
             <div class="col-md-4" style="text-align:<?php echo $alignment; ?>">
-                <img src="<?php echo $image_3['url']; ?>" class="img-responsive" style="width:<?php echo $image_width_3; ?>px" alt="Image">
+                <img src="<?php echo $image_3['url']; ?>" class="img-responsive" style="width:<?php echo $image_3_width; ?>px" alt="Image">
                 <p><?php echo $content_3; ?></p>
             </div>
         </div>

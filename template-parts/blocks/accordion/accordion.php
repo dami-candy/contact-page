@@ -2,13 +2,15 @@
 /**
  * Block Name: Accordion
  */
+
+$content = get_field('content');
 ?>
 
  <section id="accordion">
  <div class="container py-2 ">
      <div class="row">
-        <div class="acc-kontainer">          
-
+        <div class="acc-container">          
+        <?php echo $content; ?>
         <?php 
             if (have_rows('accordion')):
                 $counter = 1; // Initialize the counter variable

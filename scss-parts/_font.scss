@@ -45,3 +45,14 @@ h1 {
     letter-spacing: 1.3px;
   }
 }
+
+h1:not(.home h1) {
+  font-size: 32px;
+  &:before {
+    background-color: var(--blue);
+    padding: 0 4px;
+    content: " ";
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+}

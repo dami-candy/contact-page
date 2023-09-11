@@ -1,3 +1,11 @@
 #cta-section {
-    background: var(--blue);
+    background-image: url(images/mask.png);
+    background-color: var(--blue);
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .btn {
+        background: var(--white); 
+        color: var(--black);
+    }
 }

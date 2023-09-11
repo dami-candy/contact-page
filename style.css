@@ -108,6 +108,10 @@ article a {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
@@ -424,6 +428,17 @@ h1 {
   }
 }
 
+h1:not(.home h1) {
+  font-size: 32px;
+}
+h1:not(.home h1):before {
+  background-color: var(--blue);
+  padding: 0 4px;
+  content: " ";
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
 .single-post .single-img {
   display: flex;
   justify-content: center;
@@ -572,7 +587,15 @@ h1 {
 }
 
 #cta-section {
-  background: var(--blue);
+  background-image: url(images/mask.png);
+  background-color: var(--blue);
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#cta-section .btn {
+  background: var(--white);
+  color: var(--black);
 }
 
 #category-template .category-image {
@@ -597,11 +620,11 @@ h1 {
   color: var(--black);
 }
 
-#accordion .acc-kontainer {
+#accordion .acc-container {
   width: 100%;
   margin: auto;
 }
-#accordion .acc-kontainer .acc-body {
+#accordion .acc-container .acc-body {
   width: 98%;
   width: calc(100% - 20px);
   margin: 0 auto;
@@ -614,7 +637,7 @@ h1 {
   transition: 0.5s;
   border-top: 1px solid var(--black);
 }
-#accordion .acc-kontainer label {
+#accordion .acc-container label {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -627,10 +650,10 @@ h1 {
   z-index: 100;
   font-size: 18px;
 }
-#accordion .acc-kontainer input {
+#accordion .acc-container input {
   display: none;
 }
-#accordion .acc-kontainer label:before {
+#accordion .acc-container label:before {
   font-family: "FontAwesome";
   content: "\f067";
   font-weight: normal;
@@ -643,18 +666,37 @@ h1 {
   position: relative;
   top: 7px;
 }
-#accordion .acc-kontainer input:checked + label {
+#accordion .acc-container input:checked + label {
   background-color: rgba(255, 255, 255, 0.15);
 }
-#accordion .acc-kontainer input:checked + label:before {
+#accordion .acc-container input:checked + label:before {
   font-family: "FontAwesome";
   content: "\f00d";
   transition: 0.5s;
 }
-#accordion .acc-kontainer input:checked ~ .acc-body {
+#accordion .acc-container input:checked ~ .acc-body {
   height: auto;
   color: var(--black);
   font-size: 16px;
   padding: 20px;
   transition: 0.5s;
+}
+
+#shop-banner .row {
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 20px;
+}
+#shop-banner h2 {
+  font-size: 45px;
+  font-family: "Poppins-SemiBold", cursive;
+}
+#shop-banner img {
+  bottom: 20px;
+  position: relative;
+}
+#shop-banner .btn {
+  background: var(--white);
+  color: var(--blue);
+  padding: 10px 40px;
 }/*# sourceMappingURL=style.css.map */

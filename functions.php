@@ -131,6 +131,18 @@
             )
         );
 
+        // Shop Banner
+        acf_register_block_type(
+            array(
+            'name'              => 'shop-banner',
+            'title'             => __('Shop Banner'),
+            'description'       => __('A custom testimonial block.'),
+            'render_template'   => 'template-parts/blocks/shop-banner/shop-banner.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
         // CTA Section
         acf_register_block_type(
             array(
@@ -167,7 +179,7 @@
             )
         );
 
-         // Accordion
+        // Content
          acf_register_block_type(
             array(
             'name'              => 'content',
@@ -184,4 +196,15 @@
     if (function_exists('acf_register_block_type')) {
         add_action('acf/init', 'register_acf_block_types');
     }
+
+
+    // Removes the decoding attribute from images added inside post content.
+    add_filter( 'wp_img_tag_add_decoding_attr', '__return_false' );
+
+    // Remove the decoding attribute from featured images and the Post Image block.
+    add_filter( 'wp_get_attachment_image_attributes', function( $attributes ) {
+        unset( $attributes['decoding'] );
+        return $attributes;
+    } );
 ?>
+
