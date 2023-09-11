@@ -1,0 +1,21 @@
+#category-template {
+    .category-image {
+        border-radius: 10px;
+        width: 100%;
+        max-height: 275px;
+        object-fit: cover;
+    }
+    .category-name {
+        font-size: 20px;
+        font-family: "Poppins-Bold", cursive;
+    }
+    .arrow {
+        object-fit: contain;
+    }
+    .btn-alt {
+        font-family: "Poppins-SemiBold", cursive;
+    }
+    a {
+        color: var(--black);
+    }
+}

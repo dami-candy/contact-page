@@ -26,7 +26,7 @@
                 ?>
                     <div class="slider" style="background-image: url('<?php echo esc_url( $image['url'] ); ?>');">
                         <div class="container py-2">
-                            <div class="content w-50"><?php echo $content; ?></div>
+                            <div class="content col-12 col-md-6"><?php echo $content; ?></div>
 
                             <?php if($show_button) { ?>
                                 <a href="<?php echo $button_link; ?>"><div style="background: <?php echo $button_colour; ?>; border: 3px solid <?php echo $button_border; ?>" class="btn mt-3"><?php echo $button_text; ?></div></a>

@@ -130,7 +130,31 @@
             'keywords'          => array( 'testimonial', 'quote' ),
             )
         );
-        
+
+        // CTA Section
+        acf_register_block_type(
+            array(
+            'name'              => 'cta-section',
+            'title'             => __('CTA Section'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/cta-section/cta-section.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
+        // Categories
+        acf_register_block_type(
+            array(
+            'name'              => 'category-template',
+            'title'             => __('Category Template'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/category-template/category-template.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
     }
 
     if (function_exists('acf_register_block_type')) {

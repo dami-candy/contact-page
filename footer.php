@@ -4,11 +4,11 @@
     <section id="footer">
         <div class="container">
             <div class="row">
-                <div class="newsletter d-flex mb-5">
-                    <div class="col-md-4">
+                <div class="newsletter d-flex flex-wrap mb-5">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <h2>Subscribe To Our Newsletter To Get 10% Off</h2>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-12 col-sm-6 col-md-8">
                         <?php echo do_shortcode('[contact-form-7 id="95b2eb3" title="Footer Newsletter"]'); ?>
                     </div>
                 </div>
