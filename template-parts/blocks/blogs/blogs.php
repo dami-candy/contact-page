@@ -37,7 +37,7 @@
 										<div class="article__heading">
 											<div class="d-flex justify-content-between">
 												<div class="col-9"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3></div>
-												<div><p><?php echo get_the_date('d M Y'); ?></p></div>
+												<div><p class="text-uppercase mt-1"><?php echo get_the_date('d M Y'); ?></p></div>
 											</div>
 											<p><?php echo get_the_excerpt(); ?></p>
 											<a href="<?php the_permalink(); ?>"><div class="read-btn">Read More</div></a>

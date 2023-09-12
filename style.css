@@ -494,7 +494,7 @@ h1:not(.home h1):before {
      object-fit: cover;
 }
 .single-post .nav-label {
-  display: flex;
+  display: block;
   text-transform: uppercase;
   color: #8F8F8F;
 }
@@ -503,21 +503,23 @@ h1:not(.home h1):before {
   display: block;
   color: var(--black);
 }
-.single-post .previous-post:after {
+.single-post .previous-post .nav-label {
+  display: flex;
+}
+.single-post .previous-post .nav-label:before {
   font-family: "FontAwesome";
   content: "\f060";
   font-weight: normal;
-  float: right;
   color: var(--blue);
   font-size: 25px;
   position: relative;
   bottom: 10px;
-  right: 20px;
+  right: 130px;
 }
 .single-post .previous-post a {
   float: right;
 }
-.single-post .next-post a:after {
+.single-post .next-post .nav-label:after {
   font-family: "FontAwesome";
   content: "\f061";
   font-weight: normal;
@@ -526,7 +528,6 @@ h1:not(.home h1):before {
   font-size: 25px;
   position: relative;
   left: 40px;
-  bottom: 30px;
 }
 .single-post .post-navigation {
   padding-top: 150px;
@@ -654,6 +655,7 @@ h1:not(.home h1):before {
 #slider .slider {
   height: 100%;
   min-height: 700px;
+  background-size: cover;
 }
 #slider .content {
   margin-top: 100px;
