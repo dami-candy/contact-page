@@ -203,6 +203,18 @@
             )
         );
 
+         // Product Slider
+         acf_register_block_type(
+            array(
+            'name'              => 'product-slider',
+            'title'             => __('Product Slider'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/product-slider/product-slider.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
     }
 
     if (function_exists('acf_register_block_type')) {

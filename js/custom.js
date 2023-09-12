@@ -16,7 +16,23 @@ jQuery(document).ready(function ($) {
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
+    infinite: false,
   });
+
+  
+  $('.product-slider').slick({
+      centerMode:true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      infinite: false,
+      cssEase: 'linear',
+      variableWidth: true,
+      variableHeight: true
+    });
+  
+    
     
 
   // Search Bar Header placeholder text

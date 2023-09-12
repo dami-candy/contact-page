@@ -10,6 +10,7 @@ body {
   margin: 0;
   background: var(--white);
   color: var(--black);
+  overflow-x: hidden;
 }
 
 *:focus {
@@ -852,4 +853,31 @@ h1:not(.home h1):before {
   border-radius: 70px;
   padding: 0 8px;
   color: white;
+}
+
+#product-slider .slick-track.slick-track-less-than-slidesToShow {
+  margin-left: 0;
+}
+#product-slider .product-slider .slick-dots {
+  list-style: none;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+  margin-top: 50px;
+}
+#product-slider .product-slider .slick-dots button {
+  outline: none;
+  border: none;
+  height: 4px;
+  width: 40px;
+  margin-right: 5px;
+}
+#product-slider .product-slider .slick-dots .slick-active button {
+  width: 100px;
+  background: #0D66DB;
+  height: 6px;
+}
+#product-slider .product-slider .slick-dots li button {
+  text-indent: -9999px;
 }/*# sourceMappingURL=style.css.map */

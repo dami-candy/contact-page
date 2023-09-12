@@ -11,6 +11,7 @@ body {
   margin: 0;
   background: var(--white);
   color: var(--black);
+  overflow-x: hidden;
 }
 
 *:focus {
@@ -172,3 +173,4 @@ img {
     flex-direction: column;
   }
 }
+

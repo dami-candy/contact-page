@@ -18,7 +18,7 @@ $background = get_field('background');
 
 <section id="shop-banner">
     <div class="container">
-        <div class="row my-5 p-5">
+        <div class="row my-5 px-5 py-2">
             <div class="col-md-6 p-5">
                 <?php echo $content; ?>
                 <?php if ($show_button) { ?>

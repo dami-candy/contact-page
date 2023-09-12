@@ -7,7 +7,7 @@ $content = get_field('content');
 ?>
 
 <section id="cta-section">
-    <div class="container py-2">
+    <div class="container py-2 mt-5">
         <div class="row my-5 justify-content-center">
             <div class="col-12 col-md-6">
                 <?php echo $content; ?>
