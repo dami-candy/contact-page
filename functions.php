@@ -179,6 +179,18 @@
             )
         );
 
+        // Blog
+        acf_register_block_type(
+            array(
+            'name'              => 'blogs',
+            'title'             => __('Blogs'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/blogs/blogs.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
         // Content
          acf_register_block_type(
             array(
@@ -206,5 +218,75 @@
         unset( $attributes['decoding'] );
         return $attributes;
     } );
+
+
+    // Breadcrumbs
+    function custom_breadcrumbs() {
+        echo '<div class="breadcrumbs">';
+    
+        // Home link
+        echo '<a href="' . esc_url(home_url('/')) . '">Home</a>';
+    
+        // Check if it's a WooCommerce product page
+        if (function_exists('is_product') && is_product()) {
+            $product = wc_get_product(get_the_ID());
+            $product_cats = wc_get_product_cat_ids($product->get_id());
+    
+            if (!empty($product_cats)) {
+                $product_cat_id = $product_cats[0];
+                $product_cat = get_term($product_cat_id, 'product_cat');
+                echo ' / <a href="' . esc_url(get_term_link($product_cat)) . '">' . esc_html($product_cat->name) . '</a>';
+            }
+            
+            echo ' / ' . get_the_title();
+        }
+        // Check if it's a blog page (posts page)
+        elseif (is_home()) {
+            echo ' / Blog';
+        }
+        // Check if it's a single blog post
+        elseif (is_single()) {
+            $categories = get_the_category();
+            
+            if (!empty($categories)) {
+                $category = $categories[0];
+                echo ' / <a href="' . esc_url(get_category_link($category->term_id)) . '">' . esc_html($category->name) . '</a>';
+            }
+            
+            echo ' / ' . get_the_title();
+        }
+        // Check if it's a category archive page
+        elseif (is_category()) {
+            $category = get_queried_object();
+            echo ' / ' . esc_html($category->name);
+        }
+        // Check if it's a tag archive page
+        elseif (is_tag()) {
+            echo ' / Tag: ' . esc_html(single_tag_title('', false));
+        }
+        // Check if it's a search results page
+        elseif (is_search()) {
+            echo ' / Search results for: ' . esc_html(get_search_query());
+        }
+        // Check if it's an author archive page
+        elseif (is_author()) {
+            $author = get_queried_object();
+            echo ' / Author: ' . esc_html($author->display_name);
+        }
+        // Check if it's a 404 error page
+        elseif (is_404()) {
+            echo ' / 404 Not Found';
+        }
+        // For other pages, display the page title
+        else {
+            echo ' / ' . get_the_title();
+        }
+    
+        echo '</div>';
+    }
+    
+    
+    
+    
 ?>
 

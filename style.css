@@ -112,6 +112,48 @@ img {
   max-width: 100%;
 }
 
+.woocommerce-breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 25px !important;
+}
+
+#sidebar {
+  display: none;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 25px !important;
+  display: flex;
+}
+
+.woocommerce-ordering select {
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.woocommerce-loop-product__title, .woocommerce-Price-amount {
+  color: var(--black);
+}
+
+.product .button {
+  background: var(--blue) !important;
+  color: var(--white) !important;
+  border: 3px solid #86b2ed !important;
+  padding: 13px 25px !important;
+  border-radius: 30px !important;
+  font-weight: 700 !important;
+  transition: 0.6s !important;
+}
+.product .button:hover {
+  transform: scale(1.02);
+  color: var(--white);
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
@@ -699,4 +741,63 @@ h1:not(.home h1):before {
   background: var(--white);
   color: var(--blue);
   padding: 10px 40px;
+}
+
+#blogs .blog__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+#blogs .article__heading {
+  padding: 30px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 50px;
+  font-size: 26px;
+}
+#blogs h3 a {
+  color: var(--black);
+  font-family: "Poppins-SemiBold", cursive;
+}
+#blogs .article__heading p {
+  font-size: 16px;
+}
+#blogs .article__img img {
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+#blogs .read-btn {
+  text-align: end;
+  font-size: 16px;
+  color: var(--blue);
+  font-family: "Poppins-SemiBold", cursive;
+}
+#blogs .read-btn:before {
+  font-family: "FontAwesome";
+  content: "\f061";
+  font-weight: normal;
+  float: right;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 10px;
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+}
+#blogs .page-numbers {
+  padding: 0 8px;
+  color: var(--black);
+  font-family: "Poppins-SemiBold", cursive;
+}
+#blogs .current {
+  margin: 0;
+  background: var(--blue);
+  border-radius: 70px;
+  padding: 0 8px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

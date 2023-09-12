@@ -117,3 +117,45 @@ article {
 img {
   max-width: 100%;
 }
+
+.woocommerce-breadcrumb {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 25px !important;
+}
+
+#sidebar {
+  display: none;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto !important;
+  padding: 0 25px !important;
+  display: flex;
+}
+
+.woocommerce-ordering select {
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.woocommerce-loop-product__title, .woocommerce-Price-amount {
+  color: var(--black);
+}
+
+.product .button {
+  background: var(--blue) !important;
+  color: var(--white) !important;
+  border: 3px solid #86b2ed !important;
+  padding: 13px 25px !important;
+  border-radius: 30px !important;
+  font-weight: 700 !important;
+  transition: 0.6s !important;
+  &:hover {
+    transform: scale(1.02);
+    color: var(--white);
+  }
+}
