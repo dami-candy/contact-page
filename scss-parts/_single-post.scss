@@ -10,4 +10,53 @@
       object-fit: cover;
     }
   }
+  .nav-label {
+    display: flex;
+    text-transform: uppercase;
+    color: #8F8F8F;
+  }
+  .post-navigation {
+    a {
+      width: 60%;
+      display: block;
+      color: var(--black);
+    }
+  }
+  .previous-post {
+    &:after {
+      font-family: "FontAwesome";
+      content: "\f060";
+      font-weight: normal;
+      float: right;
+      color: var(--blue);
+      font-size: 25px;
+      position: relative;
+      bottom: 10px;
+      right: 20px;
+    }
+    a {
+      float: right;
+
+    }
+   
+  }
+  .next-post {
+    a {
+    &:after {
+      font-family: 'FontAwesome';
+      content: '\f061';
+      font-weight: normal;
+      float: right;
+      color: var(--blue);
+      font-size: 25px;
+      position: relative;
+      left: 40px;
+      bottom: 30px;
+      }
+    }
+  }
+
+  .post-navigation {
+    padding-top: 150px;
+  }
 }

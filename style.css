@@ -493,6 +493,44 @@ h1:not(.home h1):before {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.single-post .nav-label {
+  display: flex;
+  text-transform: uppercase;
+  color: #8F8F8F;
+}
+.single-post .post-navigation a {
+  width: 60%;
+  display: block;
+  color: var(--black);
+}
+.single-post .previous-post:after {
+  font-family: "FontAwesome";
+  content: "\f060";
+  font-weight: normal;
+  float: right;
+  color: var(--blue);
+  font-size: 25px;
+  position: relative;
+  bottom: 10px;
+  right: 20px;
+}
+.single-post .previous-post a {
+  float: right;
+}
+.single-post .next-post a:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  font-weight: normal;
+  float: right;
+  color: var(--blue);
+  font-size: 25px;
+  position: relative;
+  left: 40px;
+  bottom: 30px;
+}
+.single-post .post-navigation {
+  padding-top: 150px;
+}
 
 #hero-slider .container {
   flex-direction: column;
