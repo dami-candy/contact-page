@@ -1,4 +1,5 @@
 #shop-banner {
+    padding: 60px 0;
     .row {
         background: var(--blue);
         color: var(--white);
@@ -11,6 +12,7 @@
     img {
         bottom: 20px;
         position: relative;
+        scale: 1.1;
     }
     .btn {
         background: var(--white);

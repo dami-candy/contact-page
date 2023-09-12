@@ -174,3 +174,26 @@ img {
   }
 }
 
+.woocommerce-account {
+  h1 {
+    display: none;
+  }
+  .woocommerce h2 {
+    text-align: center;
+    padding: 100px 0;
+  }
+  form {
+    border: none !important;
+  }
+  .woocommerce-form {
+    width: 70%;
+    margin: 0 auto !important;
+
+    input {
+      padding: 10px;
+      border-radius: 9px;
+      border-color: #99A2A5;
+      border: 1px solid #99A2A5;
+    }
+  }
+}
