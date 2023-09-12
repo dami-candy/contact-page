@@ -154,6 +154,16 @@ img {
   color: var(--white);
 }
 
+.woocommerce .cta-div {
+  padding: 100px 0;
+}
+.woocommerce .related.products {
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
@@ -196,6 +206,8 @@ img {
   list-style: none;
   justify-content: center;
   margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 #header .container .menu a {
   padding-right: 30px;
@@ -227,12 +239,12 @@ img {
 }
 #header .menu .menu-item .sub-menu {
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   width: 160px;
   margin: 0;
   padding-left: 0;
   background: var(--white);
-  margin-top: 30px;
+  padding-top: 30px;
 }
 #header .menu .menu-item:hover > .sub-menu {
   display: block;

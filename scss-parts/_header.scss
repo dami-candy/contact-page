@@ -45,6 +45,8 @@
       list-style: none;
       justify-content: center;
       margin-bottom: 0;
+      position: relative;
+      z-index: 2;
       a {
         padding-right: 30px;
       }
@@ -73,12 +75,12 @@
       position: relative;
       .sub-menu {
         position: absolute;
-        z-index: 2;
+        z-index: -1;
         width: 160px;
         margin: 0;
         padding-left: 0;
         background: var(--white);
-        margin-top: 30px;
+        padding-top: 30px;
       }
     }
     .menu-item:hover > .sub-menu {

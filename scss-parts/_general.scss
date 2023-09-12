@@ -160,3 +160,15 @@ img {
   }
 }
 
+
+.woocommerce {
+  .cta-div {
+    padding: 100px 0;
+  }
+  .related.products {
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
