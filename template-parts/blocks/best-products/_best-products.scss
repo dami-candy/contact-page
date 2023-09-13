@@ -1,0 +1,49 @@
+#best-products {
+    padding: 70px 0;
+
+    .clr-gry.slick-arrow {
+        top: 0;
+        position: absolute;
+    }
+    .fa-angle-left.clr-gry {
+        right: 10px;
+    }
+    
+    .fa-angle-right.clr-gry {
+        right: 0;
+    }
+    h2 {
+        font-size: 54px;
+    }
+    h3 {
+        font-size: 20px;
+        color: var(--black);
+    }
+    .product {
+        padding: 0 15px;
+        img {
+            width: 100%;
+            min-height: 200px;
+            object-fit: cover;
+        }
+    } 
+    .btn {
+        padding: 5px 20px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .slick-arrow {
+        padding: 12px;
+        background: var(--blue);
+        color: var(--white);
+        border-radius: 50%;
+        margin-left: 10px;
+        cursor: pointer;
+        &:before {
+            font-size: 26px;
+        }
+    }
+}

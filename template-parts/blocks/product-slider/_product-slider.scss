@@ -44,4 +44,13 @@
     .slick-dots {
         padding-bottom: 150px !important;
     }
+    .slick-current img {
+        max-height: unset;
+        padding-top: unset;
+    }
+    .slick-current {
+        scale: unset;
+        right: 0;
+        max-height: unset;
+    }
 }

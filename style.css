@@ -469,11 +469,7 @@ a {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: "Poppins-Bold", cursive;
 }
 
@@ -928,4 +924,60 @@ h1:not(.home h1):before {
 }
 #product-slider .slick-dots {
   padding-bottom: 150px !important;
+}
+#product-slider .slick-current img {
+  max-height: unset;
+  padding-top: unset;
+}
+#product-slider .slick-current {
+  scale: unset;
+  right: 0;
+  max-height: unset;
+}
+
+#best-products {
+  padding: 70px 0;
+}
+#best-products .clr-gry.slick-arrow {
+  top: 0;
+  position: absolute;
+}
+#best-products .fa-angle-left.clr-gry {
+  right: 10px;
+}
+#best-products .fa-angle-right.clr-gry {
+  right: 0;
+}
+#best-products h2 {
+  font-size: 54px;
+}
+#best-products h3 {
+  font-size: 20px;
+  color: var(--black);
+}
+#best-products .product {
+  padding: 0 15px;
+}
+#best-products .product img {
+  width: 100%;
+  min-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#best-products .btn {
+  padding: 5px 20px;
+}
+#best-products ul {
+  list-style: none;
+}
+#best-products .slick-arrow {
+  padding: 12px;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#best-products .slick-arrow:before {
+  font-size: 26px;
 }/*# sourceMappingURL=style.css.map */
