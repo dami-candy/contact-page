@@ -197,3 +197,35 @@ img {
     }
   }
 }
+
+.woocommerce-page {
+  .button {
+    background: var(--blue) !important;
+    color: var(--white) !important;
+    border: 3px solid #86b2ed !important;
+    padding: 13px 25px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    transition: 0.6s!important;
+    &:hover {
+      transform: scale(1.02);
+      color: var(--white);
+    }
+  }
+}
+
+.woocommerce-cart-form {
+  .product-thumbnail img {
+    width: 130px;
+  }
+}
+
+.product-thumbnail {
+  display: block !important;
+  img {
+    width: 80px !important;
+  }
+  &:before {
+    display: none;
+  }
+}

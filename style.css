@@ -186,6 +186,34 @@ img {
   border: 1px solid #99A2A5;
 }
 
+.woocommerce-page .button {
+  background: var(--blue) !important;
+  color: var(--white) !important;
+  border: 3px solid #86b2ed !important;
+  padding: 13px 25px !important;
+  border-radius: 30px !important;
+  font-weight: 700 !important;
+  transition: 0.6s !important;
+}
+.woocommerce-page .button:hover {
+  transform: scale(1.02);
+  color: var(--white);
+}
+
+.woocommerce-cart-form .product-thumbnail img {
+  width: 130px;
+}
+
+.product-thumbnail {
+  display: block !important;
+}
+.product-thumbnail img {
+  width: 80px !important;
+}
+.product-thumbnail:before {
+  display: none;
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
@@ -704,7 +732,7 @@ h1:not(.home h1):before {
   background-color: var(--blue);
   color: var(--white);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
 }
 #cta-section .btn {
   background: var(--white);
@@ -961,7 +989,7 @@ h1:not(.home h1):before {
   #product-slider .slide-img {
     max-height: 300px;
     margin: 0 auto;
-    width: 80%;
+    width: 40%;
   }
 }
 #product-slider .branding {
@@ -969,7 +997,12 @@ h1:not(.home h1):before {
      object-fit: contain;
 }
 #product-slider .title h2 {
-  font-size: 60px;
+  font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  #product-slider .title h2 {
+    font-size: 60px;
+  }
 }
 #product-slider .info {
   font-size: 18px;
