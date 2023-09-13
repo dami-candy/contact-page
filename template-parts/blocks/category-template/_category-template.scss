@@ -14,6 +14,10 @@
     }
     .arrow {
         object-fit: contain;
+        max-width: 15px;
+        @media screen and (min-width: 768px) {
+            max-width: unset;
+        }
     }
     .btn-alt {
         font-family: "Poppins-SemiBold", cursive;

@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 d-flex mt-3 justify-content-between">
-                        <div class="d-flex">
+                        <div class="d-flex content d-flex flex-column">
                             <p class="me-3"><?php the_field('copyright_text', 'option'); ?></p>
                             <nav class="justify-content-center d-none d-lg-block">
                                 <?php

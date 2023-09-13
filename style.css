@@ -484,7 +484,8 @@ h2 {
 p,
 ::placeholder,
 li,
-a {
+a,
+label {
   font-family: "Poppins-Regular", cursive;
 }
 
@@ -729,6 +730,12 @@ h1:not(.home h1):before {
 #category-template .arrow {
   -o-object-fit: contain;
      object-fit: contain;
+  max-width: 15px;
+}
+@media screen and (min-width: 768px) {
+  #category-template .arrow {
+    max-width: unset;
+  }
 }
 #category-template .btn-alt {
   font-family: "Poppins-SemiBold", cursive;
@@ -893,7 +900,13 @@ h1:not(.home h1):before {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
-  margin-top: 25px;
+  padding-bottom: 150px !important;
+  margin-top: 85px;
+}
+@media screen and (min-width: 768px) {
+  #product-slider .product-slider .slick-dots {
+    margin-top: 25px;
+  }
 }
 #product-slider .product-slider .slick-dots button {
   outline: none;
@@ -918,6 +931,8 @@ h1:not(.home h1):before {
   padding: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  max-width: 50%;
+  right: 10%;
 }
 #product-slider .slider .container {
   position: relative;
@@ -925,17 +940,25 @@ h1:not(.home h1):before {
 #product-slider .slick-list {
   overflow: initial;
 }
-#product-slider .slick-dots {
-  padding-bottom: 150px !important;
-}
 #product-slider .slick-current img {
-  max-height: unset;
   padding-top: unset;
+}
+@media screen and (min-width: 460px) {
+  #product-slider .slick-current img {
+    max-height: 600px;
+  }
 }
 #product-slider .slick-current {
   scale: unset;
   right: 0;
   max-height: unset;
+}
+@media screen and (max-width: 460px) {
+  #product-slider .slide-img {
+    max-height: 300px;
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 #best-products {
@@ -983,4 +1006,76 @@ h1:not(.home h1):before {
 }
 #best-products .slick-arrow:before {
   font-size: 26px;
+}
+
+#about .mask {
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 200px 0;
+  overflow: visible;
+  z-index: 1;
+  background-image: url(images/mask-2.jpg);
+  min-height: 950px;
+}
+@media screen and (min-width: 768px) {
+  #about .mask {
+    min-height: 550px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #about .mask {
+    min-width: 550px;
+  }
+}
+#about .content {
+  position: relative;
+  z-index: 121;
+  bottom: 100px;
+}
+@media screen and (min-width: 1300px) {
+  #about .content {
+    bottom: 200px;
+  }
+}
+#about .content .container {
+  background-color: var(--white);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 90%;
+}
+#about .content p {
+  line-height: 1.8;
+}
+#about .divider {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--white);
+  z-index: -1;
+  transform-origin: left top;
+  transform: skewY(-5deg);
+  top: 950px;
+}
+@media screen and (min-width: 768px) {
+  #about .divider {
+    top: 500px;
+  }
+}
+#about .usp {
+  position: relative;
+  bottom: 100px;
+}
+#about .usp p {
+  font-size: 20px;
+  padding: 10px;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  #about .usp {
+    position: unset;
+  }
 }/*# sourceMappingURL=style.css.map */

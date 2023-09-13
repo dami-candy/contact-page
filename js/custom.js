@@ -29,7 +29,17 @@ jQuery(document).ready(function ($) {
       infinite: false,
       cssEase: 'linear',
       variableWidth: true,
-      variableHeight: true
+      variableHeight: true,
+      responsive: [{
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          //centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
     });
 
     $('.best-products').slick({

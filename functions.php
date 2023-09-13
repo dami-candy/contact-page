@@ -227,6 +227,18 @@
             )
         );
 
+          // About
+          acf_register_block_type(
+            array(
+            'name'              => 'about',
+            'title'             => __('About'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/about/about.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
     }
 
     if (function_exists('acf_register_block_type')) {

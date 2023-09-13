@@ -27,7 +27,7 @@
                     <div class="slider">
                         <div class="container">
                             <div class="content col-12 col-md-4"><?php echo $content; ?></div>
-                            <img src="<?php echo ( $image['url'] ); ?>">
+                            <img class="slide-img" src="<?php echo ( $image['url'] ); ?>">
                             <?php if($show_button) { ?>
                                 <a href="<?php echo $button_link; ?>"><div style="background: <?php echo $button_colour; ?>; border: 3px solid <?php echo $button_border; ?>" class="btn mt-3"><?php echo $button_text; ?></div></a>
                             <?php } ?>
