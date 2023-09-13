@@ -881,6 +881,9 @@ h1:not(.home h1):before {
   color: white;
 }
 
+#product-slider {
+  overflow: hidden;
+}
 #product-slider .slick-track.slick-track-less-than-slidesToShow {
   margin-left: 0;
 }
