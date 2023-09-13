@@ -21,8 +21,8 @@
     </head>
     <body <?php body_class();?>>
     <div class="slider banner-slider">
-        <div class="banner text-center py-2"><?php the_field('banner_text', 'option'); ?></div>
-        <div class="banner text-center py-2"><?php the_field('banner_text_alt', 'option'); ?></div>
+        <div class="banner text-center py-2"><p><?php the_field('banner_text', 'option'); ?></p></div>
+        <div class="banner text-center py-2"><p><?php the_field('banner_text_alt', 'option'); ?></p></div>
     </div>
     <header id="header" class="hfeed">
         <div class="container flex-wrap">
