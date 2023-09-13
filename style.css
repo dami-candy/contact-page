@@ -933,6 +933,8 @@ h1:not(.home h1):before {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   max-width: 50%;
   right: 10%;
+  display: flex;
+  justify-content: space-between;
 }
 #product-slider .slider .container {
   position: relative;
@@ -940,18 +942,20 @@ h1:not(.home h1):before {
 #product-slider .slick-list {
   overflow: initial;
 }
-#product-slider .slick-current img {
+#product-slider .slide-img {
   padding-top: unset;
 }
 @media screen and (min-width: 460px) {
-  #product-slider .slick-current img {
-    max-height: 600px;
+  #product-slider .slide-img {
+    max-height: 500px;
   }
 }
 #product-slider .slick-current {
   scale: unset;
   right: 0;
-  max-height: unset;
+}
+#product-slider .slick-current .slide-img {
+  max-height: 600px;
 }
 @media screen and (max-width: 460px) {
   #product-slider .slide-img {
@@ -959,6 +963,16 @@ h1:not(.home h1):before {
     margin: 0 auto;
     width: 80%;
   }
+}
+#product-slider .branding {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#product-slider .title h2 {
+  font-size: 60px;
+}
+#product-slider .info {
+  font-size: 18px;
 }
 
 #best-products {

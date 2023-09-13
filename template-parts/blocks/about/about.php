@@ -22,15 +22,15 @@ $usp_icon_1 = get_field('usp_icon_1');
             <h2>About SporeBuddies.com</h2>
             </div>
             <div class="col-12 col-md-7 usp d-flex justify-content-md-between flex-column flex-md-row">
-                <div class="text-center">
+                <div class="text-center mb-3">
                     <img src="<?php echo $usp_icon_1['url']; ?>"  alt="<?php echo $usp_icon_1['alt']; ?>">
                     <p>Discrete UK Shipping</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center mb-3">
                     <img src="<?php echo $usp_icon_1['url']; ?>"  alt="<?php echo $usp_icon_1['alt']; ?>">
                     <p>Discrete UK Shipping</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center mb-3">
                     <img src="<?php echo $usp_icon_1['url']; ?>"  alt="<?php echo $usp_icon_1['alt']; ?>">
                     <p>Discrete UK Shipping</p>
                 </div>
