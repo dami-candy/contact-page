@@ -634,7 +634,7 @@ h1 {
   h1 {
     font-size: 48px;
     line-height: 57px;
-    margin-bottom: 40px;
+    margin: 40px 0;
     letter-spacing: 1.3px;
   }
 }
