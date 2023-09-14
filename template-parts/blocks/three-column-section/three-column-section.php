@@ -19,11 +19,14 @@ $content_2 = get_field('content_2');
 $image_3 = get_field('image_3'); 
 $image_3_width = get_field('image_3_width');
 $content_3 = get_field('content_3');
+
+$background_colour = get_field('background_colour');
 ?>
 
-<section id="three-column-section">
+<section id="three-column-section" style="background:<?php echo $background_colour; ?>">
     <div class="container">
-        <div class="row my-5">
+        <div class="row mb-5">
+            <div class="mb-5"><?php echo $title; ?> </div>
             <div class="col-md-4" style="text-align:<?php echo $alignment; ?>">
                 <img src="<?php echo $image['url']; ?>" class="img-responsive" style="width:<?php echo $image_width; ?>px" alt="Image">
                 <p><?php echo $content; ?></p>

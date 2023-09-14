@@ -326,6 +326,7 @@ img {
   display: flex;
   padding: 10px 0 15px 0;
   background: var(--white);
+  border-bottom: 1px solid #E0E0E0;
 }
 #header a {
   color: var(--black);
@@ -1345,4 +1346,15 @@ h1:not(.home h1):before {
   #about .usp {
     position: unset;
   }
+}
+
+#text-image {
+  padding-bottom: 100px;
+}
+#text-image h2 {
+  margin-bottom: 30px;
+}
+#text-image img {
+  -o-object-fit: none;
+     object-fit: none;
 }/*# sourceMappingURL=style.css.map */

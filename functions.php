@@ -227,13 +227,25 @@
             )
         );
 
-          // About
+        // About
           acf_register_block_type(
             array(
             'name'              => 'about',
             'title'             => __('About'),
             'description'       => __('Call to action block.'),
             'render_template'   => 'template-parts/blocks/about/about.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
+        // Text Image
+          acf_register_block_type(
+            array(
+            'name'              => 'text-image',
+            'title'             => __('Text Image'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/text-image/text-image.php',
             'icon'              => 'media-default',
             'keywords'          => array( 'testimonial', 'quote' ),
             )
