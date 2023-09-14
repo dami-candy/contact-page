@@ -21,6 +21,10 @@ body {
   overflow: hidden;
 }
 
+textarea {
+  resize: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -217,6 +221,38 @@ img {
 }
 .product-thumbnail:before {
   display: none;
+}
+
+.woof_list li div {
+  border-radius: 3px;
+  background: var(--white);
+  border: 1px solid var(--black);
+}
+.woof_list li .checked {
+  background: var(--blue);
+}
+.woof_list li .checked:after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  font-weight: normal;
+  float: right;
+  color: var(--white);
+  font-size: 12px;
+  position: relative;
+  right: 4px;
+  top: 1px;
+}
+
+.woof_products_top_panel_ul ul {
+  display: none;
+}
+
+.woof_reset_button_2 {
+  border: none;
+  background: unset;
+  text-decoration: underline;
+  color: #C4C4C4;
+  font-size: 12px;
 }
 
 #header {
@@ -471,7 +507,7 @@ img {
   display: flex;
 }
 #footer .copyright li {
-  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: underline;
 }
 #footer .social-icons img {
@@ -725,6 +761,49 @@ h1:not(.home h1):before {
   margin-top: 100px;
 }
 
+.page-template-contact a {
+  color: var(--black);
+}
+.page-template-contact form label {
+  width: 100%;
+}
+.page-template-contact form label span {
+  display: grid;
+}
+.page-template-contact form input {
+  border: 1px solid #99A2A5;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.page-template-contact form textarea {
+  border: 1px solid #99A2A5;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.page-template-contact .wpcf7-submit {
+  background: var(--blue);
+  color: var(--white);
+  border: 3px solid #86b2ed;
+  padding: 7px 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: 0.6s;
+}
+.page-template-contact .wpcf7-submit:hover {
+  transform: scale(1.02);
+  color: var(--white);
+}
+.page-template-contact .wpcf7-list-item {
+  margin: 0 8px 0 0;
+}
+.page-template-contact .acceptance {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
   #three-column-section .divider {
     border-left: 1px solid #2C3258;
@@ -848,8 +927,15 @@ h1:not(.home h1):before {
   border-radius: 20px;
 }
 #shop-banner h2 {
-  font-size: 45px;
+  font-size: 36px;
+  text-align: center;
   font-family: "Poppins-SemiBold", cursive;
+}
+@media screen and (min-width: 768px) {
+  #shop-banner h2 {
+    font-size: 45px;
+    text-align: left;
+  }
 }
 #shop-banner img {
   bottom: 20px;
@@ -860,6 +946,16 @@ h1:not(.home h1):before {
   background: var(--white);
   color: var(--blue);
   padding: 10px 40px;
+}
+#shop-banner .text {
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+@media screen and (min-width: 768px) {
+  #shop-banner .text {
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
 }
 
 #blogs .blog__list {
@@ -1014,7 +1110,7 @@ h1:not(.home h1):before {
 }
 
 #best-products {
-  padding: 70px 0;
+  padding: 0 0 70px;
 }
 #best-products .clr-gry.slick-arrow {
   top: 0;
@@ -1027,7 +1123,12 @@ h1:not(.home h1):before {
   right: 0;
 }
 #best-products h2 {
-  font-size: 54px;
+  font-size: 38px;
+}
+@media screen and (min-width: 768px) {
+  #best-products h2 {
+    font-size: 54px;
+  }
 }
 #best-products h3 {
   font-size: 20px;
@@ -1043,7 +1144,14 @@ h1:not(.home h1):before {
      object-fit: cover;
 }
 #best-products .btn {
-  padding: 5px 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  #best-products .btn {
+    padding: 5px 20px;
+    font-size: inherit;
+  }
 }
 #best-products ul {
   list-style: none;
@@ -1082,7 +1190,12 @@ h1:not(.home h1):before {
   }
 }
 #about .mask h2 {
-  font-size: 42px;
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  #about .mask h2 {
+    font-size: 42px;
+  }
 }
 #about .content {
   position: relative;

@@ -29,10 +29,6 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
-<?php
-// Check if the current post type or page supports breadcrumbs
-custom_breadcrumbs();
-?>
 
 <div class="container d-flex flex-wrap justify-content-between">
     <div class="col-3"><?php echo do_shortcode('[woof]'); ?></div>

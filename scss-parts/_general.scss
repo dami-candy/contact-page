@@ -22,6 +22,10 @@ body {
   overflow: hidden;
 }
 
+textarea {
+  resize: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -235,4 +239,37 @@ img {
   &:before {
     display: none;
   }
+}
+
+.woof_list {
+  li div {
+    border-radius: 3px;
+    background: var(--white);
+    border: 1px solid var(--black);
+  }
+  li .checked {
+    background: var(--blue);
+    &:after {
+      font-family: "FontAwesome";
+      content: "\f00c";
+      font-weight: normal;
+      float: right;
+      color: var(--white);
+      font-size: 12px;
+      position: relative;
+      right: 4px;
+      top: 1px;
+    }
+  }
+}
+
+.woof_products_top_panel_ul ul {
+    display: none;
+}
+.woof_reset_button_2 {
+  border: none;
+  background: unset;
+  text-decoration: underline;
+  color: #C4C4C4;
+  font-size: 12px;
 }

@@ -19,10 +19,10 @@ $background = get_field('background');
 <section id="shop-banner">
     <div class="container">
         <div class="row my-5 px-5 py-2 flex-column-reverse flex-md-row">
-            <div class="col-md-6 p-md-5">
+            <div class="text col-md-6 p-md-5">
                 <?php echo $content; ?>
                 <?php if ($show_button) { ?>
-                    <a href="<?php echo $button_link; ?>"><div class="btn mt-3"><?php echo $button_text; ?></div></a>
+                    <a href="<?php echo $button_link; ?>"><div class="btn my-3"><?php echo $button_text; ?></div></a>
                 <?php } ?>
             </div>
             <div class="col-md-6 text-center">

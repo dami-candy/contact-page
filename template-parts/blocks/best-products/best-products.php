@@ -6,13 +6,13 @@
 $content = get_field('content');
 ?>
 <section id="best-products">
-    <div class="container d-flex px-5 justify-content-between">
-        <div class="col-3">
+    <div class="container d-flex px-5 justify-content-between flex-column flex-md-row">
+        <div class="col-12 col-md-3">
             <p>Most Popular</p>
             <h2>Our <span>Bestselling</span> products</h2>
             <a class="btn mt-4">Shop All</a>
         </div>
-        <div class="col-8">
+        <div class="col-12 col-md-8">
         <div class="d-flex text-color text-center justify-content-end">
             <ul class="d-flex">
                 <li><i class="fas fa-arrow-left"></i></li>

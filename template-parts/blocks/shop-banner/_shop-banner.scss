@@ -6,8 +6,13 @@
         border-radius: 20px;
     }
     h2 {
-        font-size: 45px;
+        font-size: 36px;
+        text-align: center;
         font-family: "Poppins-SemiBold", cursive;
+        @media screen and (min-width: 768px) {
+            font-size: 45px;
+            text-align: left;
+        }
     }
     img {
         bottom: 20px;
@@ -18,5 +23,11 @@
         background: var(--white);
         color: var(--blue);
         padding: 10px 40px;
+    }
+    .text {
+        text-align-last: center;
+        @media screen and (min-width: 768px) {
+        text-align-last: left;
+        }
     }
 }

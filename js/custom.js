@@ -49,10 +49,18 @@ jQuery(document).ready(function ($) {
       autoplaySpeed: 2000,
       arrows: true,
       prevArrow: $('.fa-arrow-left'),
-      nextArrow: $('.fa-arrow-right')
+      nextArrow: $('.fa-arrow-right'),
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
     });
   
-    
+
+  $(".woof_reset_button_2").insertAfter(".woof_container_inner_productcategories h4");
   
     
     
