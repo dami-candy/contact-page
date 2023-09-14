@@ -872,6 +872,37 @@ h1:not(.home h1):before {
   align-items: center;
 }
 
+.page-template-careers .career-div {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin: 20px auto;
+}
+@media screen and (min-width: 768px) {
+  .page-template-careers .career-div {
+    width: 80%;
+  }
+}
+.page-template-careers .career-div img {
+  width: 100%;
+}
+.page-template-careers .career-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.page-template-careers .career-div li {
+  line-height: 1.8;
+}
+.page-template-careers .sub-header {
+  margin: 20px 0 10px 0;
+  font-family: "Poppins-semiBold", cursive;
+}
+.page-template-careers .icon {
+  display: -webkit-inline-box;
+}
+
 @media screen and (min-width: 768px) {
   #three-column-section .divider {
     border-left: 1px solid #2C3258;
