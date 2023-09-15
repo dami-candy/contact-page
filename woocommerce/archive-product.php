@@ -30,9 +30,9 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
 
-<div class="container d-flex flex-wrap justify-content-between">
-    <div class="col-3"><?php echo do_shortcode('[woof]'); ?></div>
-    <div class="col-8">
+<div class="container d-flex flex-wrap justify-content-between flex-column flex-md-row">
+    <div class="col-12 col-md-3"><?php echo do_shortcode('[woof]'); ?></div>
+    <div class="col-12 col-md-8">
     <?php
     if ( woocommerce_product_loop() ) {
 

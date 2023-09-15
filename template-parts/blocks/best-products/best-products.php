@@ -43,7 +43,7 @@ $content = get_field('content');
                     $product_id = get_the_ID();
                     $product_title = get_the_title();
                     $product_permalink = get_permalink();
-                    $product_image = get_the_post_thumbnail_url($product_id, 'thumbnail'); // Change 'thumbnail' to the desired image size
+                    $product_image = get_the_post_thumbnail_url($product_id); // Change 'thumbnail' to the desired image size
                     $product = wc_get_product($product_id);
                     $product_price = $product->get_price();
                     ?>  

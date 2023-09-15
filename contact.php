@@ -19,14 +19,14 @@ $contact_information = get_field('contact_information');
 
 <div class="container">
     <div class="row">
-        <div class="col-12 mb-5">
+        <div class="col-12 my-5">
             <p>Speak to us</p>
             <h2>Get In Touch</h2>
             <p>We love our customers, so feel free to call during normal business hours.</p>
         </div>
     </div>
     <div class="row">
-        <div class="contact-info col-12 col-md-6 d-flex flex-wrap justify-content-between">
+        <div class="contact-info col-12 col-md-7 d-flex flex-wrap justify-content-between">
             <div class="col-5 col-md-6">
                 <?php if ($phone_icon) { ?> 
                     <div class="mb-5">
@@ -63,9 +63,10 @@ $contact_information = get_field('contact_information');
                 <div><?php echo $contact_information; ?></div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-5 mt-5">
             <?php echo do_shortcode('[contact-form-7 id="4d41094" title="Contact Page Form"]'); ?>
         </div>
+        <img class="mt-5" src="<?php bloginfo('template_url'); ?>/images/map.jpg" alt="Map">
     </div>
 </div>
 

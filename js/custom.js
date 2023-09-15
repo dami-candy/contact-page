@@ -50,14 +50,16 @@ jQuery(document).ready(function ($) {
       arrows: true,
       prevArrow: $('.fa-arrow-left'),
       nextArrow: $('.fa-arrow-right'),
-      responsive: [{
-        breakpoint: 768,
+    responsive: [
+      {
+        breakpoint: 500,
         settings: {
-          slidesToShow: 2
+        slidesToShow: 2,
+        slidesToScroll: 1,
         }
       }
-    ]
-    });
+    ]        
+  });
   
 
   $(".woof_reset_button_2").insertAfter(".woof_container_inner_productcategories h4");
@@ -81,7 +83,8 @@ jQuery(document).ready(function ($) {
 
   $(".hamburger-menu").click(function() {
     $(this).toggleClass('active');
-    $('.w-100.mt-3').toggleClass('mob-header');
+    $('.header-div').toggleClass('mob-header');
+    $('.header-div').toggleClass('d-none');
     $('nav').toggleClass('d-none');
     $('body').toggleClass('overflow');
     $('.mob-account-details').toggleClass('d-none');

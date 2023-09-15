@@ -31,17 +31,20 @@ $product_title = get_field('product_title');
                         <div class="container">
                             <div class="row">
                                 <div class="content d-flex flex-wrap">
-                                    <div class="col-8">
+                                    <div class="col-12 col-md-8">
                                         <h2><?php echo $title; ?></h2>
                                         <span class="branding d-flex">by
                                             <img class="ms-2" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Email Icon" width="115px" height="22px">
                                         </span>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-12 col-md-4 d-none d-md-block">
                                         <a class="btn">Shop Now</a>
                                     </div>
-                                    <div class="col-10 mt-3 info">
+                                    <div class="col-12 col-md-10 mt-3 info">
                                         <?php echo $content; ?>
+                                    </div>
+                                    <div class="col-12 col-md-4 d-block d-md-none">
+                                        <a class="btn">Shop Now</a>
                                     </div>
                                 </div>
                             </div>

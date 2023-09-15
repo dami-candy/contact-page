@@ -461,7 +461,7 @@ img {
   left: 0;
   padding-top: 50px;
   top: 0;
-  height: 100vh;
+  height: 150vh;
   z-index: 10;
 }
 #header .mob-header li {
@@ -499,7 +499,7 @@ img {
   background: var(--grey);
   color: #121212;
   padding: 40px 0;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 #footer a {
   color: var(--black);
@@ -635,7 +635,6 @@ h1 {
     font-size: 48px;
     line-height: 57px;
     margin: 40px 0;
-    letter-spacing: 1.3px;
   }
 }
 
@@ -846,14 +845,14 @@ h1:not(.home h1):before {
 }
 .page-template-contact form input {
   border: 1px solid #99A2A5;
-  border-radius: 4px;
-  padding: 5px;
+  border-radius: 9px;
+  padding: 8px;
   margin-top: 5px;
 }
 .page-template-contact form textarea {
   border: 1px solid #99A2A5;
-  border-radius: 4px;
-  padding: 5px;
+  border-radius: 9px;
+  padding: 8px;
   margin-top: 5px;
 }
 .page-template-contact .wpcf7-submit {
@@ -1159,16 +1158,39 @@ h1:not(.home h1):before {
 }
 #product-slider .content {
   position: absolute;
-  bottom: -50px;
-  right: 0;
+  bottom: -150px;
   background: var(--white);
   padding: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   max-width: 50%;
-  right: 10%;
   display: flex;
   justify-content: space-between;
+  right: 30%;
+  max-width: 300px;
+}
+@media screen and (min-width: 768px) {
+  #product-slider .content {
+    right: 0;
+    bottom: -50px;
+    max-width: 500px;
+  }
+}
+#product-slider .content h2 {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  #product-slider .content h2 {
+    font-size: 30px;
+  }
+}
+#product-slider .content p {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  #product-slider .content p {
+    font-size: inherit;
+  }
 }
 #product-slider .slider .container {
   position: relative;
@@ -1178,10 +1200,18 @@ h1:not(.home h1):before {
 }
 #product-slider .slide-img {
   padding-top: unset;
+  scale: 0.8;
+  z-index: -1;
+  position: relative;
+  max-height: 300px;
+  margin: 0 auto;
+  width: 50%;
 }
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 768px) {
   #product-slider .slide-img {
     max-height: 500px;
+    scale: 1;
+    width: unset;
   }
 }
 #product-slider .slick-current {
@@ -1190,13 +1220,6 @@ h1:not(.home h1):before {
 }
 #product-slider .slick-current .slide-img {
   max-height: 600px;
-}
-@media screen and (max-width: 460px) {
-  #product-slider .slide-img {
-    max-height: 300px;
-    margin: 0 auto;
-    width: 40%;
-  }
 }
 #product-slider .branding {
   -o-object-fit: contain;
