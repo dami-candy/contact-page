@@ -28,7 +28,7 @@
                     ?>
                     <a class="float-right" href="<?php echo get_permalink($prev_post->ID); ?>">
                         <span class="nav-label justify-content-end">Previous Post</span>
-                        <?php echo esc_html($prev_post->post_title); ?>
+                        <p><?php echo esc_html($prev_post->post_title); ?></p>
                     </a>
                 <?php endif; ?>
             </div>
@@ -39,7 +39,7 @@
                     ?>
                     <a href="<?php echo get_permalink($next_post->ID); ?>">
                         <span class="nav-label">Next Post</span>
-                        <?php echo esc_html($next_post->post_title); ?>
+                        <p><?php echo esc_html($next_post->post_title); ?></p>
                     </a>
                 <?php endif; ?>
             </div>

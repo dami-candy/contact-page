@@ -83,6 +83,10 @@ article {
 }
 
 .logo-div {
+  text-align: -webkit-center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
   img {
     max-width: 100%;
     display: block;

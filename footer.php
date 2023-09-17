@@ -14,29 +14,29 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 text-center text-md-left">
                     <div class="logo-div mb-3">
                         <a href="/#">
                             <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/spore-buddies.png" alt="Spore Buddies Logo" width="240px" height="60px">
                         </a>
                     </div>
-                    <div class="contact-info">
+                    <div class="contact-info text-center tex-md-start">
                         <a href="tel:08000699269">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
                                 <img src="<?php bloginfo('template_url'); ?>/images/footer-phone.png" alt="Phone Icon" width="17px" height="17px">
                                 <p class="mb-0 ms-2">0800 069 9269</p>
                             </div>
-                            <small>Call UK free phone (8.30am-6pm)</small>
+                            <small class="d-flex justify-content-center justify-content-md-start">Call UK free phone (8.30am-6pm)</small>
                         </a>
                         <a href="mailto:hello@sporebuddies.com">
-                            <div class="d-flex align-items-center mt-4">
+                            <div class="d-flex align-items-center mt-4 justify-content-center justify-content-md-start">
                                 <img src="<?php bloginfo('template_url'); ?>/images/footer-email.png" alt="Email Icon" width="17px" height="17px">
                                 <p class="mb-0 ms-2">hello@sporebuddies.com</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center text-md-start mt-5 mt-md-0">
                     <strong>Useful Links</strong>
                     <nav class="justify-content-center mt-3">
                         <?php
@@ -46,7 +46,7 @@
                         ?>
                     </nav>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 text-center text-md-start">
                     <strong>About Us</strong>
                     <nav class="justify-content-center mt-3">
                         <?php
