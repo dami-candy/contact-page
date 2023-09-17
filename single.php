@@ -21,7 +21,7 @@
         
     <?php if (is_single()) { ?>
         <div class="post-navigation d-flex flex-wrap justify-content-between">
-            <div class="previous-post col-4 text-end">
+            <div class="previous-post col-5 col-md-4 text-end">
                 <?php
                 $prev_post = get_previous_post();
                 if (!empty($prev_post)) :
@@ -32,7 +32,7 @@
                     </a>
                 <?php endif; ?>
             </div>
-            <div class="next-post col-4 text-start">
+            <div class="next-post col-5 col-md-4 text-start">
                 <?php
                 $next_post = get_next_post();
                 if (!empty($next_post)) :

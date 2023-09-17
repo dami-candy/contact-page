@@ -1104,6 +1104,7 @@ h1:not(.home h1):before {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 #blogs .article__heading {
   padding: 30px;
@@ -1113,12 +1114,15 @@ h1:not(.home h1):before {
   margin-bottom: 50px;
   font-size: 26px;
 }
+#blogs h3 {
+  font-size: 24px;
+}
 #blogs h3 a {
   color: var(--black);
   font-family: "Poppins-SemiBold", cursive;
 }
 #blogs .article__heading p {
-  font-size: 16px;
+  font-size: 14px;
 }
 #blogs .article__img img {
   max-height: 300px;

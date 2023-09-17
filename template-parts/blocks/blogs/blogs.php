@@ -28,16 +28,16 @@
             	<div class="blog__items">
 					<ul class="blog__list">
 						<?php while($wp_query->have_posts()): $wp_query->the_post(); ?>
-							<li class="col-6 px-4">
+							<li class="col-12 col-md-6 px-md-4">
 								<div class="article">
 									<a class="article__img" href="<?php the_permalink(); ?>">
 										<?php the_post_thumbnail(); ?>
 									</a>
 									<div class="article__body">
 										<div class="article__heading">
-											<div class="d-flex justify-content-between">
-												<div class="col-9"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3></div>
-												<div><p class="text-uppercase mt-1"><?php echo get_the_date('d M Y'); ?></p></div>
+											<div class="row d-flex justify-content-between">
+												<div class="col-12 col-md-9"><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3></div>
+												<div class="col-12 col-md-3 text-left text-md-end"><p class="date text-uppercase mt-1"><?php echo get_the_date('d M Y'); ?></p></div>
 											</div>
 											<p><?php echo get_the_excerpt(); ?></p>
 											<a href="<?php the_permalink(); ?>"><div class="read-btn">Read More</div></a>

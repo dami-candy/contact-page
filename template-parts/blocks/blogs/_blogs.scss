@@ -3,6 +3,7 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
     }
 
     .article__heading {
@@ -18,10 +19,11 @@
             color: var(--black);
             font-family: "Poppins-SemiBold", cursive;
         }
+        font-size: 24px;
     }
 
     .article__heading p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .article__img img {
