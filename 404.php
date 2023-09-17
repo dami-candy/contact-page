@@ -8,7 +8,7 @@
         </header>
         <div class="entry-content" itemprop="mainContentOfPage">
             <p><?php esc_html_e( 'The page you are looking for does not seem to exist', 'generic' ); ?></p>
-            <a class="home-btn" href="/#">GO BACK TO HOME</a> 
+            <a class="home-btn" href="<?php home_url(); ?>/#">GO BACK TO HOME</a> 
         </div>
         </article>
     </div>

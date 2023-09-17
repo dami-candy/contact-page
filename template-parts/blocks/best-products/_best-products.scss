@@ -17,6 +17,9 @@
         @media screen and (min-width: 768px) {
             font-size: 54px;
         }
+        span {
+            color: var(--blue);
+        }
     }
     h3 {
         font-size: 20px;
@@ -33,10 +36,17 @@
     .btn {
         padding: 5px 10px;
         font-size: 14px;
+      
         @media screen and (min-width: 768px) {
             padding: 5px 20px;
             font-size: inherit;
         }
+    }
+    .title .btn {
+        background-color: var(--white);
+        border: 2px solid var(--black);
+        color: var(--black);
+        padding: 8px 30px;
     }
 
     ul {

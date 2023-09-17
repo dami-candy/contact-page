@@ -27,7 +27,7 @@
     <header id="header" class="hfeed">
         <div class="container flex-wrap">
             <div class="logo-div">
-                <a href="/#">
+                <a href="<?php home_url(); ?>/#">
                     <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/spore-buddies.png" alt="Spore Buddies Logo" width="240px" height="60px">
                 </a>
             </div>
@@ -72,7 +72,7 @@
                             <!-- <input type="submit" class="d-none" value="Search" /> -->
                         </form>
                     </div>
-                    <div>
+                    <div class="d-flex">
                         <a href="/basket"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart icon" width="22px" height="22px"></a>
                         <a class="ms-2" href="/my-account"><img src="<?php bloginfo('template_url'); ?>/images/account.png" alt="Phone icon" width="17px" height="17px"></a>
                     </div>

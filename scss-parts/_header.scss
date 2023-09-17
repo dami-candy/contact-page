@@ -20,6 +20,7 @@
   }
 
   .search {
+    display: flex;
     input {
       background: none;
       border: none;
@@ -31,7 +32,10 @@
     }
     ::placeholder { 
       color: #99a2a5;
-      font-size: 14px; 
+      font-size: 12spx; 
+    }
+    img {
+      object-fit: contain;
     }
   }
 
@@ -74,19 +78,24 @@
     }
     .menu-item {
       position: relative;
+      display: flex;
+      flex-direction: column;
       .sub-menu {
-        position: absolute;
         z-index: -1;
         width: 160px;
         margin: 0;
         padding-left: 0;
         background: var(--white);
-        padding-top: 30px;
+        @media screen and (min-width: 768px) {
+          padding-top: 30px;
+        }
       }
     }
     .menu-item:hover > .sub-menu {
       display: block;
-      position: absolute;
+      @media screen and (min-width: 768px) {
+        position: absolute;
+      }
 
       a {
         color: var(--black);

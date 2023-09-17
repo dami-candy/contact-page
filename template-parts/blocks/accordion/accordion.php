@@ -4,6 +4,9 @@
  */
 
 $content = get_field('content');
+$show_link = get_field('show_link');
+$link_text = get_field('link_text');
+$link_url = get_field('link_url');
 ?>
 
 <section id="accordion">
@@ -50,6 +53,9 @@ $content = get_field('content');
                     // Do something...
                 endif;
                 ?>
+            <?php if ($show_link) { ?>
+                <div><a href="<?php echo $link_url;?>"><?php echo $link_text;?></a></div>
+            <?php } ?>
             </div>
         </div>
     </div>

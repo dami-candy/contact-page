@@ -52,7 +52,7 @@ jQuery(document).ready(function ($) {
       nextArrow: $('.fa-arrow-right'),
     responsive: [
       {
-        breakpoint: 500,
+        breakpoint: 650,
         settings: {
         slidesToShow: 2,
         slidesToScroll: 1,

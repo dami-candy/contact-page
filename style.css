@@ -337,6 +337,9 @@ img {
 #header .email img, #header .phone img {
   margin-right: 10px;
 }
+#header .search {
+  display: flex;
+}
 #header .search input {
   background: none;
   border: none;
@@ -348,11 +351,15 @@ img {
 }
 #header .search ::-moz-placeholder {
   color: #99a2a5;
-  font-size: 14px;
+  font-size: 12spx;
 }
 #header .search ::placeholder {
   color: #99a2a5;
-  font-size: 14px;
+  font-size: 12spx;
+}
+#header .search img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #header .container {
   display: flex;
@@ -395,19 +402,28 @@ img {
 }
 #header .menu .menu-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 #header .menu .menu-item .sub-menu {
-  position: absolute;
   z-index: -1;
   width: 160px;
   margin: 0;
   padding-left: 0;
   background: var(--white);
-  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  #header .menu .menu-item .sub-menu {
+    padding-top: 30px;
+  }
 }
 #header .menu .menu-item:hover > .sub-menu {
   display: block;
-  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  #header .menu .menu-item:hover > .sub-menu {
+    position: absolute;
+  }
 }
 #header .menu .menu-item:hover > .sub-menu a {
   color: var(--black);
@@ -520,6 +536,12 @@ img {
   border-radius: 16px;
   padding: 32px 32px 0 32px;
   position: relative;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #footer .newsletter {
+    text-align: left;
+  }
 }
 #footer .newsletter h2 {
   font-weight: 900;
@@ -834,6 +856,14 @@ h1:not(.home h1):before {
   margin-top: 100px;
 }
 
+.page-template-contact h2 {
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .page-template-contact h2 {
+    font-size: 40px;
+  }
+}
 .page-template-contact .contact-info a {
   color: var(--black);
 }
@@ -925,6 +955,14 @@ h1:not(.home h1):before {
 #cta-section .btn {
   background: var(--white);
   color: var(--black);
+}
+#cta-section .container {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #cta-section .container {
+    text-align: left;
+  }
 }
 
 #category-template .category-image {
@@ -1023,7 +1061,7 @@ h1:not(.home h1):before {
 }
 
 #shop-banner {
-  padding: 60px 0;
+  padding: 0 0 60px;
 }
 #shop-banner .row {
   background: var(--blue);
@@ -1133,12 +1171,13 @@ h1:not(.home h1):before {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
-  padding-bottom: 150px !important;
-  margin-top: 85px;
+  margin-top: 185px;
+  padding-bottom: 50px !important;
 }
 @media screen and (min-width: 768px) {
   #product-slider .product-slider .slick-dots {
     margin-top: 25px;
+    padding-bottom: 150px !important;
   }
 }
 #product-slider .product-slider .slick-dots button {
@@ -1166,7 +1205,7 @@ h1:not(.home h1):before {
   max-width: 50%;
   display: flex;
   justify-content: space-between;
-  right: 30%;
+  right: 33%;
   max-width: 300px;
 }
 @media screen and (min-width: 768px) {
@@ -1205,7 +1244,7 @@ h1:not(.home h1):before {
   position: relative;
   max-height: 300px;
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
 }
 @media screen and (min-width: 768px) {
   #product-slider .slide-img {
@@ -1258,6 +1297,9 @@ h1:not(.home h1):before {
     font-size: 54px;
   }
 }
+#best-products h2 span {
+  color: var(--blue);
+}
 #best-products h3 {
   font-size: 20px;
   color: var(--black);
@@ -1280,6 +1322,12 @@ h1:not(.home h1):before {
     padding: 5px 20px;
     font-size: inherit;
   }
+}
+#best-products .title .btn {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
+  padding: 8px 30px;
 }
 #best-products ul {
   list-style: none;
@@ -1325,6 +1373,14 @@ h1:not(.home h1):before {
     font-size: 42px;
   }
 }
+#about .title {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #about .title {
+    text-align: left;
+  }
+}
 #about .content {
   position: relative;
   z-index: 121;
@@ -1363,6 +1419,7 @@ h1:not(.home h1):before {
 #about .usp {
   position: relative;
   bottom: 100px;
+  margin-top: 150px;
 }
 #about .usp p {
   font-size: 20px;
@@ -1373,6 +1430,7 @@ h1:not(.home h1):before {
 @media screen and (min-width: 768px) {
   #about .usp {
     position: unset;
+    margin-top: 0;
   }
 }
 

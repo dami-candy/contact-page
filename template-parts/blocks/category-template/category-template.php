@@ -3,6 +3,7 @@
  * Block Name: Category Template
  */
 
+ $content = get_field('content');
 ?>
 
 <section id="category-template">
@@ -19,6 +20,7 @@
                         // Do something...
                         ?>
                             <div class="col-6 col-md-4">
+                                <div><?php $content; ?></div>
                                 <?php
                                     $category_id = $product; 
                                     $category = get_term($category_id, 'product_cat');

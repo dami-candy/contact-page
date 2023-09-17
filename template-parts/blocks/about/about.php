@@ -25,9 +25,9 @@ $usp_text_3 = get_field('usp_text_3');
 <section id="about">
     <div class="mask row mt-5 py-5">
         <div class="container d-flex justify-content-between mt-5 flex-wrap">
-            <div class="col-12 col-md-4">
-            <p>Our story</p>
-            <h2>About SporeBuddies.com</h2>
+            <div class="col-12 col-md-4 title">
+                <p>Our story</p>
+                <h2>About SporeBuddies.com</h2>
             </div>
             <div class="col-12 col-md-7 usp d-flex justify-content-md-between flex-column flex-md-row">
                 <div class="text-center mb-3">
@@ -51,7 +51,7 @@ $usp_text_3 = get_field('usp_text_3');
     <div class="content">
         <div class="container">
             <div class="story d-flex flex-wrap">
-                <div class="col-12 col-md-6 p-1 pe-4">
+                <div class="col-12 col-md-6 p-1 pe-md-4">
                     <img src="<?php echo ( $image['url'] ); ?>">
                 </div>
                 <div class="col-12 col-md-6 mt-5">

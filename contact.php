@@ -21,7 +21,7 @@ $contact_information = get_field('contact_information');
     <div class="row">
         <div class="col-12 my-5">
             <p>Speak to us</p>
-            <h2>Get In Touch</h2>
+            <h2 class="mb-4">Get In Touch</h2>
             <p>We love our customers, so feel free to call during normal business hours.</p>
         </div>
     </div>

@@ -12,7 +12,7 @@ $content = get_field('content');
             <div class="col-12 col-md-6">
                 <?php echo $content; ?>
             </div>
-            <div class="col-12 col-md-2">
+            <div class="col-12 col-md-3">
                 <a href="tel:0800 069 926"><div class="btn ms-3 mt-2">Call Us Now</div></a>
             </div>
         </div>

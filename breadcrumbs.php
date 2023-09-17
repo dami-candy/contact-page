@@ -1,6 +1,6 @@
 <div class="breadcrumbs">
     <ul>
-        <li><a href="/">Home</a></li>
+        <li><a href="<?php home_url();?>/#">Home</a></li>
         <?php
         // Get the current URL and split it into segments
         $url = rtrim($_SERVER['REQUEST_URI'], '/');
