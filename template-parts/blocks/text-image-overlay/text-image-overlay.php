@@ -23,7 +23,7 @@ $button_link = get_field('button_link');
                     <?php echo $content; ?>
                 </div>
             <?php } ?>
-            <div class="col-12 d-flex align-content-center">
+            <div class="col-12 d-flex align-content-center justify-content-center">
                 <img src="<?php echo $image['url']; ?>">
             </div>
             <?php if ($content_position === 'bottom') { ?>

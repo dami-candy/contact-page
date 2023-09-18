@@ -29,5 +29,10 @@
     }
     .icon {
         display: -webkit-inline-box;
+        img {
+            width: 23px;
+            height: 23px;
+            object-fit: contain;
+        }
     }
 }

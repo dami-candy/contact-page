@@ -1,4 +1,5 @@
 #text-image-overlay {
+    overflow: hidden;
     .container {
         @media screen and (min-width: 768px) {
             max-width: unset;
@@ -23,6 +24,9 @@
     img {
         object-fit: none;
         min-height: 350px;
+        object-fit: fill;
+        min-height: 350px;
+        width: 100vw;
     }
     @media screen and (min-width: 768px) {
         padding-bottom: 100px;

@@ -33,8 +33,8 @@
                     <div class="career-div">
                         <img src="<?php echo the_post_thumbnail_url()?>">
                         <div class="d-flex flex-wrap justify-content-between mt-4">
-                            <div class="col-md-8 col-12"><h2 class=""><?php the_title(); ?></h2></div>
-                            <div class="col-md-2 col-12"><a href="mailto:<?php $email; ?>" class="btn">Email Us</a></div>
+                            <div class="col-md-8 col-12 d-flex align-self-end"><h2 class="m-0"><?php the_title(); ?></h2></div>
+                            <div class="col-md-2 col-12 mt-3 mt-md-0"><a href="mailto:<?php $email; ?>" class="btn">Email Us</a></div>
                         </div>
                         <div class="d-flex flex-wrap justify-content-between">
                             <div class="col-md-7 col-12">
@@ -65,13 +65,13 @@
                             <div class="col-12">
                                 <div class="d-flex flex-wrap mt-4">
                                     <?php if ($location) { ?>
-                                        <div class="col-md-4 col-12 icon">
+                                        <div class="col-md-2 col-12 icon">
                                             <img src="<?php bloginfo('template_url'); ?>/images/location.png" alt="Location Icon" width="20" height="20">
                                             <p class="ms-2"><?php echo $location; ?></p>
                                         </div>
                                     <?php } ?>
                                     <?php if ($time) { ?>
-                                        <div class="col-md-4 col-12 icon">
+                                        <div class="col-md-2 col-12 icon">
                                             <img src="<?php bloginfo('template_url'); ?>/images/clock.png" alt="Location Icon" width="20" height="20">
                                             <p class="ms-2"><?php echo $time; ?></p>
                                         </div>

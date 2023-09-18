@@ -137,7 +137,7 @@ img {
 .woocommerce-breadcrumb {
   max-width: 1200px;
   margin: 0 auto !important;
-  padding: 0 25px !important;
+  padding: 10px 25px !important;
 }
 
 #sidebar {
@@ -308,6 +308,10 @@ img {
   display: none;
 }
 
+.single-product h1:before {
+  display: none;
+}
+
 .woocommerce-info {
   border-top-color: var(--blue);
 }
@@ -356,6 +360,27 @@ img {
 
 .cart_totals {
   width: 100% !important;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("images/toggle.png");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.variations tbody, .variations tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.variations select {
+  padding: 3px 10px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 #header {
@@ -687,6 +712,8 @@ div {
 
 h1 {
   font-size: 36px;
+  width: 100%;
+  margin: 30px 0;
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -1001,6 +1028,12 @@ h1:not(.home h1):before {
 }
 .page-template-careers .icon {
   display: -webkit-inline-box;
+}
+.page-template-careers .icon img {
+  width: 23px;
+  height: 23px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -1442,6 +1475,9 @@ h1:not(.home h1):before {
   color: #AEAEAE;
 }
 
+#about {
+  overflow-x: hidden;
+}
 #about .mask {
   color: var(--white);
   background-repeat: no-repeat;
@@ -1543,6 +1579,9 @@ h1:not(.home h1):before {
      object-fit: none;
 }
 
+#text-image-overlay {
+  overflow: hidden;
+}
 @media screen and (min-width: 768px) {
   #text-image-overlay .container {
     max-width: unset;
@@ -1568,6 +1607,10 @@ h1:not(.home h1):before {
   -o-object-fit: none;
      object-fit: none;
   min-height: 350px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  min-height: 350px;
+  width: 100vw;
 }
 @media screen and (min-width: 768px) {
   #text-image-overlay {

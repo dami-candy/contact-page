@@ -141,7 +141,7 @@ img {
 .woocommerce-breadcrumb {
   max-width: 1200px;
   margin: 0 auto !important;
-  padding: 0 25px !important;
+  padding: 10px 25px !important;
 }
 
 #sidebar {
@@ -327,6 +327,12 @@ img {
   }
 }
 
+.single-product h1 {
+  &:before {
+    display: none;
+  }
+}
+
 .woocommerce-info {
   border-top-color: var(--blue);
   &:before {
@@ -373,4 +379,23 @@ img {
 }
 .cart_totals  {
   width: 100% !important;
+}
+
+select { 
+  appearance: none;
+  background-image: url("images/toggle.png");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.variations tbody, .variations tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.variations select {
+  padding: 3px 10px;
+  border-radius: 5px;
+  width: 100%;
 }
