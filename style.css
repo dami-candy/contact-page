@@ -330,6 +330,34 @@ img {
   color: var(--blue) !important;
 }
 
+.woocommerce .quantity .qty {
+  text-align: center;
+  border-radius: 7px;
+  border: 1.3px solid #99A2A5;
+  height: 35px;
+}
+
+.woocommerce-cart-form a {
+  color: var(--black);
+}
+
+.woocommerce a.remove {
+  color: #939393 !important;
+}
+.woocommerce a.remove:hover {
+  color: var(--white);
+  background-color: #939393 !important;
+}
+
+.product-thumbnail {
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+
+.cart_totals {
+  width: 100% !important;
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
