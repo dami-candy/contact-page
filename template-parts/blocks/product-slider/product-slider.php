@@ -37,7 +37,7 @@ $product_title = get_field('product_title');
                                             <img class="ms-2" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Email Icon" width="115px" height="22px">
                                         </span>
                                     </div>
-                                    <div class="col-12 col-md-4 d-none d-md-block">
+                                    <div class="col-12 col-md-4 d-none d-md-block text-end">
                                         <a class="btn">Shop Now</a>
                                     </div>
                                     <div class="col-12 col-md-10 mt-3 info">

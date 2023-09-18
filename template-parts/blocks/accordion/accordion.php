@@ -54,7 +54,8 @@ $link_url = get_field('link_url');
                 endif;
                 ?>
             <?php if ($show_link) { ?>
-                <div><a href="<?php echo $link_url;?>"><?php echo $link_text;?></a></div>
+                <a href="<?php echo $link_url;?>"><div class="faq mt-3"><?php echo $link_text;?></div>
+                <span class="arrow"></span></a>
             <?php } ?>
             </div>
         </div>

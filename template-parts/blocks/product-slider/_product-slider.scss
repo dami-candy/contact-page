@@ -105,5 +105,9 @@
     }
     .info {
         font-size: 18px;
+        border-top: 1px solid rgba(0,0,0, 0.15);
+        p {
+            padding-top: 15px;
+        }
     }
 }

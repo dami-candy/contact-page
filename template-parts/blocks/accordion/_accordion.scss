@@ -4,8 +4,6 @@
     margin: auto;
   }
   .acc-container .acc-body {
-    width: 98%;
-    width: calc(100% - 20px);
     margin: 0 auto;
     height: 0;
     color: rgba(0, 0, 0, 0);;
@@ -22,7 +20,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
-    padding: 15px;
+    padding: 15px 0;
     width: 100%;
     color: var(--black);
     font-weight: 400;
@@ -65,5 +63,22 @@
     font-size: 16px;
     padding: 20px;
     transition: 0.5s;
+  }
+  .faq {
+    text-decoration: underline;
+    color: var(--blue);
+    display: inline-block;
+    font-family: "Poppins-SemiBold", cursive;
+  }
+  .arrow {
+    &:after {
+      font-family: "FontAwesome";
+      content: "\f061";
+      font-weight: normal;
+      color: var(--blue);
+      font-size: 12px;
+      position: relative;
+      left: 4px;
+    }
   }
 }
