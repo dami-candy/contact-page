@@ -83,7 +83,7 @@ do_action( 'woocommerce_before_main_content' );
     <div class="cta-div text-center">
         <h2>Need Help From Us?</h2>
         <p>If you ever got stuck with creating your print, just send me a message and we will be there to help.</p>
-        <a href="/" class="btn">Get In Touch</a>
+        <a href="<?php echo home_url(); ?>/" class="btn">Get In Touch</a>
     </div>
 </div>
 

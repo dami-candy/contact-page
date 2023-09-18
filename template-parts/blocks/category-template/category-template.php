@@ -51,7 +51,7 @@
                     // Do something...
                 endif;
             ?>
-            <a href="/" class="text-center"><div class="btn btn-alt mt-5">View All</div></a>
+            <a href="<?php echo home_url(); ?>/" class="text-center"><div class="btn btn-alt mt-5">View All</div></a>
         </div>
     </div>
 </section>

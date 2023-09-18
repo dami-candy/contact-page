@@ -29,7 +29,7 @@ textarea {
   width: 100%;
 }
 
-.container {
+.container, .inner-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 25px;
@@ -359,11 +359,11 @@ img {
 }
 #header .search ::-moz-placeholder {
   color: #99a2a5;
-  font-size: 12spx;
+  font-size: 12px;
 }
 #header .search ::placeholder {
   color: #99a2a5;
-  font-size: 12spx;
+  font-size: 12px;
 }
 #header .search img {
   -o-object-fit: contain;
@@ -1097,9 +1097,6 @@ h1:not(.home h1):before {
   transition: 0.5s;
 }
 
-#shop-banner {
-  padding: 0 0 60px;
-}
 #shop-banner .row {
   background: var(--blue);
   color: var(--white);
@@ -1491,4 +1488,36 @@ h1:not(.home h1):before {
 #text-image img {
   -o-object-fit: none;
      object-fit: none;
+}
+
+@media screen and (min-width: 768px) {
+  #text-image-overlay .container {
+    max-width: unset;
+    padding: 0;
+  }
+}
+#text-image-overlay .inner-container {
+  padding: 50px 25px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background: white;
+  position: relative;
+  bottom: 60px;
+}
+#text-image-overlay h2 {
+  margin-bottom: 30px;
+}
+#text-image-overlay h3 {
+  font-size: 24px;
+  font-family: "Poppins-SemiBold", cursive;
+}
+#text-image-overlay img {
+  -o-object-fit: none;
+     object-fit: none;
+  min-height: 350px;
+}
+@media screen and (min-width: 768px) {
+  #text-image-overlay {
+    padding-bottom: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */

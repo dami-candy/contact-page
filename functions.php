@@ -251,6 +251,18 @@
             )
         );
 
+         // Text Image Overlay
+         acf_register_block_type(
+            array(
+            'name'              => 'text-image-overlay',
+            'title'             => __('Text Image Overlay'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/text-image-overlay/text-image-overlay.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
     }
 
     if (function_exists('acf_register_block_type')) {

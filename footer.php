@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-md-8 text-center text-md-left">
                     <div class="logo-div mb-3">
-                        <a href="/#">
+                        <a href="<?php echo home_url(); ?>/#">
                             <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/spore-buddies.png" alt="Spore Buddies Logo" width="240px" height="60px">
                         </a>
                     </div>
