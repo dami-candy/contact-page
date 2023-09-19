@@ -19,6 +19,27 @@ jQuery(document).ready(function ($) {
     infinite: false,
   });
 
+  $('.gallery').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: true,
+    centerMode: true,
+    responsive: [{
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        //centerPadding: '40px',
+        slidesToShow: 2,
+        centerMode: false,
+      }
+    }
+  ]
+  });
+
   
   $('.product-slider').slick({
       centerMode:true,

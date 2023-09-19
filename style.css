@@ -418,6 +418,14 @@ select {
   width: 100%;
 }
 
+hr {
+  max-width: 50px;
+  margin: 100px auto;
+  height: 12px !important;
+  color: var(--blue);
+  opacity: 1;
+}
+
 #header {
   display: flex;
   padding: 10px 0 15px 0;
@@ -988,19 +996,19 @@ h1:not(.home h1):before {
 .page-template-contact .contact-info a {
   color: var(--black);
 }
-.page-template-contact form label {
+.page-template-contact #content form label {
   width: 100%;
 }
-.page-template-contact form label span {
+.page-template-contact #content form label span {
   display: grid;
 }
-.page-template-contact form input {
+.page-template-contact #content form input {
   border: 1px solid #99A2A5;
   border-radius: 9px;
   padding: 8px;
   margin-top: 5px;
 }
-.page-template-contact form textarea {
+.page-template-contact #content form textarea {
   border: 1px solid #99A2A5;
   border-radius: 9px;
   padding: 8px;
@@ -1076,6 +1084,11 @@ h1:not(.home h1):before {
 }
 #three-column-section .container {
   max-width: unset;
+}
+#three-column-section h3 {
+  font-family: "Poppins-Bold", cursive;
+  font-size: 26px;
+  padding-bottom: 20px;
 }
 
 #cta-section {
@@ -1610,8 +1623,8 @@ h1:not(.home h1):before {
   margin-bottom: 30px;
 }
 #text-image img {
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #text-image-overlay {
@@ -1639,11 +1652,9 @@ h1:not(.home h1):before {
   font-family: "Poppins-SemiBold", cursive;
 }
 #text-image-overlay img {
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: contain;
+     object-fit: contain;
   min-height: 350px;
-  -o-object-fit: fill;
-     object-fit: fill;
   min-height: 350px;
   width: 100vw;
 }
@@ -1651,4 +1662,35 @@ h1:not(.home h1):before {
   #text-image-overlay {
     padding-bottom: 100px;
   }
+}
+
+#gallery {
+  padding: 70px 0;
+}
+#gallery .slick-dots {
+  display: flex;
+  place-content: center;
+  padding-top: 30px;
+  cursor: pointer;
+}
+#gallery .slick-dots button {
+  border: none;
+  background: none;
+  text-indent: -999vw;
+  padding: 7px;
+}
+#gallery .slick-dots .slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid rgb(151, 146, 146);
+  padding: 5px;
+}
+#gallery .slick-dots ::marker {
+  color: #8D8D8D;
+}
+#gallery .slick-dots .slick-active::marker {
+  color: var(--black);
 }/*# sourceMappingURL=style.css.map */

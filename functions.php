@@ -251,13 +251,37 @@
             )
         );
 
-         // Text Image Overlay
+        // Text Image Overlay
          acf_register_block_type(
             array(
             'name'              => 'text-image-overlay',
             'title'             => __('Text Image Overlay'),
             'description'       => __('Call to action block.'),
             'render_template'   => 'template-parts/blocks/text-image-overlay/text-image-overlay.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
+        // Gallery
+        acf_register_block_type(
+            array(
+            'name'              => 'gallery',
+            'title'             => __('Gallery'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/gallery/gallery.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
+         // Contact Form
+         acf_register_block_type(
+            array(
+            'name'              => 'contact-form',
+            'title'             => __('Contact Form'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/contact-form/contact-form.php',
             'icon'              => 'media-default',
             'keywords'          => array( 'testimonial', 'quote' ),
             )

@@ -8,24 +8,27 @@
     .contact-info a {
         color: var(--black);
     }
-    form {
-        label {
-            width: 100%;
-            span {
-                display: grid;
+    #content {
+
+        form {
+            label {
+                width: 100%;
+                span {
+                    display: grid;
+                }
             }
-        }
-        input {
-            border: 1px solid #99A2A5;
-            border-radius: 9px;
-            padding: 8px;
-            margin-top: 5px;
-        }
-        textarea {
-            border: 1px solid #99A2A5;
-            border-radius: 9px;
-            padding: 8px;
-            margin-top: 5px;
+            input {
+                border: 1px solid #99A2A5;
+                border-radius: 9px;
+                padding: 8px;
+                margin-top: 5px;
+            }
+            textarea {
+                border: 1px solid #99A2A5;
+                border-radius: 9px;
+                padding: 8px;
+                margin-top: 5px;
+            }
         }
     }
     .wpcf7-submit {

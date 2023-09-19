@@ -430,3 +430,11 @@ select {
   border-radius: 5px;
   width: 100%;
 }
+
+hr {
+  max-width: 50px;
+  margin: 100px auto;
+  height: 12px !important;
+  color: var(--blue);
+  opacity: 1;
+}

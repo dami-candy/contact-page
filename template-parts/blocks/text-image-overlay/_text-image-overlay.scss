@@ -22,9 +22,8 @@
         font-family: "Poppins-SemiBold", cursive;
     }
     img {
-        object-fit: none;
+        object-fit: contain;
         min-height: 350px;
-        object-fit: fill;
         min-height: 350px;
         width: 100vw;
     }

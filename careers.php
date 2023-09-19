@@ -1,6 +1,4 @@
-<?php /* Template Name: Careers Template*/ 
-
-?>
+<?php /* Template Name: Careers Template*/ ?>
 
 <?php get_header();?>
 <div class="container">
