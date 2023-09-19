@@ -22,7 +22,9 @@ $button_link = get_field('button_link');
             </div>
             <div class="col-12 col-md-6">
                 <?php echo $content; ?>
-                <a href="<?php echo $button_link; ?>" class="btn mt-5"><?php echo $button_text; ?></a>
+                <?php if ($show_button) { ?>
+                    <a href="<?php echo $button_link; ?>"><div class="btn mt-3"><?php echo $button_text; ?></div></a>
+                <?php } ?>
             </div>
         </div>
     </div>

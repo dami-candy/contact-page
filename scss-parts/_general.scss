@@ -45,6 +45,22 @@ article {
 
 // 404 Page
 .error404 {
+  article {
+    padding: 30px;
+    @media screen and (min-width: 768px) {
+      padding: 100px;
+    }
+  }
+  h1 {
+    color: rgba(13,102,219, 0.3);
+    &::before {
+      display: none;
+    }
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 50px;
+  }
   .not-found {
     min-height: 80vh;
     text-align: center;
@@ -53,17 +69,32 @@ article {
     place-content: center;
     padding-bottom: 120px;
     .entry-title {
+      font-size: 130px !important;
       @media screen and (min-width: 768px) {
         font-size: 200px;
       }
     }
-    .home-btn {
-      color: var(--black);
-      background: var(--white);
-      padding: 15px;
+    .btn {
+      font-family: "Poppins-Bold", cursive;
     }
     .entry-content p {
       padding-bottom: 25px;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-top: 20px;
+      font-size: 16px;
+    }
+  }
+  .title {
+    position: relative;
+    display: inline;
+    h1 {
+      display: inline;
+    }
+    img {
+      position: absolute;
+      bottom: 0px;
+      right: -20px;
     }
   }
 }

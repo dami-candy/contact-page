@@ -42,6 +42,24 @@ article a {
   padding-bottom: 50px;
 }
 
+.error404 article {
+  padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .error404 article {
+    padding: 100px;
+  }
+}
+.error404 h1 {
+  color: rgba(13, 102, 219, 0.3);
+}
+.error404 h1::before {
+  display: none;
+}
+.error404 h2 {
+  margin-top: 30px;
+  font-size: 50px;
+}
 .error404 .not-found {
   min-height: 80vh;
   text-align: center;
@@ -50,18 +68,35 @@ article a {
   place-content: center;
   padding-bottom: 120px;
 }
+.error404 .not-found .entry-title {
+  font-size: 130px !important;
+}
 @media screen and (min-width: 768px) {
   .error404 .not-found .entry-title {
     font-size: 200px;
   }
 }
-.error404 .not-found .home-btn {
-  color: var(--black);
-  background: var(--white);
-  padding: 15px;
+.error404 .not-found .btn {
+  font-family: "Poppins-Bold", cursive;
 }
 .error404 .not-found .entry-content p {
   padding-bottom: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 16px;
+}
+.error404 .title {
+  position: relative;
+  display: inline;
+}
+.error404 .title h1 {
+  display: inline;
+}
+.error404 .title img {
+  position: absolute;
+  bottom: 0px;
+  right: -20px;
 }
 
 .home-btn,
@@ -723,9 +758,6 @@ h1 {
   }
 }
 
-h1:not(.home h1) {
-  font-size: 32px;
-}
 h1:not(.home h1):before {
   background-color: var(--blue);
   padding: 0 4px;
@@ -1041,6 +1073,9 @@ h1:not(.home h1):before {
     border-left: 1px solid #2C3258;
     border-right: 1px solid #2C3258;
   }
+}
+#three-column-section .container {
+  max-width: unset;
 }
 
 #cta-section {

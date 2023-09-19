@@ -3,12 +3,15 @@
     <div class="container">
         <article id="post-0" class="post not-found">
         <header class="header">
-        <h1 class="entry-title" itemprop="name"><?php esc_html_e( '404', 'generic' ); ?></h1>
-        <h2>Page Not Found</h2>
+        <div class="title">
+            <h1 class="entry-title" itemprop="name"><?php esc_html_e( '404', 'generic' ); ?></h1>
+            <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/favicon-logo.png" alt="Spore Buddies Logo" width="80px" height="80px">
+        </div>
+        <h2>Page not found</h2>
         </header>
         <div class="entry-content" itemprop="mainContentOfPage">
-            <p><?php esc_html_e( 'The page you are looking for does not seem to exist', 'generic' ); ?></p>
-            <a class="home-btn" href="<?php home_url(); ?>/#">GO BACK TO HOME</a> 
+            <p><?php esc_html_e( "Oops! The page you're searching for seems to have gone on a little adventure. How about heading back to the homepage?", 'generic' ); ?></p>
+            <a class="btn" href="<?php home_url(); ?>/#">Back to Home</a> 
         </div>
         </article>
     </div>

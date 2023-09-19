@@ -21,7 +21,9 @@ $image_url = get_field('image_url');
                 <?php if ($show_button) { ?>
                     <a href="<?php echo $button_link; ?>"><div class="btn mt-3"><?php echo $button_text; ?></div></a>
                 <?php } ?>
-                <img src="<?php echo $image['url']; ?>"  alt="<?php echo $image['alt']; ?>">
+                <?php if ($image) { ?>
+                    <img src="<?php echo $image['url']; ?>"  alt="<?php echo $image['alt']; ?>">
+                <?php } ?>
             </div>
         </div>
     </div>
