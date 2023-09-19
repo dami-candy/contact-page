@@ -760,7 +760,6 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 48px;
     line-height: 57px;
     margin: 40px 0;
   }
@@ -1693,4 +1692,8 @@ h1:not(.home h1):before {
 }
 #gallery .slick-dots .slick-active::marker {
   color: var(--black);
+}
+
+#image-block {
+  padding: 60px 0;
 }/*# sourceMappingURL=style.css.map */

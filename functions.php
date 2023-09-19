@@ -275,13 +275,25 @@
             )
         );
 
-         // Contact Form
+        // Contact Form
          acf_register_block_type(
             array(
             'name'              => 'contact-form',
             'title'             => __('Contact Form'),
             'description'       => __('Call to action block.'),
             'render_template'   => 'template-parts/blocks/contact-form/contact-form.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
+        // Image Block
+        acf_register_block_type(
+            array(
+            'name'              => 'image-block',
+            'title'             => __('Image Block'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/image-block/image-block.php',
             'icon'              => 'media-default',
             'keywords'          => array( 'testimonial', 'quote' ),
             )
