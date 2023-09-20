@@ -71,7 +71,7 @@ article {
     .entry-title {
       font-size: 130px !important;
       @media screen and (min-width: 768px) {
-        font-size: 200px;
+        font-size: 200px !important;
       }
     }
     .btn {
@@ -437,4 +437,35 @@ hr {
   height: 12px !important;
   color: var(--blue);
   opacity: 1;
+}
+
+.related.products h2:first-child {
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+  display: none;
+}
+
+.woocommerce-variation-add-to-cart {
+  display: flex;
+  flex-direction: column;
+  .quantity {
+    padding-bottom: 20px;
+  }
+  .button {
+    max-width: 200px;
+  }
+}
+
+.single_buy_now_button {
+  width: 170px;
+  background-color: unset !important;
+  border: 1px solid #C1C1C1C1 !important;
+  color: #000000 !important;
+}
+
+.wp-block-group  {
+  justify-content: center;
 }

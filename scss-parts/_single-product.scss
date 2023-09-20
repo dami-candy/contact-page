@@ -1,0 +1,33 @@
+.single-product {
+    .product_meta {
+        div {
+            cursor: pointer;
+        }
+        .title {
+            padding: 15px 0;
+            font-family: "Poppins-SemiBold", cursive;
+            border-bottom: 1px solid #bcbcbc;
+
+            &:after {
+                font-family: 'FontAwesome';
+                content: '\f078';
+                font-weight: normal;
+                float: right;
+                color: var(--black);
+                font-size: 10px;
+                @media screen and (min-width: 768px) {
+                    font-size: 10px;
+                    position: relative;
+                }
+            }
+            &.active {
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .details {
+            border-top: 1px solid #bcbcbc;
+        }
+    }
+}

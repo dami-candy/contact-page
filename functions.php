@@ -382,5 +382,13 @@
     }
     
 
+    // Updating the related products text
+    add_filter(  'gettext',  'change_related_products_title', 10, 3 );
+    function change_related_products_title( $translated, $text, $domain  ) {
+        if( $text === 'Related products' && $domain === 'woocommerce' ){
+            $translated = esc_html__( 'You May Also Like', $domain );
+        }
+        return $translated;
+    }
 ?>
 

@@ -73,7 +73,7 @@ article a {
 }
 @media screen and (min-width: 768px) {
   .error404 .not-found .entry-title {
-    font-size: 200px;
+    font-size: 200px !important;
   }
 }
 .error404 .not-found .btn {
@@ -424,6 +424,37 @@ hr {
   height: 12px !important;
   color: var(--blue);
   opacity: 1;
+}
+
+.related.products h2:first-child {
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+  display: none;
+}
+
+.woocommerce-variation-add-to-cart {
+  display: flex;
+  flex-direction: column;
+}
+.woocommerce-variation-add-to-cart .quantity {
+  padding-bottom: 20px;
+}
+.woocommerce-variation-add-to-cart .button {
+  max-width: 200px;
+}
+
+.single_buy_now_button {
+  width: 170px;
+  background-color: unset !important;
+  border: 1px solid rgba(193, 193, 193, 0.7568627451) !important;
+  color: #000000 !important;
+}
+
+.wp-block-group {
+  justify-content: center;
 }
 
 #header {
@@ -1073,6 +1104,35 @@ h1:not(.home h1):before {
   height: 23px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.single-product .product_meta div {
+  cursor: pointer;
+}
+.single-product .product_meta .title {
+  padding: 15px 0;
+  font-family: "Poppins-SemiBold", cursive;
+  border-bottom: 1px solid #bcbcbc;
+}
+.single-product .product_meta .title:after {
+  font-family: "FontAwesome";
+  content: "\f078";
+  font-weight: normal;
+  float: right;
+  color: var(--black);
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .single-product .product_meta .title:after {
+    font-size: 10px;
+    position: relative;
+  }
+}
+.single-product .product_meta .title.active:after {
+  transform: rotate(180deg);
+}
+.single-product .product_meta .details {
+  border-top: 1px solid #bcbcbc;
 }
 
 @media screen and (min-width: 768px) {

@@ -110,5 +110,21 @@ jQuery(document).ready(function ($) {
     $('body').toggleClass('overflow');
     $('.mob-account-details').toggleClass('d-none');
     $('.banner').toggleClass('d-none');
-});
-});
+  });
+
+  $(".details").click(function() {
+    $(".details .content").toggleClass('d-none');
+    $(".details .title").toggleClass('active');
+  });
+
+  $(".shipping").click(function() {
+    $(".shipping .content").toggleClass('d-none');
+    $(".shipping .title").toggleClass('active');
+  });
+
+  $(".returns").click(function() {
+    $(".returns .content").toggleClass('d-none');
+    $(".returns .title").toggleClass('active');
+  });
+
+})
