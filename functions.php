@@ -203,6 +203,18 @@
             )
         );
 
+          // Steps Section
+          acf_register_block_type(
+            array(
+            'name'              => 'steps-section',
+            'title'             => __('Steps Section'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/steps-section/steps-section.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
         // Product Slider
          acf_register_block_type(
             array(

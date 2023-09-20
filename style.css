@@ -1149,6 +1149,10 @@ h1:not(.home h1):before {
   font-size: 26px;
   padding-bottom: 20px;
 }
+#three-column-section img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 #cta-section {
   background-image: url(images/mask.png);
@@ -1756,4 +1760,164 @@ h1:not(.home h1):before {
 
 #image-block {
   padding: 60px 0;
+}
+
+#steps-section {
+  padding: 60px 0;
+}
+#steps-section .step {
+  position: relative;
+}
+#steps-section .step .content p {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  #steps-section .step .content p {
+    font-size: 16px;
+  }
+}
+#steps-section .image {
+  position: relative;
+}
+#steps-section .image img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+#steps-section .arrow p {
+  max-width: 90%;
+}
+#steps-section .step:nth-child(odd) .image:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  font-weight: normal;
+  color: var(--white);
+  font-size: 12px;
+  position: absolute;
+  right: -45px;
+  top: 45%;
+  background: var(--blue);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+#steps-section .step:nth-child(odd):after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  font-weight: normal;
+  color: var(--white);
+  font-size: 12px;
+  position: absolute;
+  right: -40px;
+  top: 65px;
+  background: var(--blue);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  #steps-section .step:nth-child(3n+1) .image:after {
+    font-family: "FontAwesome";
+    content: "\f061";
+    font-weight: normal;
+    color: var(--white);
+    font-size: 12px;
+    position: absolute;
+    right: -45px;
+    top: 45%;
+    background: var(--blue);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  #steps-section .step:nth-child(3n+1):after {
+    font-family: "FontAwesome";
+    content: "\f061";
+    font-weight: normal;
+    color: var(--white);
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    background: var(--blue);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  #steps-section .step:nth-child(3n+2) .image {
+    padding: 0 15px;
+  }
+  #steps-section .step:nth-child(3n+2) .image:after {
+    font-family: "FontAwesome";
+    content: "\f061";
+    font-weight: normal;
+    color: var(--white);
+    font-size: 12px;
+    position: absolute;
+    right: -30px;
+    top: 45%;
+    background: var(--blue);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  #steps-section .step:nth-child(3n+2) {
+    padding: 0 15px;
+  }
+  #steps-section .step:nth-child(3n+2):after {
+    font-family: "FontAwesome";
+    content: "\f061";
+    font-weight: normal;
+    color: var(--white);
+    font-size: 12px;
+    position: absolute;
+    right: -5px;
+    top: 65px;
+    background: var(--blue);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  #steps-section .step:nth-child(3n+1), #steps-section .step:nth-child(3n+1):nth-child(3n+1) {
+    padding-right: 30px;
+  }
+  #steps-section .step:nth-child(3n+2), #steps-section .step:nth-child(3n+2) {
+    padding: 0 15px;
+  }
+  #steps-section .step:nth-child(3n+3), #steps-section .step:nth-child(3n+3) {
+    padding-left: 30px;
+  }
+  #steps-section .step:nth-child(3n+3):after, #steps-section .step:nth-child(3n+3):after {
+    display: none;
+  }
+  #steps-section .step:last-child .image::after, #steps-section .step:last-child::after {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
