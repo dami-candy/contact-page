@@ -1135,6 +1135,18 @@ h1:not(.home h1):before {
   border-top: 1px solid #bcbcbc;
 }
 
+#payment-page .icon:before {
+  font-family: "FontAwesome";
+  content: "\f061";
+  float: right;
+  color: var(--blue);
+  font-size: 14px;
+}
+#payment-page .half-section {
+  background-color: #F9F9F9;
+  padding: 100px 0;
+}
+
 @media screen and (min-width: 768px) {
   #three-column-section .divider {
     border-left: 1px solid #2C3258;

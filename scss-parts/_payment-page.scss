@@ -1,0 +1,15 @@
+#payment-page {
+    .icon {
+        &:before {
+            font-family: 'FontAwesome';
+            content: '\f061';
+            float: right;
+            color: var(--blue);
+            font-size: 14px;
+          }
+    }
+    .half-section {
+        background-color: #F9F9F9;
+        padding: 100px 0;
+    }
+}
