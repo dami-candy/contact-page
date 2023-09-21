@@ -150,6 +150,20 @@ article a {
   color: var(--white);
 }
 
+.checkout-button {
+  background: var(--blue) !important;
+  color: var(--white) !important;
+  border: 3px solid #86b2ed;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: 0.6s;
+}
+.checkout-button:hover {
+  transform: scale(1.02);
+  color: var(--white);
+}
+
 .btn-alt {
   padding: 10px 40px;
   border: 1px solid #c1c1c1;
@@ -446,6 +460,12 @@ hr {
   max-width: 200px;
 }
 
+.woocommerce-billing-fields input {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #99A2A5;
+}
+
 .single_buy_now_button {
   width: 170px;
   background-color: unset !important;
@@ -455,6 +475,42 @@ hr {
 
 .wp-block-group {
   justify-content: center;
+}
+
+.form-row.place-order .button {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+  border: 3px solid #86b2ed;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: 0.6s;
+}
+.form-row.place-order .button:hover {
+  transform: scale(1.02);
+  color: var(--white);
+}
+
+.woocommerce-checkout-payment {
+  background: none !important;
+}
+.woocommerce-checkout-payment p {
+  font-size: 14px;
+}
+.woocommerce-checkout-payment a {
+  text-decoration: underline;
+  color: var(--black);
+}
+
+.woocommerce .payment-methods {
+  text-align: center;
+  color: red;
+}
+.woocommerce .payment-methods:nth-child(2) {
+  display: none !important;
+}
+.woocommerce .payment-methods:nth-child(2) {
+  display: none !important;
 }
 
 #header {
@@ -562,7 +618,7 @@ hr {
 }
 #header .menu .menu-item:hover > .sub-menu a {
   color: var(--black);
-  padding: 5px;
+  padding: 5px 10px;
 }
 #header .main-menu {
   width: 100%;
@@ -772,6 +828,7 @@ h2 {
 }
 
 ::-moz-placeholder {
+  line-height: 120%;
   font-family: "Poppins-Regular", cursive;
 }
 
@@ -781,6 +838,7 @@ li,
 a,
 label,
 div {
+  line-height: 120%;
   font-family: "Poppins-Regular", cursive;
 }
 
@@ -1135,16 +1193,35 @@ h1:not(.home h1):before {
   border-top: 1px solid #bcbcbc;
 }
 
-#payment-page .icon:before {
-  font-family: "FontAwesome";
-  content: "\f061";
-  float: right;
-  color: var(--blue);
-  font-size: 14px;
+#payment-page .icon {
+  margin-right: 40px;
+  width: 30px;
+  height: 30px;
 }
 #payment-page .half-section {
   background-color: #F9F9F9;
   padding: 100px 0;
+}
+#payment-page .logo-section {
+  padding: 80px 0;
+  background: var(--blue);
+  color: var(--white);
+}
+#payment-page .logos {
+  max-width: 50%;
+  margin: 0 auto;
+}
+#payment-page .logos img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0 10px;
+}
+#payment-page h3 {
+  font-family: "Poppins-SemiBold", cursive;
+  font-size: 24px;
+}
+#payment-page a {
+  color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
