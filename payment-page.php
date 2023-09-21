@@ -36,6 +36,24 @@ $logo_icon_3 = get_field('logo_icon_3');
 $logo_icon_4 = get_field('logo_icon_4');
 $button_link = get_field('button_link');
 
+$payment_1_title = get_field('payment_1_title');
+$payment_1 = get_field('payment_1');
+$payment_1_button = get_field('payment_1_button');
+$payment_1_button_link = get_field('payment_1_button_link');
+
+$payment_2 = get_field('payment_2');
+$payment_2_title = get_field('payment_2_title');
+
+$payment_3 = get_field('payment_3');
+$payment_3_title = get_field('payment_3_title');
+
+
+
+$payment_4 = get_field('payment_4');
+$payment_4_title = get_field('payment_4_title');
+
+$payment_4_button = get_field('payment_4_button');
+$payment_4_button_link = get_field('payment_4_button_link');
 
 ?>
 
@@ -43,30 +61,24 @@ $button_link = get_field('button_link');
     <section id="payment-page">
         <div class="container"><h1><?php the_title(); ?></h1>
             <div class="row">
-                <div class="d-flex flex-wrap justify-content-between">
+                <div class="payment d-flex flex-wrap justify-content-between">
                     <div class="col-12 col-md-5">
-                        <h2>Card Payment</h2>
-                        <p>Pay with debit/credit card over the phone Call. 
-                            Card payments will show on your bank statement as "OMS".</p>
-                            <a><div class="btn">Call us  0800 069 9269</div></a>
+                        <div class="d-flex"><span class="number">1</span><h2><?php echo $payment_1_title;?></h2></div>
+                        <?php echo $payment_1; ?>
+                        <a class="btn" href="<?php echo $payment_1_button_link; ?>"><?php echo $payment_1_button; ?></a> 
                     </div>
                     <div class="col-12 col-md-5">
-                        <h2>Card Payment</h2>
-                        <p>Pay with debit/credit card over the phone Call. 
-                            Card payments will show on your bank statement as "OMS".</p>
-                            <div></div>
+                        <div class="d-flex"><span class="number">2</span><h2><?php echo $payment_2_title;?></h2></div>
+                        <?php echo $payment_2; ?>
                     </div>
                     <div class="col-12 col-md-5 mt-5">
-                        <h2>Card Payment</h2>
-                        <p>Pay with debit/credit card over the phone Call. 
-                            Card payments will show on your bank statement as "OMS".</p>
-                            <div></div>
+                        <div class="d-flex"><span class="number">3</span><h2><?php echo $payment_3_title;?></h2></div>
+                        <?php echo $payment_3; ?>
                     </div>
                     <div class="col-12 col-md-5 mt-5">
-                        <h2>Card Payment</h2>
-                        <p>Pay with debit/credit card over the phone Call. 
-                            Card payments will show on your bank statement as "OMS".</p>
-                            <a><div class="btn">Call us  0800 069 9269</div></a>
+                        <div class="d-flex"><span class="number">4</span><h2><?php echo $payment_4_title;?></h2></div>
+                        <?php echo $payment_4; ?>
+                        <a class="btn alt" href="<?php echo $payment_4_button_link; ?>"><?php echo $payment_4_button; ?></a> 
                     </div>
                 </div>
             </div>
@@ -175,7 +187,7 @@ $button_link = get_field('button_link');
 
                                 // Do something...
                                 ?>
-                                <div class="step col-5 col-md-4 mb-5">
+                                <div class="step col-12 col-md-4 mb-5">
                                     <div class="content">
                                         <?php if ($image && $image_position === 'top') { ?>
                                             <div class="image"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></div>
@@ -183,7 +195,7 @@ $button_link = get_field('button_link');
                                         <div class="mt-4 <?php if($image === false) {echo 'arrow'; } ?>"><?php echo $content; ?></div>
                                         <?php if ($show_button) { ?>
                                             <a href="<?php echo $button_link; ?>"><div class="btn mt-3 
-                                            <?php echo $button_text; ?></div></a>
+                                           <?php echo $button_text; ?>"></div></a>
                                         <?php } ?>
                                         <?php if ($image && $image_position === 'bottom') { ?>
                                             <div class="image"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></div>
@@ -204,9 +216,24 @@ $button_link = get_field('button_link');
                     </div>
                 </div>
             </div>
-</section>
+        </section>
 
+        <section id="video-section">
+            <div class="container py-5">
+                <h2 class="text-center">Coinbase Tutorial</h2>
+                <iframe src="//player.vimeo.com/video/723623250?h=13b40ef54a&autoplay=0&title=0&portrait=0&byline=0&badge=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
 
+        <section id="content my-5">
+            <div class="container">
+                <div class="row text-center mt-5 py-5">
+                <h2>Get Stuck</h2>
+                <p>If you ever got stuck with creating your print, just send me a message and we will be there to help.</p>
+                <a href="<?php echo home_url(); ?>/contact"><div class="btn mt-3">Get in Touch</div></a>
+                </div>
+            </div>
+        </section>
 
         <?php 
         
@@ -214,6 +241,8 @@ $button_link = get_field('button_link');
         ?>
         </div>
     </section>
+
+   
 
 </div>
 <?php get_footer();?>

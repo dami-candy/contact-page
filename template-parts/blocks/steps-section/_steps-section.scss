@@ -23,7 +23,9 @@
     }
     .arrow {
         p {
-            max-width: 90%;
+            @media screen and (min-width: 768px) {
+                max-width: 90%;
+            }
         }
     }
     .step:nth-child(odd)  .image {
@@ -46,26 +48,59 @@
             border-radius: 50%;
         }
     }
-    .step:nth-child(odd)  {
+    @media screen and (max-width: 767px) {
+    .step:last-child {
         &:after {
-            font-family: "FontAwesome";
-            content: "\f061";
-            font-weight: normal;
-            color: var(--white);
-            font-size: 12px;
-            position: absolute;
-            right: -40px;
-            top: 65px;
-            background: var(--blue);
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            border-radius: 50%;
+            display: none;
+        }
+    }
+    .step {
+        &:after {
+                font-family: "FontAwesome";
+                content: "\f061";
+                font-weight: normal;
+                color: var(--white);
+                font-size: 12px;
+                position: absolute;
+                background: var(--blue);
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                border-radius: 45%;
+                transform: rotate(90deg);
+                right: 45%;
+                top: 105%;
             }
         }
+    }
+
+
+    .step:nth-child(odd)  {
+        &:after {
+            @media screen and (min-width: 768px) {
+                font-family: "FontAwesome";
+                content: "\f061";
+                font-weight: normal;
+                color: var(--white);
+                font-size: 12px;
+                position: absolute;
+                background: var(--blue);
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                border-radius: 50%;
+                transform: rotate(0deg);
+                right: -45px;
+                top: 45%;
+            }
+        }
+    }
     @media screen and (min-width: 768px) {
         .step:nth-child(3n + 1)  .image {
             &:after {
