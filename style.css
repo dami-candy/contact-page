@@ -235,9 +235,6 @@ img {
   flex-direction: column;
 }
 
-.woocommerce-account h1 {
-  display: none;
-}
 .woocommerce-account .woocommerce h2 {
   text-align: center;
   padding: 100px 0;
@@ -254,20 +251,6 @@ img {
   border-radius: 9px;
   border-color: #99A2A5;
   border: 1px solid #99A2A5;
-}
-
-.woocommerce-page .button {
-  background: var(--blue);
-  color: var(--white);
-  border: 3px solid #86b2ed !important;
-  padding: 10px 25px !important;
-  border-radius: 30px !important;
-  font-weight: 700 !important;
-  transition: 0.6s !important;
-}
-.woocommerce-page .button:hover {
-  transform: scale(1.02);
-  color: var(--white);
 }
 
 .woocommerce-cart-form .product-thumbnail img {
@@ -347,16 +330,6 @@ img {
   background-color: #ffffff;
 }
 
-.woocommerce-account h1 {
-  display: block !important;
-  text-align: center;
-  margin-top: 30px;
-  text-transform: capitalize;
-}
-.woocommerce-account h1:before {
-  display: none;
-}
-
 .single-product h1:before {
   display: none;
 }
@@ -375,12 +348,6 @@ img {
   font-size: 10px;
   top: 18px;
   margin-left: 10px;
-}
-
-.woocommerce-Button {
-  background: var(--white) !important;
-  border: 2px solid var(--blue) !important;
-  color: var(--blue) !important;
 }
 
 .woocommerce .quantity .qty {
@@ -511,6 +478,44 @@ hr {
 }
 .woocommerce .payment-methods:nth-child(2) {
   display: none !important;
+}
+.woocommerce .lost_password a {
+  font-size: 14px;
+}
+.woocommerce .login .form-row {
+  place-self: center;
+}
+.woocommerce .form-row .woocommerce-form__label {
+  display: none !important;
+}
+.woocommerce .woocommerce-message {
+  border-top-color: var(--blue);
+}
+.woocommerce .woocommerce-message::before {
+  color: var(--blue);
+}
+.woocommerce .order-details h3 {
+  font-family: "Poppins-Bold", cursive;
+}
+.woocommerce .order-details p {
+  font-size: 24px;
+}
+.woocommerce .woocommerce-order-overview {
+  margin: 100px 0 !important;
+  padding: 0 !important;
+}
+.woocommerce .woocommerce-order-overview strong {
+  font-size: 24px !important;
+}
+.woocommerce .woocommerce-order-overview li {
+  font-size: 16px !important;
+}
+.woocommerce .woocommerce-notice--success {
+  font-size: 18px;
+}
+
+.page-id-15 h1 {
+  text-align: center;
 }
 
 #header {
@@ -843,9 +848,12 @@ div {
 }
 
 h1 {
-  font-size: 36px;
   width: 100%;
   margin: 30px 0;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -854,6 +862,9 @@ h1 {
   }
 }
 
+h1:not(.home h1) {
+  font-size: 36px;
+}
 h1:not(.home h1):before {
   background-color: var(--blue);
   padding: 0 4px;
@@ -1221,6 +1232,21 @@ h1:not(.home h1):before {
   font-size: 24px;
 }
 #payment-page a {
+  color: var(--white);
+}
+
+.woocommerce button, .button {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+  border: 3px solid #86b2ed !important;
+  padding: 10px 25px !important;
+  border-radius: 30px !important;
+  font-weight: 700 !important;
+  transition: 0.6s !important;
+  font-family: "Poppins-SemiBold", cursive;
+}
+.woocommerce button:hover, .button:hover {
+  transform: scale(1.02);
   color: var(--white);
 }
 

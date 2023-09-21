@@ -239,9 +239,7 @@ img {
 }
 
 .woocommerce-account {
-  h1 {
-    display: none;
-  }
+  
   .woocommerce h2 {
     text-align: center;
     padding: 100px 0;
@@ -258,22 +256,6 @@ img {
       border-radius: 9px;
       border-color: #99A2A5;
       border: 1px solid #99A2A5;
-    }
-  }
-}
-
-.woocommerce-page {
-  .button {
-    background: var(--blue);
-    color: var(--white);
-    border: 3px solid #86b2ed !important;
-    padding: 10px 25px !important;
-    border-radius: 30px !important;
-    font-weight: 700 !important;
-    transition: 0.6s!important;
-    &:hover {
-      transform: scale(1.02);
-      color: var(--white);
     }
   }
 }
@@ -360,18 +342,6 @@ img {
   background-color: #ffffff;
 }
 
-.woocommerce-account {
-  h1 {
-    display: block !important;
-    text-align: center;
-    margin-top: 30px;
-    text-transform: capitalize;
-    &:before {
-      display: none;
-    }
-  }
-}
-
 .single-product h1 {
   &:before {
     display: none;
@@ -392,12 +362,6 @@ img {
     top: 18px;
     margin-left: 10px;
   }
-}
-
-.woocommerce-Button {
-  background: var(--white) !important;
-  border: 2px solid var(--blue) !important;
-  color: var(--blue) !important;
 }
 
 .woocommerce .quantity .qty {
@@ -526,4 +490,47 @@ hr {
   .payment-methods:nth-child(2) {
     display: none !important;
   }
+  .lost_password a {
+    font-size: 14px;
+  }
+  .login .form-row {
+    place-self: center;
+  }
+  .form-row .woocommerce-form__label {
+    display: none !important;
+  }
+  .woocommerce-message {
+    border-top-color: var(--blue);
+  }
+  .woocommerce-message::before {
+    color: var(--blue);
+  }
+  .order-details {
+    h3 {
+      font-family: "Poppins-Bold", cursive;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+  .woocommerce-order-overview {
+    margin: 100px 0 !important;
+    padding: 0 !important;
+    strong {
+    font-size: 24px !important;
+    }
+    li {
+      font-size: 16px !important;
+    }
+  }
+  .woocommerce-notice--success {
+    font-size: 18px;
+  }
+}
+
+.page-id-15 {
+  h1 {
+    text-align: center;
+  }
+
 }
