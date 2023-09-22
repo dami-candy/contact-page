@@ -1,12 +1,13 @@
 #steps-section {
     padding: 60px 0;
+    
     .step {
         position: relative;
         .content {
             p {
                 font-size: 14px;
                 @media screen and (min-width: 768px) {
-                    font-size: 16pxt;
+                    font-size: 16px;
                 }
             }
             h2, p {
@@ -15,6 +16,13 @@
                     text-align: left;
                 }
 
+            }
+        }
+        .page-template-magic-journey & {
+            &:after {
+                @media screen and (min-width: 768px) {
+                    display: none !important;
+                }
             }
         }
     }
@@ -36,23 +44,25 @@
         }
     }
     .step:nth-child(odd)  .image {
-        &:after {
-            font-family: "FontAwesome";
-            content: "\f061";
-            font-weight: normal;
-            color: var(--white);
-            font-size: 12px;
-            position: absolute;
-            right: -45px;
-            top: 45%;
-            background: var(--blue);
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            border-radius: 50%;
+        @media screen and (min-width: 768px) {
+            &:after {
+                font-family: "FontAwesome";
+                content: "\f061";
+                font-weight: normal;
+                color: var(--white);
+                font-size: 12px;
+                position: absolute;
+                right: -45px;
+                top: 45%;
+                background: var(--blue);
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                border-radius: 50%;
+            }
         }
     }
     @media screen and (max-width: 767px) {
@@ -63,6 +73,9 @@
     }
     .step {
         &:after {
+            @media screen and (max-width: 767px) {
+                top: 100%;
+            }
                 font-family: "FontAwesome";
                 content: "\f061";
                 font-weight: normal;
@@ -83,6 +96,8 @@
             }
         }
     }
+
+    
 
 
     .step:nth-child(odd)  {
@@ -207,6 +222,11 @@
             &::after {
                 display: none;
             }
+        }
+    }
+    .step:nth-child(3n + 3) .image  {
+        &:after {
+            display: none !important;
         }
     }
     

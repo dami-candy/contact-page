@@ -31,7 +31,7 @@ $image_position = get_field('image_position');
 
                         // Do something...
                         ?>
-                        <div class="step col-5 col-md-4 mb-5">
+                        <div class="step col-12 col-md-4 mb-5">
                             <div class="content">
                                 <?php if ($image && $image_position === 'top') { ?>
                                     <div class="image"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></div>

@@ -7,12 +7,25 @@
         }
     }
     .inner-container {
-        padding: 50px 25px;
+        padding: 20px;
         -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
+        border-radius: 10px;
         background: white;
         position: relative;
-        bottom: 60px;
+        bottom: 30px;
+        @media screen and (min-width: 768px) {
+            padding: 50px 25px;
+            bottom: 60px;
+            border-radius: 20px;
+        }
+        h2 {
+            margin-bottom: 0;
+            font-size: 20px;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 30px;
+                font-size: 32px;
+            }
+        }
     }
     h2 {
         margin-bottom: 30px;
@@ -23,11 +36,12 @@
     }
     img {
         object-fit: contain;
-        min-height: 350px;
-        min-height: 350px;
         width: 100vw;
+        @media screen and (min-width: 768px) {
+            min-height: 350px;
+        }
     }
     @media screen and (min-width: 768px) {
-        padding-bottom: 100px;
+        padding-bottom: 30px;
     }
 }

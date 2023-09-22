@@ -664,3 +664,12 @@ textarea {
     display: none !important;
   }
 }
+
+.write-question-review-button-text {
+  color: var(--white) !important;
+}
+.yotpo-default-button:hover {
+  span {
+    color: var(--black) !important;
+  }
+}
