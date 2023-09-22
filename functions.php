@@ -311,6 +311,18 @@
             )
         );
 
+         // Video Section
+         acf_register_block_type(
+            array(
+            'name'              => 'video-section',
+            'title'             => __('Video Section'),
+            'description'       => __('Call to action block.'),
+            'render_template'   => 'template-parts/blocks/video-section/video-section.php',
+            'icon'              => 'media-default',
+            'keywords'          => array( 'testimonial', 'quote' ),
+            )
+        );
+
     }
 
     if (function_exists('acf_register_block_type')) {

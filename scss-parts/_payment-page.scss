@@ -14,8 +14,10 @@
         color: var(--white);
     }
     .logos {
-        max-width: 50%;
         margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            max-width: 50%;
+        }
         img {
             object-fit: contain;
             padding: 0 10px;
@@ -54,5 +56,8 @@
     @media screen and (min-width: 768px) {
         min-height: 700px;
     }
+   }
+   .payment p {
+    line-height: 24px;
    }
 }

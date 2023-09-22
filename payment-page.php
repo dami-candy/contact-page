@@ -62,21 +62,21 @@ $payment_4_button_link = get_field('payment_4_button_link');
         <div class="container"><h1><?php the_title(); ?></h1>
             <div class="row">
                 <div class="payment d-flex flex-wrap justify-content-between">
-                    <div class="col-12 col-md-5">
-                        <div class="d-flex"><span class="number">1</span><h2><?php echo $payment_1_title;?></h2></div>
+                    <div class="col-12 col-md-5 mb-5">
+                        <div class="d-flex"><span class="number">1</span><h2 class="mb-4"><?php echo $payment_1_title;?></h2></div>
                         <?php echo $payment_1; ?>
                         <a class="btn" href="<?php echo $payment_1_button_link; ?>"><?php echo $payment_1_button; ?></a> 
                     </div>
-                    <div class="col-12 col-md-5">
-                        <div class="d-flex"><span class="number">2</span><h2><?php echo $payment_2_title;?></h2></div>
+                    <div class="col-12 col-md-5 mb-5">
+                        <div class="d-flex"><span class="number">2</span><h2 class="mb-4"><?php echo $payment_2_title;?></h2></div>
                         <?php echo $payment_2; ?>
                     </div>
-                    <div class="col-12 col-md-5 mt-5">
-                        <div class="d-flex"><span class="number">3</span><h2><?php echo $payment_3_title;?></h2></div>
+                    <div class="col-12 col-md-5 mb-5">
+                        <div class="d-flex"><span class="number">3</span><h2 class="mb-4"><?php echo $payment_3_title;?></h2></div>
                         <?php echo $payment_3; ?>
                     </div>
-                    <div class="col-12 col-md-5 mt-5">
-                        <div class="d-flex"><span class="number">4</span><h2><?php echo $payment_4_title;?></h2></div>
+                    <div class="col-12 col-md-5 mb-5">
+                        <div class="d-flex"><span class="number">4</span><h2 class="mb-4"><?php echo $payment_4_title;?></h2></div>
                         <?php echo $payment_4; ?>
                         <a class="btn alt" href="<?php echo $payment_4_button_link; ?>"><?php echo $payment_4_button; ?></a> 
                     </div>
@@ -127,7 +127,7 @@ $payment_4_button_link = get_field('payment_4_button_link');
                     <h2 class="my-3">Western Union Money Transfer</h2>
                     <p>Now accepting Western Union Money Transfer. <br>
                         Please always send to the bank details found in the order confirmation Payment link. </p>
-                        <div class="logos col-12 d-flex flex-wrap my-4">
+                        <div class="logos col-12 d-flex flex-wrap my-5">
                             <div class="col-3"><img src="<?php echo $logo_icon_1['url']; ?>" alt="<?php echo $logo_icon_1['alt']; ?>"></div>
                             <div class="col-3"><img src="<?php echo $logo_icon_2['url']; ?>" alt="<?php echo $logo_icon_2['alt']; ?>"></div>
                             <div class="col-3"><img src="<?php echo $logo_icon_3['url']; ?>" alt="<?php echo $logo_icon_3['alt']; ?>"></div>
