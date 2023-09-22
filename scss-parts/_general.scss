@@ -596,10 +596,46 @@ hr {
   .acceptance {
     font-size: 14px;
   }
+  .woof_redraw_zone {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 25px;
+    background: white;
+    z-index: 20;
+  }
+  .filter {
+    width: 100%;
+    text-align: end;
+  }
 }
 
 .page-id-15 {
   h1 {
     text-align: center;
+  }
+}
+
+.filter-toggle {
+  text-align: end;
+  padding: 20px 0;
+  p {
+    display: inline;
+    padding-right: 10px;
+  }
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f078';
+    float: right;
+    color: var(--blue);
+    font-size: 14px;
+  }
+  &.active {
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+  @media screen and (min-width:768px) {
+    display: none !important;
   }
 }

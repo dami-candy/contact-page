@@ -127,4 +127,8 @@ jQuery(document).ready(function ($) {
     $(".returns .title").toggleClass('active');
   });
 
+  $(".filter-toggle").click(function() {
+    $(".filter").toggleClass('d-none');
+    $(".filter-toggle").toggleClass('active');
+  });
 })

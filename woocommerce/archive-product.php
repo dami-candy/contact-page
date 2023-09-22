@@ -31,7 +31,8 @@ do_action( 'woocommerce_before_main_content' );
 ?>
 <div class="container d-flex flex-wrap justify-content-between flex-column flex-md-row">
     <h1>Magic Shop</h1>
-    <div class="col-12 col-md-3"><?php echo do_shortcode('[woof]'); ?></div>
+    <div class="filter-toggle d-md-none"><p>Filter</p></div>
+    <div class="col-12 col-md-3 filter d-md-block d-none active"><?php echo do_shortcode('[woof]'); ?></div>
     <div class="col-12 col-md-8">
     <?php
     if ( woocommerce_product_loop() ) {

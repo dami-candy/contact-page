@@ -34,17 +34,20 @@
   }
   
   .acc-container label:before {
-    font-family: 'FontAwesome';
-    content: '\f067';
+    font-family: "FontAwesome";
+    content: "\f067";
     font-weight: normal;
     float: right;
     background-color: var(--blue);
     color: var(--white);
-    padding: 3px 7px;
     border-radius: 50%;
     font-size: 12px;
     position: relative;
-    top: 7px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    place-content: center;
+    align-items: center;
   }
   
   .acc-container input:checked+label {
