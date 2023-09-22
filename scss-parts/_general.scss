@@ -356,11 +356,15 @@ img {
     font-weight: normal;
     background-color: var(--blue);
     color: var(--white);
-    padding: 2px 5px;
     border-radius: 50%;
     font-size: 10px;
-    top: 18px;
+    top: 15px;
     margin-left: 10px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
   }
 }
 
@@ -482,13 +486,18 @@ hr {
 .woocommerce {
   .payment-methods {
     text-align: center;
-    color: red;
-    &:nth-child(2) {
-      display: none !important;
+    h2 {
+      color: var(--blue);
+      font-size: 24px;
     }
-  }
-  .payment-methods:nth-child(2) {
-    display: none !important;
+    p {
+      margin-bottom: 6px;
+    }
+    .methods {
+      max-width: 170px;
+      text-align: left;
+      margin: 0 auto
+    }
   }
   .lost_password a {
     font-size: 14px;
@@ -506,7 +515,7 @@ hr {
     color: var(--blue);
   }
   .order-details {
-    h3 {
+    h3, span {
       font-family: "Poppins-Bold", cursive;
     }
     p {
@@ -557,6 +566,9 @@ hr {
     border-color: #99A2A5;
     border: 1px solid #99A2A5;
   }
+}
+#place_order {
+  float: none !important;
 }
 
 .wp-block-contact-form-7-contact-form-selector form {
@@ -614,6 +626,19 @@ hr {
   h1 {
     text-align: center;
   }
+}
+
+.wpcf7-form input  {
+  border: 1px solid #99A2A5;
+  border-radius: 9px;
+  padding: 8px;
+  margin-top: 5px;
+}
+textarea {
+  border: 1px solid #99A2A5;
+  border-radius: 9px;
+  padding: 8px;
+  margin-top: 5px;
 }
 
 .filter-toggle {

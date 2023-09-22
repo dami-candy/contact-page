@@ -110,6 +110,6 @@ defined( 'ABSPATH' ) || exit;
   
 	</tfoot>
 </table>
-<?php wc_get_template( 'checkout/payment-methods.php' ); ?>
+
 
 

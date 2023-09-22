@@ -71,13 +71,13 @@
     }
     .submit {
       p {
-        width: 60%;
-        display: flex;
         flex-direction: column;
         margin: 0 auto;
+        max-width: 250px;
       }
       @media screen and (min-width: 768px) {
         p {
+          display: flex;
           width: 100%;
           margin-bottom: 20px;
         }

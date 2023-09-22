@@ -84,6 +84,12 @@ jQuery(document).ready(function ($) {
   
 
   $(".woof_reset_button_2").insertAfter(".woof_container_inner_productcategories h4");
+
+  // Create a new h2 element
+  var paymentMethods = $('<div class="payment-methods p-3"><h2 class="mb-4">Payment Methods</h2><div class="methods"><p>1.Pay over the phone</p><p>2.Crypto</p><p>3.Send cash</p></div></div>');
+
+  // Insert the new h2 element before the .woocommerce-terms-and-conditions-wrapper
+  paymentMethods.insertBefore('#payment');
   
     
     
@@ -131,4 +137,10 @@ jQuery(document).ready(function ($) {
     $(".filter").toggleClass('d-none');
     $(".filter-toggle").toggleClass('active');
   });
+
+
+  var $termsWrapper = $('.woocommerce-terms-and-conditions-wrapper');
+  var $h2Element = $('<h2>Your Heading Text</h2>'); // Replace 'Your Heading Text' with your desired heading text
+  
+  $termsWrapper.before($h2Element);
 })

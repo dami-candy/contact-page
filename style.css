@@ -343,11 +343,15 @@ img {
   font-weight: normal;
   background-color: var(--blue);
   color: var(--white);
-  padding: 2px 5px;
   border-radius: 50%;
   font-size: 10px;
-  top: 18px;
+  top: 15px;
   margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
 .woocommerce .quantity .qty {
@@ -471,13 +475,18 @@ hr {
 
 .woocommerce .payment-methods {
   text-align: center;
-  color: red;
 }
-.woocommerce .payment-methods:nth-child(2) {
-  display: none !important;
+.woocommerce .payment-methods h2 {
+  color: var(--blue);
+  font-size: 24px;
 }
-.woocommerce .payment-methods:nth-child(2) {
-  display: none !important;
+.woocommerce .payment-methods p {
+  margin-bottom: 6px;
+}
+.woocommerce .payment-methods .methods {
+  max-width: 170px;
+  text-align: left;
+  margin: 0 auto;
 }
 .woocommerce .lost_password a {
   font-size: 14px;
@@ -494,7 +503,7 @@ hr {
 .woocommerce .woocommerce-message::before {
   color: var(--blue);
 }
-.woocommerce .order-details h3 {
+.woocommerce .order-details h3, .woocommerce .order-details span {
   font-family: "Poppins-Bold", cursive;
 }
 .woocommerce .order-details p {
@@ -542,6 +551,10 @@ hr {
   border-radius: 9px;
   border-color: #99A2A5;
   border: 1px solid #99A2A5;
+}
+
+#place_order {
+  float: none !important;
 }
 
 .wp-block-contact-form-7-contact-form-selector form label {
@@ -595,6 +608,20 @@ hr {
 
 .page-id-15 h1 {
   text-align: center;
+}
+
+.wpcf7-form input {
+  border: 1px solid #99A2A5;
+  border-radius: 9px;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+textarea {
+  border: 1px solid #99A2A5;
+  border-radius: 9px;
+  padding: 8px;
+  margin-top: 5px;
 }
 
 .filter-toggle {
@@ -890,16 +917,16 @@ hr {
   width: 100%;
 }
 #footer .newsletter .submit p {
-  width: 60%;
-  display: flex;
   flex-direction: column;
   margin: 0 auto;
+  max-width: 250px;
 }
 @media screen and (min-width: 768px) {
   #footer .newsletter .submit {
     width: 28%;
   }
   #footer .newsletter .submit p {
+    display: flex;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -1245,6 +1272,10 @@ h1:not(.home h1):before {
 .page-template-contact .acceptance {
   display: flex;
   font-size: 13px;
+  align-items: center;
+}
+.page-template-contact .row {
+  display: flex;
   align-items: center;
 }
 
@@ -1635,12 +1666,16 @@ h1:not(.home h1):before {
   float: right;
   background-color: var(--blue);
   color: var(--white);
-  padding: 2px 5px;
   border-radius: 50%;
   font-size: 10px;
   position: relative;
-  top: 3px;
   margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  bottom: 3px;
 }
 #blogs .page-numbers {
   padding: 0 8px;
@@ -1819,7 +1854,9 @@ h1:not(.home h1):before {
 }
 @media screen and (min-width: 768px) {
   #best-products .btn {
-    padding: 5px 20px;
+    display: flex;
+    place-content: center;
+    max-width: 150px;
     font-size: inherit;
   }
 }
@@ -2103,7 +2140,7 @@ h1:not(.home h1):before {
     align-items: center;
     align-content: center;
     justify-content: center;
-    border-radius: 45%;
+    border-radius: 50%;
     transform: rotate(90deg);
     right: 45%;
     top: 105%;

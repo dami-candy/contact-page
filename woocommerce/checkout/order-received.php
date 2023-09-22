@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
     <h2 class="mb-5">Order Number #<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h2>
 
     <h3 class="mb-4">Thank you</h3>
-    <p><strong>To pay for over the phone, please call <span style="color: #0D66DB">0800 069 9269</span></strong></p>
+    <p><strong>To pay for over the phone, please call <a href="tel:0800 069 9269"><strong style="color: #0D66DB">0800 069 9269</span></a></strong></p>
     </br>
     <p class="mb-5"><strong><span>Alternatively,</span></strong> if you are paying by <strong>crypto</strong> or sending <strong>cash</strong>, our payment details can be found in your order confirmation email by way of a off site link or please call us and a SporeBuddy will guide you through the payment process.</p>
 </div>
