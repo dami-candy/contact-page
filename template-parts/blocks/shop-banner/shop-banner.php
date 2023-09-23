@@ -22,7 +22,7 @@ $background = get_field('background');
             <div class="text col-md-6 p-md-5">
                 <?php echo $content; ?>
                 <?php if ($show_button) { ?>
-                    <a href="<?php echo $button_link; ?>"><div class="btn my-3"><?php echo $button_text; ?></div></a>
+                    <a href="<?php echo home_url(); ?>/"<?php echo $button_link; ?>"><div class="btn my-3"><?php echo $button_text; ?></div></a>
                 <?php } ?>
             </div>
             <div class="col-md-6 text-center">

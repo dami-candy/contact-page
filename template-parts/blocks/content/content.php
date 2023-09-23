@@ -19,7 +19,7 @@ $image_url = get_field('image_url');
             <div style="text-align:<?php echo $alignment; ?>">
                 <?php echo $content; ?>
                 <?php if ($show_button) { ?>
-                    <a href="<?php echo $button_link; ?>"><div class="btn mt-3"><?php echo $button_text; ?></div></a>
+                    <a href="<?php echo home_url(); ?>/<?php echo $button_link; ?>"><div class="btn mt-3"><?php echo $button_text; ?></div></a>
                 <?php } ?>
                 <?php if ($image) { ?>
                     <img src="<?php echo $image['url']; ?>"  alt="<?php echo $image['alt']; ?>">

@@ -10,7 +10,7 @@ $content = get_field('content');
         <div class="col-12 col-md-3 title">
             <p>Most Popular</p>
             <h2>Our <span>Bestselling</span> products</h2>
-            <a class="btn mt-4">Shop All</a>
+            <a href="<?php echo home_url(); ?>/magic-shop" class="btn mt-4">Shop All</a>
         </div>
         <div class="col-12 col-md-8">
         <div class="d-flex text-color text-center justify-content-end">

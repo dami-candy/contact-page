@@ -38,20 +38,21 @@ $product_title = get_field('product_title');
                                         </span>
                                     </div>
                                     <div class="col-12 col-md-4 d-none d-md-block text-end">
-                                        <a class="btn">Shop Now</a>
+                                    <?php if($show_button) { ?>
+                                        <a href="<?php echo home_url(); ?>/<?php echo $button_link; ?>"><div style="background: <?php echo $button_colour; ?>; border: 3px solid <?php echo $button_border; ?>" class="btn mt-3"><?php echo $button_text; ?></div></a>
+                                    <?php } ?>
                                     </div>
                                     <div class="col-12 col-md-10 mt-3 info">
                                         <?php echo $content; ?>
                                     </div>
                                     <div class="col-12 col-md-4 d-block d-md-none">
-                                        <a class="btn">Shop Now</a>
+                                        <?php if($show_button) { ?>
+                                            <a href="<?php echo home_url(); ?>/<?php echo $button_link; ?>"><div style="background: <?php echo $button_colour; ?>; border: 3px solid <?php echo $button_border; ?>" class="btn mt-3"><?php echo $button_text; ?></div></a>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
                             <img class="slide-img" src="<?php echo ( $image['url'] ); ?>">
-                            <?php if($show_button) { ?>
-                                <a href="<?php echo $button_link; ?>"><div style="background: <?php echo $button_colour; ?>; border: 3px solid <?php echo $button_border; ?>" class="btn mt-3"><?php echo $button_text; ?></div></a>
-                            <?php } ?>
                         </div>
                     </div>
                 <?php 

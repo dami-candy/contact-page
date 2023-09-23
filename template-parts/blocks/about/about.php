@@ -63,7 +63,7 @@ $usp_text_3 = get_field('usp_text_3');
                     SporeBuddies.com has been set up to collect, stock and resell the Worlds Largest Selection of Magic Mushroom Spores, magic mushroom spore syringes, magic mushroom prints and vials at the lowest prices. We aim to bring you spore syringes, spore prints and spore vials from as many labs and producers as we can.
                     Some samples will be from small scale Mycologists. Some samples will be from the larger commercial mushroom producers.
                     </p>
-                    <a class="btn">Read More</a>
+                    <a href="<?php echo home_url(); ?>/about" class="btn">Read More</a>
                 </div>
             </div>
         </div>

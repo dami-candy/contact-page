@@ -100,6 +100,8 @@ if ( $show_downloads ) {
 	<?php do_action( 'woocommerce_order_details_after_order_table', $order ); ?>
 
 	<p class="ms-4 mt-5">Please note: Your order will not be proceeded until we receive a payment.</p>
+	
+	<div><a href="<?php echo home_url(); ?>/"class="btn">Done</a></div>
 
 </section>
 
