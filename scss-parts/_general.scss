@@ -242,14 +242,20 @@ img {
   
   .woocommerce h2 {
     text-align: center;
-    padding: 100px 0;
+    padding: 20px 0;
+
+    @media screen and (min-width: 768px) {
+      padding: 100px 0;
+    }
   }
   form {
     border: none !important;
   }
   .woocommerce-form {
-    width: 70%;
     margin: 0 auto !important;
+    @media screen and (min-width: 768px) {
+      width: 70%;
+    }
 
     input {
       padding: 10px;

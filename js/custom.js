@@ -90,6 +90,19 @@ jQuery(document).ready(function ($) {
 
   // Insert the new h2 element before the .woocommerce-terms-and-conditions-wrapper
   paymentMethods.insertBefore('#payment');
+
+
+
+
+
+  // buy now button
+  var buyNowButton = $('.single_add_to_cart_button');
+    
+    // Find the .d-flex.flex div
+    var flexDiv = $('.d-flex.flex');
+    
+    // Move the buyNowButton inside the flexDiv
+    flexDiv.append(buyNowButton);
   
     
     

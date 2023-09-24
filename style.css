@@ -237,14 +237,23 @@ img {
 
 .woocommerce-account .woocommerce h2 {
   text-align: center;
-  padding: 100px 0;
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .woocommerce-account .woocommerce h2 {
+    padding: 100px 0;
+  }
 }
 .woocommerce-account form {
   border: none !important;
 }
 .woocommerce-account .woocommerce-form {
-  width: 70%;
   margin: 0 auto !important;
+}
+@media screen and (min-width: 768px) {
+  .woocommerce-account .woocommerce-form {
+    width: 70%;
+  }
 }
 .woocommerce-account .woocommerce-form input {
   padding: 10px;
