@@ -6,7 +6,10 @@
     }
     .half-section {
         background-color: #F9F9F9;
-        padding: 100px 0;
+        padding: 20px 0;
+        @media screen and (min-width: 768px) {
+            padding: 100px 0;
+        }
     }
     .logo-section {
         padding: 80px 0;
@@ -51,7 +54,7 @@
     font-family: "Poppins-SemiBold", cursive;
    }
    iframe {
-        min-height: 400px;
+        min-height: 250px;
         width: 100%;
     @media screen and (min-width: 768px) {
         min-height: 700px;

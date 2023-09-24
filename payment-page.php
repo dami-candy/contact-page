@@ -219,7 +219,7 @@ $payment_4_button_link = get_field('payment_4_button_link');
         </section>
 
         <section id="video-section">
-            <div class="container py-5">
+            <div class="container py-md-5">
                 <h2 class="text-center">Coinbase Tutorial</h2>
                 <iframe src="//player.vimeo.com/video/723623250?h=13b40ef54a&autoplay=0&title=0&portrait=0&byline=0&badge=0" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -227,7 +227,7 @@ $payment_4_button_link = get_field('payment_4_button_link');
 
         <section id="content my-5">
             <div class="container">
-                <div class="row text-center mt-5 py-5">
+                <div class="row text-center mt-md-5 py-md-5">
                 <h2>Get Stuck</h2>
                 <p>If you ever got stuck with creating your print, just send me a message and we will be there to help.</p>
                 <a href="<?php echo home_url(); ?>/contact"><div class="btn mt-3">Get in Touch</div></a>

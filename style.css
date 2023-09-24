@@ -405,10 +405,15 @@ select {
 
 hr {
   max-width: 50px;
-  margin: 100px auto;
   height: 12px !important;
   color: var(--blue);
   opacity: 1;
+  margin: 50px auto;
+}
+@media screen and (min-width: 768px) {
+  hr {
+    margin: 100px auto;
+  }
 }
 
 .related.products h2:first-child {
@@ -507,14 +512,24 @@ hr {
   font-family: "Poppins-Bold", cursive;
 }
 .woocommerce .order-details p {
-  font-size: 24px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .woocommerce .order-details p {
+    font-size: 24px;
+  }
 }
 .woocommerce .woocommerce-order-overview {
   margin: 100px 0 !important;
   padding: 0 !important;
 }
 .woocommerce .woocommerce-order-overview strong {
-  font-size: 24px !important;
+  font-size: 18px !important;
+}
+@media screen and (min-width: 768px) {
+  .woocommerce .woocommerce-order-overview strong {
+    font-size: 24px !important;
+  }
 }
 .woocommerce .woocommerce-order-overview li {
   font-size: 16px !important;
@@ -617,6 +632,10 @@ hr {
   margin-top: 5px;
 }
 
+.wpcf7-text {
+  width: 100%;
+}
+
 textarea {
   border: 1px solid #99A2A5;
   border-radius: 9px;
@@ -654,6 +673,48 @@ textarea {
 
 .yotpo-default-button:hover span {
   color: var(--black) !important;
+}
+
+.woocommerce .woocommerce-customer-details address {
+  border: none;
+}
+
+.woocommerce-table__line-item .woocommerce-table__product-total {
+  width: 30%;
+}
+
+.woocommerce-order-details .woocommerce-table {
+  margin: 0 !important;
+}
+
+.two-column img {
+  margin-bottom: 30px;
+}
+
+.cart_totals .shipping th {
+  display: block !important;
+  width: 100% !important;
+}
+
+.woocommerce-billing-fields .select2-selection {
+  padding: 20px 0;
+  border-radius: 9px !important;
+}
+.woocommerce-billing-fields .select2-selection__rendered {
+  line-height: 20px !important;
+  position: relative;
+  bottom: 9px;
+}
+.woocommerce-billing-fields .select2-selection__arrow {
+  top: 8px !important;
+}
+
+.product-remove .remove {
+  margin: 0 auto;
+}
+
+.coupon {
+  padding-bottom: 0 !important;
 }
 
 #header {
@@ -879,7 +940,12 @@ textarea {
 }
 #footer .newsletter h2 {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  #footer .newsletter h2 {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   #footer .newsletter form {
@@ -1008,20 +1074,26 @@ div {
 h1 {
   width: 100%;
   margin: 30px 0;
-  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  font-size: 32px;
 }
 @media screen and (min-width: 768px) {
   h1 {
+    font-size: 48px;
     line-height: 57px;
     margin: 40px 0;
   }
 }
 
 h1:not(.home h1) {
-  font-size: 36px;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  h1:not(.home h1) {
+    font-size: 36px;
+  }
 }
 h1:not(.home h1):before {
   background-color: var(--blue);
@@ -1292,7 +1364,12 @@ h1:not(.home h1):before {
 }
 
 .page-template-careers .careers {
-  padding-bottom: 100px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .page-template-careers .careers {
+    padding-bottom: 100px;
+  }
 }
 .page-template-careers .career-div {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -1367,7 +1444,12 @@ h1:not(.home h1):before {
 }
 #payment-page .half-section {
   background-color: #F9F9F9;
-  padding: 100px 0;
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  #payment-page .half-section {
+    padding: 100px 0;
+  }
 }
 #payment-page .logo-section {
   padding: 80px 0;
@@ -1415,7 +1497,7 @@ h1:not(.home h1):before {
   font-family: "Poppins-SemiBold", cursive;
 }
 #payment-page iframe {
-  min-height: 400px;
+  min-height: 250px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1451,10 +1533,20 @@ h1:not(.home h1):before {
 #three-column-section .container {
   max-width: unset;
 }
+@media screen and (max-width: 767px) {
+  #three-column-section h2 {
+    font-size: 24px;
+  }
+}
 #three-column-section h3 {
   font-family: "Poppins-Bold", cursive;
-  font-size: 26px;
   padding-bottom: 20px;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  #three-column-section h3 {
+    font-size: 26px;
+  }
 }
 #three-column-section img {
   -o-object-fit: contain;
@@ -2093,13 +2185,23 @@ h1:not(.home h1):before {
 #gallery .slick-dots .slick-active::marker {
   color: var(--black);
 }
+#gallery .container {
+  padding: 0 5px !important;
+}
+@media screen and (min-width: 768px) {
+  #gallery .container {
+    padding: 0 25px !important;
+  }
+}
 
 #image-block {
   padding: 60px 0;
 }
 
-#steps-section {
-  padding: 60px 0;
+@media screen and (min-width: 768px) {
+  #steps-section {
+    padding: 60px 0;
+  }
 }
 #steps-section .step {
   position: relative;

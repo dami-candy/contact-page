@@ -8,10 +8,18 @@
     .container {
         max-width: unset;
     }
+    h2 {
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+        }   
+    }
     h3 {
         font-family: "Poppins-Bold", cursive;
-        font-size: 26px;
         padding-bottom: 20px;
+        font-size: 20px;
+        @media screen and (min-width: 768px) {
+            font-size: 26px;
+        }
     }
     img {
         object-fit: contain;

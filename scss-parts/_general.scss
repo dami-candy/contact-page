@@ -417,10 +417,13 @@ select {
 
 hr {
   max-width: 50px;
-  margin: 100px auto;
   height: 12px !important;
   color: var(--blue);
   opacity: 1;
+  margin: 50px auto;
+  @media screen and (min-width: 768px) {
+    margin: 100px auto;
+  }
 }
 
 .related.products h2:first-child {
@@ -521,14 +524,20 @@ hr {
       font-family: "Poppins-Bold", cursive;
     }
     p {
-      font-size: 24px;
+      font-size: 18px;
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
     }
   }
   .woocommerce-order-overview {
     margin: 100px 0 !important;
     padding: 0 !important;
     strong {
-    font-size: 24px !important;
+      font-size: 18px !important;
+        @media screen and (min-width: 768px) {
+          font-size: 24px !important;
+        }
     }
     li {
       font-size: 16px !important;
@@ -636,6 +645,10 @@ hr {
   padding: 8px;
   margin-top: 5px;
 }
+.wpcf7-text {
+  width: 100%;
+}
+
 textarea {
   border: 1px solid #99A2A5;
   border-radius: 9px;
@@ -674,4 +687,47 @@ textarea {
   span {
     color: var(--black) !important;
   }
+}
+
+.woocommerce .woocommerce-customer-details address {
+  border: none;
+}
+.woocommerce-table__line-item {
+  .woocommerce-table__product-total {
+    width: 30%;
+  }
+}
+.woocommerce-order-details {
+  .woocommerce-table {
+    margin: 0 !important;
+  }
+}
+.two-column img {
+  margin-bottom: 30px;
+}
+.cart_totals .shipping th {
+  display: block !important;
+  width: 100% !important;
+}
+.woocommerce-billing-fields {
+  .select2-selection {
+    padding: 20px 0;
+    border-radius: 9px !important;
+  }
+  .select2-selection__rendered {
+    line-height: 20px !important;
+    position: relative;
+    bottom: 9px;
+  }
+  .select2-selection__arrow {
+    top: 8px !important;
+  }
+}
+.product-remove {
+  .remove {
+    margin: 0 auto;
+  }
+}
+.coupon {
+  padding-bottom: 0 !important;
 }

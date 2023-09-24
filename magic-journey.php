@@ -32,7 +32,7 @@ $two_column_2_image = get_field('two_column_2_image');
         </div>
         <h3 class="text-center my-5">Agaricus campestris (Common Field Mushroom)</h3>
     </div>
-    <div class="row justify-content-between">
+    <div class="row two-column justify-content-between flex-column-reverse flex-column-md-column  ">
         <div class="col-md-6 col-12">
             <?php echo $two_column_1_content; ?>
         </div>
@@ -40,7 +40,7 @@ $two_column_2_image = get_field('two_column_2_image');
             <img src="<?php echo $two_column_1_image['url']; ?>" alt="<?php echo $two_column_1_image['alt']; ?>">
         </div>
     </div>
-    <div class="row justify-content-between flex-row-reverse mt-5">
+    <div class="row two-column justify-content-between flex-row-reverse mt-5">
         <div class="col-md-6 col-12">
             <?php echo $two_column_2_content; ?>
         </div>
