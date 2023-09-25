@@ -4,54 +4,106 @@
  */
 
  $content = get_field('content');
+ $category_type = get_field('category_type');
 ?>
 
 <section id="category-template">
-    <div class="container py-2">
-        <div class="row my-5">
-            <?php 
-                if( have_rows('product_template') ):
+    <?php if ($category_type === '1') { ?>
+        <div class="container py-2">
+            <div class="row my-5">
+                <?php 
+                    if( have_rows('product_template') ):
 
-                    // Loop through rows.
-                    while( have_rows('product_template') ) : the_row();
-        
-                        // Load sub field value.
-                        $product = get_sub_field('product');
+                        // Loop through rows.
+                        while( have_rows('product_template') ) : the_row();
+            
+                            // Load sub field value.
+                            $product = get_sub_field('product');
+                            // Do something...
+                            ?>
+                                <div class="col-6 col-md-4">
+                                    <div><?php $content; ?></div>
+                                    <?php
+                                        $category_id = $product; 
+                                        $category = get_term($category_id, 'product_cat');
+
+                                        // Get the category thumbnail (featured image) ID
+                                        $thumbnail_id = get_term_meta($category_id, 'thumbnail_id', true);
+                                        $category_url = get_term_link($category, 'product_cat');
+
+                                        // Get the image URL
+                                        $thumbnail_url = wp_get_attachment_image_url($thumbnail_id, 'large'); // 'thumbnail' is the image size you want (you can change it to 'medium', 'large', etc.)
+
+                                        echo '<a href="' . esc_url($category_url) . '">';
+                                            echo '<img class="category-image" src="' . esc_url($thumbnail_url) . '" alt="Category Thumbnail">';
+                                            echo '<div class="d-flex justify-content-between">';
+                                                echo '<p class="category-name mt-3">' . esc_html($category->name) . '</p>';
+                                                echo '<img class="arrow" src="' . esc_url(get_template_directory_uri()) . '/images/arrow.png">';
+                                            echo '</div>';
+                                        echo '</a>';
+                                    ?>
+                                </div>
+                            <?php 
+            
+                        // End loop.
+                        endwhile;
+            
+                    // No value.
+                    else :
                         // Do something...
-                        ?>
-                            <div class="col-6 col-md-4">
-                                <div><?php $content; ?></div>
-                                <?php
-                                    $category_id = $product; 
-                                    $category = get_term($category_id, 'product_cat');
-
-                                    // Get the category thumbnail (featured image) ID
-                                    $thumbnail_id = get_term_meta($category_id, 'thumbnail_id', true);
-                                    $category_url = get_term_link($category, 'product_cat');
-
-                                    // Get the image URL
-                                    $thumbnail_url = wp_get_attachment_image_url($thumbnail_id, 'large'); // 'thumbnail' is the image size you want (you can change it to 'medium', 'large', etc.)
-
-                                    echo '<a href="' . esc_url($category_url) . '">';
-                                        echo '<img class="category-image" src="' . esc_url($thumbnail_url) . '" alt="Category Thumbnail">';
-                                        echo '<div class="d-flex justify-content-between">';
-                                            echo '<p class="category-name mt-3">' . esc_html($category->name) . '</p>';
-                                            echo '<img class="arrow" src="' . esc_url(get_template_directory_uri()) . '/images/arrow.png">';
-                                        echo '</div>';
-                                    echo '</a>';
-                                ?>
-                            </div>
-                        <?php 
-        
-                    // End loop.
-                    endwhile;
-        
-                // No value.
-                else :
-                    // Do something...
-                endif;
-            ?>
-            <a href="<?php echo home_url(); ?>/magic-shop" class="text-center"><div class="btn btn-alt mt-5">View All</div></a>
+                    endif;
+                ?>
+                <a href="<?php echo home_url(); ?>/categories" class="text-center"><div class="btn btn-alt mt-5">View All</div></a>
+            </div>
         </div>
-    </div>
+    <?php } ?>
+
+    <?php if ($category_type === '2') { ?>
+        <div class="container py-2 alt">
+            <div class="row my-5">
+                <?php 
+                    if( have_rows('product_template') ):
+
+                        // Loop through rows.
+                        while( have_rows('product_template') ) : the_row();
+            
+                            // Load sub field value.
+                            $product = get_sub_field('product');
+                            // Do something...
+                            ?>
+                                <div class="cat col-6 col-md-4">
+                                    <?php
+                                        $category_id = $product; 
+                                        $category = get_term($category_id, 'product_cat');
+
+                                        // Get the category thumbnail (featured image) ID
+                                        $thumbnail_id = get_term_meta($category_id, 'thumbnail_id', true);
+                                        $category_url = get_term_link($category, 'product_cat');
+
+                                        // Get the image URL
+                                        $thumbnail_url = wp_get_attachment_image_url($thumbnail_id, 'large'); // 'thumbnail' is the image size you want (you can change it to 'medium', 'large', etc.)
+
+                                        echo '<a href="' . esc_url($category_url) . '">';
+                                            echo '<img class="category-image" src="' . esc_url($thumbnail_url) . '" alt="Category Thumbnail">';
+                                            echo '<div class="content d-flex justify-content-between">';
+                                                echo '<p class="category-name mt-3">' . esc_html($category->name) . '</p>';
+                                                echo '<img class="arrow" src="' . esc_url(get_template_directory_uri()) . '/images/arrow-white.png">';
+                                            echo '</div>';
+                                        echo '</a>';
+                                    ?>
+                                </div>
+                            <?php 
+            
+                        // End loop.
+                        endwhile;
+            
+                    // No value.
+                    else :
+                        // Do something...
+                    endif;
+                ?>
+                <div class="col-6 col-md-8 d-flex justify-content-center align-items-center"><a href="<?php echo home_url(); ?>/magic-shop" class="text-center"><div class="cta mb-md-5">All Products</div></a></div>
+            </div>
+        </div>
+    <?php } ?>
 </section>

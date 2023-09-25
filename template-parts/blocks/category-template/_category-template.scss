@@ -28,4 +28,36 @@
     .faq {
         text-decoration: underline;
     }
+
+    .alt {
+        .cat {
+            padding-bottom: 20px;
+            @media screen and (min-width: 768px) {
+                padding-bottom: 40px;
+            }
+        }
+        .category-image {
+            border-radius: 0 !important;
+        }
+        .content {
+            background-color: var(--blue);
+            bottom: 10px;
+            position: relative;
+            border-radius: 0 0 10px 10px;
+            padding: 0 20px;
+            color: var(--white);
+            p {
+                font-family: "Poppins-SemiBold", cursive;
+            }
+        }
+        .cta {
+            font-size: 20px;
+            color: var(--blue);
+            @media screen and (min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+    }
+    
+   
 }

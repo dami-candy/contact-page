@@ -1684,6 +1684,37 @@ h1:not(.home h1):before {
 #category-template .faq {
   text-decoration: underline;
 }
+#category-template .alt .cat {
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  #category-template .alt .cat {
+    padding-bottom: 40px;
+  }
+}
+#category-template .alt .category-image {
+  border-radius: 0 !important;
+}
+#category-template .alt .content {
+  background-color: var(--blue);
+  bottom: 10px;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+  padding: 0 20px;
+  color: var(--white);
+}
+#category-template .alt .content p {
+  font-family: "Poppins-SemiBold", cursive;
+}
+#category-template .alt .cta {
+  font-size: 20px;
+  color: var(--blue);
+}
+@media screen and (min-width: 768px) {
+  #category-template .alt .cta {
+    font-size: 36px;
+  }
+}
 
 #accordion .acc-container {
   width: 100%;
