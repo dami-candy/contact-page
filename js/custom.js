@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
   var buyNowButton = $('.single_add_to_cart_button');
     
     // Find the .d-flex.flex div
-    var flexDiv = $('.d-flex.flex');
+    var flexDiv = $('.payment');
     
     // Move the buyNowButton inside the flexDiv
     flexDiv.append(buyNowButton);

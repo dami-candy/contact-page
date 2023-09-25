@@ -17,6 +17,20 @@ body {
   outline: none;
 }
 
+.orderby, .variations select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  padding: 0;
+  border: none;
+  background-image: url(/wp-content/themes/sporebuddies/images/toggle.png);
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--white);
+}
+
 .overflow {
   overflow: hidden;
 }
@@ -186,7 +200,12 @@ img {
 .woocommerce-breadcrumb {
   max-width: 1200px;
   margin: 0 auto !important;
-  padding: 10px 25px !important;
+  padding: 10px !important;
+}
+@media screen and (min-width: 768px) {
+  .woocommerce-breadcrumb {
+    padding: 10px 25px !important;
+  }
 }
 
 #sidebar {
@@ -226,13 +245,21 @@ img {
 }
 
 .woocommerce .cta-div {
-  padding: 100px 0;
+  padding: 30px 0;
+}
+@media screen and (min-width: 768px) {
+  .woocommerce .cta-div {
+    padding: 100px 0;
+  }
 }
 .woocommerce .related.products {
   padding-top: 100px;
   display: flex;
   width: 100%;
   flex-direction: column;
+}
+.woocommerce .woocommerce-product-details__short-description p {
+  line-height: 32px;
 }
 
 .woocommerce-account .woocommerce h2 {
@@ -570,12 +597,6 @@ hr {
   max-width: 700px;
   margin: 0 auto;
 }
-.woocommerce form input {
-  padding: 10px;
-  border-radius: 9px;
-  border-color: #99A2A5;
-  border: 1px solid #99A2A5;
-}
 
 #place_order {
   float: none !important;
@@ -675,6 +696,11 @@ textarea {
     display: none !important;
   }
 }
+.filter-toggle select {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
 
 .write-question-review-button-text {
   color: var(--white) !important;
@@ -718,12 +744,52 @@ textarea {
   top: 8px !important;
 }
 
+.woocommerce .wc-buy-now-btn {
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  padding: 15px;
+  border: 1px solid rgba(193, 193, 193, 0.7568627451) !important;
+  margin-left: 16px !important;
+}
+.woocommerce .payment {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen {
+  .woocommerce .payment {
+    justify-content: start;
+  }
+}
+.woocommerce .payment button {
+  width: 50%;
+  padding: 16px 20px !important;
+  max-width: 230px;
+}
+
 .product-remove .remove {
   margin: 0 auto;
 }
 
 .coupon {
   padding-bottom: 0 !important;
+}
+
+.woocommerce-notices-wrapper .woocommerce-message {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+
+.woocommerce-message .button {
+  width: 100%;
+  max-width: 190px;
+  margin-top: 10px !important;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .woocommerce-message .button {
+    max-width: 160px;
+  }
 }
 
 #header {
@@ -749,9 +815,15 @@ textarea {
   border: none;
 }
 #header .search form {
-  padding: 8px 15px;
   background: var(--dark-grey);
   border-radius: 12px;
+  padding: 2px 13px;
+}
+@media screen and (min-width: 768px) {
+  #header .search form {
+    max-width: 250px;
+    padding: 8px 15px;
+  }
 }
 #header .search ::-moz-placeholder {
   color: #99a2a5;
@@ -764,6 +836,13 @@ textarea {
 #header .search img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media screen and (min-width: 768px) {
+  #header .search-form img {
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
 }
 #header .container {
   display: flex;
@@ -1518,21 +1597,6 @@ h1:not(.home h1):before {
   line-height: 24px;
 }
 
-.woocommerce button, .button {
-  background-color: var(--blue) !important;
-  color: var(--white) !important;
-  border: 3px solid #86b2ed !important;
-  padding: 10px 25px !important;
-  border-radius: 30px !important;
-  font-weight: 700 !important;
-  transition: 0.6s !important;
-  font-family: "Poppins-SemiBold", cursive;
-}
-.woocommerce button:hover, .button:hover {
-  transform: scale(1.02);
-  color: var(--white);
-}
-
 @media screen and (min-width: 768px) {
   #three-column-section .divider {
     border-left: 1px solid #2C3258;
@@ -1580,6 +1644,9 @@ h1:not(.home h1):before {
   #cta-section .container {
     text-align: left;
   }
+}
+#cta-section a {
+  color: white;
 }
 
 #category-template .category-image {

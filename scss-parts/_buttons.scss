@@ -1,14 +1,14 @@
-.woocommerce button, .button {
-    background-color: var(--blue) !important;
-    color: var(--white) !important;
-    border: 3px solid #86b2ed !important;
-    padding: 10px 25px !important;
-    border-radius: 30px !important;
-    font-weight: 700 !important;
-    transition: 0.6s!important;
-    font-family: "Poppins-SemiBold", cursive;
-    &:hover {
-        transform: scale(1.02);
-        color: var(--white);
-    }
-}
+// .woocommerce button:not(.woo-product-gallery), .button {
+//     background-color: var(--blue) !important;
+//     color: var(--white) !important;
+//     border: 3px solid #86b2ed !important;
+//     padding: 10px 25px !important;
+//     border-radius: 30px !important;
+//     font-weight: 700 !important;
+//     transition: 0.6s!important;
+//     font-family: "Poppins-SemiBold", cursive;
+//     &:hover {
+//         transform: scale(1.02);
+//         color: var(--white);
+//     }
+// }

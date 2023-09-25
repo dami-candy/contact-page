@@ -26,9 +26,14 @@
       border: none;
     }
     form {
-      padding: 8px 15px;
       background: var(--dark-grey);
       border-radius: 12px;
+      padding: 2px 13px;
+      
+      @media screen and (min-width: 768px) {
+        max-width: 250px;
+        padding: 8px 15px;
+      }
     }
     ::placeholder { 
       color: #99a2a5;
@@ -36,6 +41,15 @@
     }
     img {
       object-fit: contain;
+    }
+  }
+  .search-form {
+    @media screen and (min-width: 768px) {
+      img {
+        position: relative;
+        top: 5px;
+        right: 5px;
+      }
     }
   }
 

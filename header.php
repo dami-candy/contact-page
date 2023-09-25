@@ -37,7 +37,7 @@
 
                 <div class="search d-flex align-items-center ms-xl-5"> 
                     <div>
-                        <form role="search" method="get" class="search-form d-none d-md-block" action="<?php echo home_url( '/' ); ?>">
+                        <form role="search" method="get" class="search-form d-none d-md-flex" action="<?php echo home_url( '/' ); ?>">
                             <img class="mr-2" src="<?php bloginfo('template_url'); ?>/images/search.png" alt="Search icon" width="14px" height="14px">
                             <label>
                                 <span class="screen-reader-text">Search for:</span>
@@ -63,7 +63,7 @@
             <div class="w-100 d-none d-md-block mt-3 header-div">
                 <div class="container mob-account-details justify-content-between my-2 d-none">
                     <div class="search">
-                        <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                        <form role="search" method="get" class="search-form d-flex me-3" action="<?php echo home_url( '/' ); ?>">
                             <img class="mr-2" src="<?php bloginfo('template_url'); ?>/images/search.png" alt="Search icon" width="14px" height="14px">
                             <label>
                                 <span class="screen-reader-text">Search for:</span>

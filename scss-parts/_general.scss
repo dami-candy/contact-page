@@ -18,6 +18,19 @@ body {
   outline:none
 }
 
+.orderby, .variations select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  background-image: url(/wp-content/themes/sporebuddies/images/toggle.png);
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--white);
+}
+
 .overflow {
   overflow: hidden;
 }
@@ -186,7 +199,10 @@ img {
 .woocommerce-breadcrumb {
   max-width: 1200px;
   margin: 0 auto !important;
-  padding: 10px 25px !important;
+  padding: 10px !important;
+  @media screen and (min-width: 768px) {
+    padding: 10px 25px !important;
+  }
 }
 
 #sidebar {
@@ -228,13 +244,21 @@ img {
 
 .woocommerce {
   .cta-div {
-    padding: 100px 0;
+    padding: 30px 0;
+    @media screen and (min-width: 768px) {
+      padding: 100px 0;
+    }
   }
   .related.products {
     padding-top: 100px;
     display: flex;
     width: 100%;
     flex-direction: column;
+  }
+  .woocommerce-product-details__short-description {
+    p {
+      line-height: 32px;
+    }
   }
 }
 
@@ -577,12 +601,12 @@ hr {
       margin: 0 auto;
     }
   }
-  form input {
-    padding: 10px;
-    border-radius: 9px;
-    border-color: #99A2A5;
-    border: 1px solid #99A2A5;
-  }
+  // form input {
+  //   padding: 10px;
+  //   border-radius: 9px;
+  //   border-color: #99A2A5;
+  //   border: 1px solid #99A2A5;
+  // }
 }
 #place_order {
   float: none !important;
@@ -684,6 +708,11 @@ textarea {
   @media screen and (min-width:768px) {
     display: none !important;
   }
+  select {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
 }
 
 .write-question-review-button-text {
@@ -729,6 +758,27 @@ textarea {
     top: 8px !important;
   }
 }
+.woocommerce {
+  .wc-buy-now-btn {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    padding: 15px;
+    border: 1px solid #C1C1C1C1 !important;
+    margin-left: 16px !important;
+  }
+  .payment {
+    display: flex;
+    justify-content: space-between;
+    @media screen {
+      justify-content: start;
+    }
+    button {
+      width: 50%;
+      padding: 16px 20px !important;
+      max-width: 230px;
+    }
+  }
+}
 .product-remove {
   .remove {
     margin: 0 auto;
@@ -736,4 +786,19 @@ textarea {
 }
 .coupon {
   padding-bottom: 0 !important;
+}
+.woocommerce-notices-wrapper .woocommerce-message {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+
+.woocommerce-message .button {
+  width: 100%;
+    max-width: 190px;
+    margin-top: 10px !important;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      max-width: 160px;
+    }
 }
