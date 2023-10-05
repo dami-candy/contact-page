@@ -1,6 +1,14 @@
 #steps-section {
+    background: #F9F9F9;
+    margin-bottom: 80px;
+
     @media screen and (min-width: 768px) {
         padding: 60px 0;
+        
+        .page-template-magic-journey & {
+            padding: 60px 0 0 0;
+            margin-bottom: 80px;
+        }
     }
     
     .step {

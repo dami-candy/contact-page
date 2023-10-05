@@ -83,7 +83,7 @@
                                             <a href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener" aria-label="<?php echo $icon['alt']; ?>">
                                                 <?php $icon = get_sub_field('icon', 'option');
                                                         if ($icon) : ?>
-                                                    <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" width="15" height="20">
+                                                    <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" width="20" height="20">
                                                 <?php endif; ?>
                                             </a>
                                         </li>

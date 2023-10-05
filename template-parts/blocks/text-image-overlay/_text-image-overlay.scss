@@ -1,5 +1,8 @@
 #text-image-overlay {
     overflow: hidden;
+    .page-template-careers & {
+        padding-bottom: 60px;
+    }
     .container {
         @media screen and (min-width: 768px) {
             max-width: unset;

@@ -200,11 +200,11 @@ img {
 .woocommerce-breadcrumb {
   max-width: 1200px;
   margin: 0 auto !important;
-  padding: 10px !important;
+  padding: 10px 10px 40px 10px !important;
 }
 @media screen and (min-width: 768px) {
   .woocommerce-breadcrumb {
-    padding: 10px 25px !important;
+    padding: 10px 25px 60px 25px !important;
   }
 }
 
@@ -461,14 +461,14 @@ hr {
   display: none;
 }
 
-.woocommerce-variation-add-to-cart {
+.woocommerce-variation-add-to-cart, .summary .cart {
   display: flex;
   flex-direction: column;
 }
-.woocommerce-variation-add-to-cart .quantity {
+.woocommerce-variation-add-to-cart .quantity, .summary .cart .quantity {
   padding-bottom: 20px;
 }
-.woocommerce-variation-add-to-cart .button {
+.woocommerce-variation-add-to-cart .button, .summary .cart .button {
   max-width: 200px;
 }
 
@@ -790,6 +790,27 @@ textarea {
   .woocommerce-message .button {
     max-width: 160px;
   }
+}
+
+.page-template-full-width .wpcf7-form {
+  padding: 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .page-template-full-width .wpcf7-form {
+    padding: unset;
+  }
+}
+
+.product_title {
+  line-height: 1.2;
+}
+
+.woocommerce span.onsale {
+  background-color: #E43A36;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #E43A36;
 }
 
 #header {
@@ -1597,6 +1618,24 @@ h1:not(.home h1):before {
   line-height: 24px;
 }
 
+.page-template-magic-journey .text {
+  max-width: 890px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+.page-template-magic-journey .selection-section {
+  padding: 70px 0;
+}
+.page-template-magic-journey h2 {
+  font-size: 30px;
+}
+.page-template-magic-journey img {
+  margin-bottom: 30px;
+}
+.page-template-magic-journey .title {
+  color: var(--blue);
+}
+
 @media screen and (min-width: 768px) {
   #three-column-section .divider {
     border-left: 1px solid #2C3258;
@@ -1709,6 +1748,7 @@ h1:not(.home h1):before {
 #category-template .alt .cta {
   font-size: 20px;
   color: var(--blue);
+  font-family: "Poppins-SemiBold", cursive;
 }
 @media screen and (min-width: 768px) {
   #category-template .alt .cta {
@@ -2208,6 +2248,9 @@ h1:not(.home h1):before {
 #text-image-overlay {
   overflow: hidden;
 }
+.page-template-careers #text-image-overlay {
+  padding-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   #text-image-overlay .container {
     max-width: unset;
@@ -2305,9 +2348,17 @@ h1:not(.home h1):before {
   padding: 60px 0;
 }
 
+#steps-section {
+  background: #F9F9F9;
+  margin-bottom: 80px;
+}
 @media screen and (min-width: 768px) {
   #steps-section {
     padding: 60px 0;
+  }
+  .page-template-magic-journey #steps-section {
+    padding: 60px 0 0 0;
+    margin-bottom: 80px;
   }
 }
 #steps-section .step {

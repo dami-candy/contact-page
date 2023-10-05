@@ -14,6 +14,20 @@ $two_column_2_content = get_field('two_column_2_content');
 $two_column_2_image = get_field('two_column_2_image');
 
 
+$selection_text = get_field('selection_text');
+$selection_header_1 = get_field('selection_header_1');
+$selection_content_1 = get_field('selection_content_1');
+$selection_image_1 = get_field('selection_image_1');
+
+$selection_header_2 = get_field('selection_header_2');
+$selection_content_2 = get_field('selection_content_2');
+$selection_image_2 = get_field('selection_image_2');
+
+$selection_header_3 = get_field('selection_header_3');
+$selection_content_3 = get_field('selection_content_3');
+$selection_image_3 = get_field('selection_image_3');
+
+
 
 ?>
 
@@ -21,11 +35,11 @@ $two_column_2_image = get_field('two_column_2_image');
 <div class="container">
     <h1><?php the_title(); ?></h1>
     <div class="row mx-md-5">
-        <h2 class="text-center mb-5"><?php echo $usp_title; ?></h2>
+        <h2 class="title text-center mb-5"><?php echo $usp_title; ?></h2>
         <div class="col-12 col-md-6">
-            <div><?php echo $usp_1; ?></div>
-            <div><?php echo $usp_2; ?></div>
-            <div><?php echo $usp_3; ?></div>
+            <div class="mt-5"><?php echo $usp_1; ?></div>
+            <div class="mt-5"><?php echo $usp_2; ?></div>
+            <div class="mt-5"><?php echo $usp_3; ?></div>
         </div>
         <div class="col-12 col-md-6">
             <img src="<?php echo $usp_image['url']; ?>" alt="<?php echo $usp_image['alt']; ?>">
@@ -53,6 +67,38 @@ $two_column_2_image = get_field('two_column_2_image');
 </div>
 
 <?php include get_template_directory() . '/template-parts/blocks/text-image-overlay/text-image-overlay.php'; ?>
+
+
+<section id="selection">
+    <div class="container">
+        <div class="text">
+            <?php echo $selection_text;?>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-7">
+                <h2><?php echo $selection_header_1;?></h2>
+                <div><?php echo $selection_content_1;?></div>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="<?php echo $selection_image_1['url']; ?>" alt="<?php echo $selection_image_1['alt']; ?>">
+            </div>
+            <div class="col-12 col-md-7">
+                <h2><?php echo $selection_header_2;?></h2>
+                <div><?php echo $selection_content_2;?></div>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="<?php echo $selection_image_2['url']; ?>" alt="<?php echo $selection_image_2['alt']; ?>">
+            </div>
+            <div class="col-12 col-md-7">
+                <h2><?php echo $selection_header_3;?></h2>
+                <div><?php echo $selection_content_3;?></div>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="<?php echo $selection_image_3['url']; ?>" alt="<?php echo $selection_image_3['alt']; ?>">
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php include get_template_directory() . '/template-parts/blocks/steps-section/steps-section.php'; ?>
 
